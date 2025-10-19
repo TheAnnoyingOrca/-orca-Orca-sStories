@@ -1,0 +1,109 @@
+{
+    "Changes": [
+        {
+            "LogName": "Calvin Gift Dialogue",
+            "Action": "EditData",
+		    "Target": "Characters/Dialogue/OrcasStories_Calvin",
+		    "Entries": 	{
+                // Generic Gift Reaction
+                    "AcceptGift_category_flowers": "{{i18n:Gifts.OrcasStories_Calvin.Category.Flowers}}",
+                    "AcceptGift_category_fish": "{{i18n:Gifts.OrcasStories_Calvin.Category.Fish}}",
+                    "AcceptGift_category_junk": "{{i18n:Gifts.OrcasStories_Calvin.Category.Junk}}",
+                    
+
+                // Specific Gift Reaction (Oh Boy)
+                    //Loved
+                    "AcceptGift_(O)StardropTea": "{{i18n:Gifts.OrcasStories_Calvin.StardropTea}}",
+                    "AcceptGift_(O)107": "{{i18n:Gifts.OrcasStories_Calvin.DinosaurEgg}}",
+                    "AcceptGift_(O)242": "{{i18n:Gifts.OrcasStories_Calvin.DishofSea}}",
+                    "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Shark": "{{i18n:Gifts.OrcasStories_Calvin.Shark}}",
+                    "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Shark_Tooth": "{{i18n:Gifts.OrcasStories_Calvin.SharkTooth}}",
+                    "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_King_Salmon": "{{i18n:Gifts.OrcasStories_Calvin.KingSalmon}}",
+                    "AcceptGift_(O)OrcasStories_SalmonShark": "{{i18n:Gifts.OrcasStories_Calvin.SalmonShark}}",
+                    //Liked
+                     
+                    
+                    "AcceptGift_(O)SkillBook_1": "{{i18n:Gifts.OrcasStories_Calvin.SkillBook_1}}",
+                    "AcceptGift_(O)Book_Crabbing": "{{i18n:Gifts.OrcasStories_Calvin.Book_Crabbing}}",
+                    "AcceptGift_(O)Book_Roe": "{{i18n:Gifts.OrcasStories_Calvin.Book_Roe}}",
+                    
+                    "AcceptGift_(O)424": "{{i18n:Gifts.OrcasStories_Calvin.Cheese}}",
+                    "AcceptGift_(O)426": "{{i18n:Gifts.OrcasStories_Calvin.Cheese}}",
+                    "AcceptGift_(O)812": "{{i18n:Gifts.OrcasStories_Calvin.Roe}}",
+
+                    //Hated
+                    "AcceptGift_(O)Book_Friendship": "{{i18n:Gifts.OrcasStories_Calvin.Book_Friendship}}",
+
+
+                    //seafood
+                    "AcceptGift_(O)SmokedFish": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)265": "{{i18n:Gifts.OrcasStories_Calvin.SeafoamPudding}}",
+                    "AcceptGift_(O)198": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)209": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)212": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)213": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)214": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)219": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)225": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)226": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)227": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)228": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)728": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)730": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)732": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+                    "AcceptGift_(O)733": "{{i18n:Gifts.OrcasStories_Calvin.Seafood}}",
+
+                    //sea forage
+                    "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed": "{{i18n:Gifts.OrcasStories_Calvin.Algae}}",
+                    "AcceptGift_(O)153": "{{i18n:Gifts.OrcasStories_Calvin.Algae}}",
+                    "AcceptGift_(O)157": "{{i18n:Gifts.OrcasStories_Calvin.Algae}}",
+                    "AcceptGift_(O)152": "{{i18n:Gifts.OrcasStories_Calvin.Algae}}",
+                    "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Big_Conch": "{{i18n:Gifts.OrcasStories_Calvin.Big_Conch}}",
+                    "AcceptGift_(O)169": "{{i18n:Gifts.OrcasStories_Calvin.Driftwood}}",
+                    "AcceptGift_(O)392": "{{i18n:Gifts.OrcasStories_Calvin.NautilusShell}}",
+                    "AcceptGift_(O)394": "{{i18n:Gifts.OrcasStories_Calvin.RainbowShell}}",
+                    "AcceptGift_(O)393": "{{i18n:Gifts.OrcasStories_Calvin.Coral}}",
+                    "AcceptGift_(O)397": "{{i18n:Gifts.OrcasStories_Calvin.Urchin}}",
+
+                    //fish
+
+
+
+
+                    //Neutral
+                    //"AcceptGift_(O)107": "{{i18n:Gifts.OrcasStories_Calvin.DinosaurEgg}}",
+
+                    //Disliked
+                    //"AcceptGift_(O)107": "{{i18n:Gifts.OrcasStories_Calvin.DinosaurEgg}}",
+
+                    //Hated
+                    //"AcceptGift_(O)107": "{{i18n:Gifts.OrcasStories_Calvin.DinosaurEgg}}",
+
+
+                // Birthday Dialogue (SHIT I FORGOT)
+
+                    "AcceptBirthdayGift_Loved": "{{i18n:Gifts.OrcasStories_Calvin.Loved.BirthDay}}",
+                    "AcceptBirthdayGift_Liked": "{{i18n:Gifts.OrcasStories_Calvin.Liked.BirthDay}}",
+                    "AcceptBirthdayGift_Neutral": "{{i18n:Gifts.OrcasStories_Calvin.Neutral.BirthDay}}",
+                    "AcceptBirthdayGift_Disliked": "{{i18n:Gifts.OrcasStories_Calvin.Disliked.BirthDay}}",
+                    "AcceptBirthdayGift_Hated": "{{i18n:Gifts.OrcasStories_Calvin.Hated.BirthDay}}",
+
+                // NO GIFT FOR YOU
+				"RejectBouquet_NotDatable":"{{i18n:Gifts.OrcasStories_Calvin.RejectBouquet}}",
+				"RejectMermaidPendant_NotDatable":"{{i18n:Gifts.OrcasStories_Calvin.RejectMermaidPendant}}",
+				"RejectMovieTicket_AlreadyInvitedBySomeoneElse":"{{i18n:Gifts.OrcasStories_Calvin.AlreadyInvited}}",
+				"RejectMovieTicket_AlreadyWatchedThisWeek":"{{i18n:Gifts.OrcasStories_Calvin.AlreadyWatched}}",
+				"RejectMovieTicket_DontWantToSeeThatMovie":"{{i18n:Gifts.OrcasStories_Calvin.DontWantWatch}}",
+				"reject_<item_id>":"",
+                "":"",
+                "":"",
+                "":"",
+				"":""
+
+
+
+            }
+        }
+    ]
+}

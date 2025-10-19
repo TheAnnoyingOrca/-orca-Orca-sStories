@@ -1,0 +1,66 @@
+{
+    "Changes": [
+        
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "Orca.OrcasStories_Items.PickledDiamond": {
+                    "Name": "Orca.OrcasStories_Items.PickledDiamond",
+                    "DisplayName": "{{i18n:Core.Items.PickledDiamond}}",
+                    "Description": "{{i18n:Core.Items.PickledDiamond.Description}}",
+                    "Category": -26,
+                    "Price": 900,
+                    "Edibility": 1,
+                    "IsDrink": true,
+                    "Type": "Basic",
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [ "diamond" ],
+                    "Texture": "{{InternalAssetKey: Assets/Items/OSObjects.png}}",
+                    "SpriteIndex": 5
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": { 
+                "Orca.OrcasStories_Items.PickledDiamond": {  "EatenHealthRestoredOverride": -100, "EatenStaminaRestoredOverride": -25 
+               }
+            }
+        },
+        {
+            "LogName": "Why are you Pickling Diamonds?",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)15", "OutputRules" ],
+            "Entries": {
+               "Orca.OrcasStories_PickledDiamond": {
+                  "Id": "Orca.OrcasStories_PickledDiamond",
+                  "Triggers": [
+                     {
+                        "Id": "PickledDiamondInputMachine",
+                        "Trigger": "ItemPlacedInMachine",
+                        "RequiredItemId": "(O)72",
+                        "RequiredCount": 1
+                     }
+                  ],
+                  "OutputItem": [
+                     {
+                        "Id": "PickledDiamondOutputMachine",
+                        "ItemId": "(O)Orca.OrcasStories_Items.PickledDiamond",
+                        "RandomItemId": null,
+                        "MinStack": 1,
+                        "MaxStack": 1,
+                        "Quality": 0
+                     }
+                  ],
+                  "DaysUntilReady": 1
+               }
+            },
+            "MoveEntries": [ 
+               { "Id": "Orca.OrcasStories_PickledDiamond", "ToPosition": "Top" } ]
+        }
+    ]
+    
+}

@@ -1,0 +1,328 @@
+
+
+
+{
+    "Changes":[
+        {
+            "LogName": "Calvin 4 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_Event.OrcasStories_Calvin.4h/e Orca.OrcasStories_Event.OrcasStories_Calvin.2h/t 800 1300/w sunny/d Wed Thu Sun/f OrcasStories_Calvin 1000":"
+                    ocean/
+                    58 120/
+                    farmer 60 107 2 OrcasStories_Calvin 58 120 2 Jacob 61 103 2/
+                    addTemporaryActor OrcasStories_Cetus 80 48 55 121 1 false Character/
+                    changeName OrcasStories_Cetus Cetus/
+                    showFrame OrcasStories_Cetus 4/
+                    positionOffset OrcasStories_Cetus 26 14 true/
+                    hideShadow OrcasStories_Calvin true/
+                    action Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin Wetsuit/
+                    action Spiderbuttons.BETAS_UpdateAppearance Jacob JacobEventLand/
+                    speed OrcasStories_Calvin 2/
+                    ignoreCollisions OrcasStories_Calvin/
+                    ignoreCollisions farmer/
+                    ignoreCollisions Jacob/
+                    ignoreCollisions OrcasStories_Cetus/
+                    addConversationTopic SickCetus/
+                    skippable/
+                        advancedMove farmer false 0 7 2 10/
+                        pause 2000/
+                        waitForAllStationary/
+                        stopAdvancedMoves/
+                        pause 100/
+                        advancedMove OrcasStories_Calvin false 2 0 2 10 0 1 3 10/
+                        pause 1000/
+                        emote OrcasStories_Cetus 12 false/
+                        pause 500/
+                        emote OrcasStories_Calvin 28 false/
+                        pause 700/
+                        faceDirection OrcasStories_Calvin 0/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_1.Calvin}}\"/
+                        faceDirection OrcasStories_Calvin 3/
+                        animate OrcasStories_Calvin false true 500 16 17/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_2.Calvin}}\"/
+                        pause 400/
+                        stopAnimation OrcasStories_Calvin 12/
+                        emote OrcasStories_Cetus 28 false/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_3.Calvin}}\"/
+                        advancedMove OrcasStories_Calvin false 0 -1 4 10 -2 0 2 10/
+                        waitForAllStationary/
+                        animate OrcasStories_Calvin false true 250 20 20 20 20 20 21 22 23 21 22 23 21 22 23 21 22 23 21 20 20 20 20/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_4.Calvin}}\"/
+                        pause 500/
+                        stopAnimation OrcasStories_Calvin 18/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_5.Calvin}}\"/
+                        pause 500/
+                        advancedMove OrcasStories_Calvin false -2 0 2 10/
+                        waitForAllStationary/
+                        animate OrcasStories_Calvin false true 250 20 20 20 20 20 21 22 23 21 22 23 21 22 23 21 22 23 21 20 20 20 20/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_6.Calvin}}\"/
+                        pause 700/
+                        stopAnimation OrcasStories_Calvin 19/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_7.Calvin}}\"/
+                        advancedMove OrcasStories_Calvin false 2 0 2 10/
+                        waitForAllStationary/
+                        pause 500/
+                        showFrame OrcasStories_Calvin 18/
+                        pause 100/
+                        emote OrcasStories_Calvin 40 false/
+                        faceDirection OrcasStories_Calvin 0/
+                        stopMusic/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_8.Calvin}}\"/
+                    quickQuestion {{i18n:Events.OrcasStories_Calvin.Event4_8.Question}}#{{i18n:Events.OrcasStories_Calvin.Event4_8.Answer1}}#{{i18n:Events.OrcasStories_Calvin.Event4_8.Answer2}} (break) switchEvent Orca.OrcasStories_CetusAnimal (break) switchEvent Orca.OrcasStories_CetusFriend/
+                    end/
+                    "
+            }
+        },
+        {
+            "LogName": "Cetus is An Animal",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_CetusAnimal":"
+                    playMusic Cavern/
+                    facedirection OrcasStories_Calvin 2/
+                    pause 100/
+                    showFrame OrcasStories_Calvin 19/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_1.Calvin}}\"/
+                    advancedMove OrcasStories_Calvin false 2 0 2 10 0 1 3 10/
+                    waitForAllStationary/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_2.Calvin}}\"/
+                    pause 300/
+                    faceDirection OrcasStories_Calvin 0/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_3.Calvin}}\"/
+                    pause 250/
+                    faceDirection OrcasStories_Calvin 3/
+                    animate OrcasStories_Calvin false true 500 16 17/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_4.Calvin}}\"/
+                    stopAnimation OrcasStories_Calvin 12/
+                    pause 400/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_5.Calvin}}\"/
+                    pause 300/
+                    advancedMove OrcasStories_Calvin false 0 -1 4 10 -2 0 2 10/
+                    waitForAllStationary/
+                    animate OrcasStories_Calvin false true 250 20 20 20 20 20 21 22 23 21 22 23 21 22 23 21 22 23 21 20 20 20 20/
+                    pause 300/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_6.Calvin}}\"/
+                    pause 500/
+                    stopAnimation OrcasStories_Calvin 0/
+                    pause 300/
+                    faceDirection OrcasStories_Calvin 1/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_7.Calvin}}\"/
+                    pause 300/
+                    faceDirection OrcasStories_Calvin 2/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_8.Calvin}}\"/
+                    faceDirection OrcasStories_Calvin 0/
+                    pause 200/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_9.Calvin}}\"/
+                    pause 1000/
+                    emote farmer 28 true/
+                    emote OrcasStories_Calvin 40 false/
+                    pause 200/
+                    faceDirection OrcasStories_Calvin 2/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4A_10.Calvin}}\"/
+                switchEvent Orca.OrcasStories_CetusQuestionEnd/
+                end/
+                "
+            }
+        },
+        {
+            "LogName": "Cetus is My Friend",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_CetusFriend":"
+                    friendship OrcasStories_Calvin 125/
+                    playMusic Icicles/
+                    pause 400/
+                    emote OrcasStories_Calvin 56 false/
+                    pause 100/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_1.Calvin}}\"/
+                    advancedMove OrcasStories_Calvin false 2 0 2 10 0 1 3 10/
+                    waitForAllStationary/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_2.Calvin}}\"/
+                    pause 300/
+                    faceDirection OrcasStories_Calvin 0/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_3.Calvin}}\"/
+                    pause 300/
+                    animate OrcasStories_Calvin false true 500 16 17/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_4.Calvin}}\"/
+                    stopAnimation OrcasStories_Calvin 12/
+                    pause 500/
+                    faceDirection OrcasStories_Calvin 0/
+                    pause 300/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_5.Calvin}}\"/
+                    pause 300/
+                    faceDirection OrcasStories_Calvin 3/
+                    pause 300/
+                    advancedMove OrcasStories_Calvin false 0 -1 4 10 -2 0 2 10/
+                    waitForAllStationary/
+                    animate OrcasStories_Calvin false true 250 20 20 20 20 20 21 22 23 21 22 23 21 22 23 21 22 23 21 20 20 20 20/
+                    pause 3000/
+                    stopAnimation OrcasStories_Calvin 0/
+                    pause 200/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_6.Calvin}}\"/
+                    pause 400/
+                    faceDirection OrcasStories_Calvin 1/ 
+                    pause 300/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_7.Calvin}}\"/
+                    pause 200/
+                    faceDirection OrcasStories_Calvin 2/
+                    pause 400/
+                quickQuestion {{i18n:Events.OrcasStories_Calvin.Event4B_8.QuickQuestion}}#{{i18n:Events.OrcasStories_Calvin.Event4B_8.Answer1}}#{{i18n:Events.OrcasStories_Calvin.Event4B_8.Answer2}} (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_9.CalvinAnswer1}}\"\\friendship OrcasStories_Calvin 125 (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_9.CalvinAnswer2}}\"/
+                    faceDirection OrcasStories_Calvin 1/
+                    pause 500/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4B_10.Calvin}}\"/
+                switchEvent Orca.OrcasStories_CetusQuestionEnd/
+                end/
+                "
+            }
+        },
+        {
+            "LogName": "Calvin 4 Heart End",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_CetusQuestionEnd":"
+                playMusic ocean/
+                    pause 100/
+                    advancedMove Jacob false 0 9 2 10/
+                    pause 900/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_9.Calvin}}\"/
+                    pause 300/
+                speak Jacob \"{{i18n:Events.OrcasStories_Calvin.Event4_10.Jacob}}\"/
+                    advancedMove Jacob false -4 0 2 10 0 3 2 10/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_11.Calvin}}\"/
+                    pause 500/
+                    waitForAllStationary/
+                speak Jacob \"{{i18n:Events.OrcasStories_Calvin.Event4_12.Jacob}}\"/
+                    emote OrcasStories_Calvin 60 true/
+                    advancedMove Jacob false 0 5 2 10/
+                    pause 100/
+                    advancedMove OrcasStories_Calvin false 1 0 3 10/
+                    faceDirection OrcasStories_Calvin 3/
+                    hideShadow Jacob true/
+                    action Spiderbuttons.BETAS_UpdateAppearance Jacob JacobEventSea/
+                    pause 200/
+                    waitForAllStationary/
+                speak Jacob \"{{i18n:Events.OrcasStories_Calvin.Event4_13.Jacob}}\"/
+                    pause 300/
+                    faceDirection OrcasStories_Calvin 2/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_14.Calvin}}\"/
+                    pause 100/
+                    advancedMove OrcasStories_Calvin false 1 0 2 10 0 1 3 10/
+                    pause 400/
+                    faceDirection Jacob 1/
+                    pause 200/
+                speak Jacob \"{{i18n:Events.OrcasStories_Calvin.Event4_15.Jacob}}\"/
+                    waitForAllStationary/
+                    emote farmer 40 true/
+                    pause 200/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_16.Calvin}}\"/
+                    pause 100/
+                    shake OrcasStories_Cetus 200/
+                speak OrcasStories_Cetus \"{{i18n:Events.OrcasStories_Calvin.Event4_17.Cetus}}\"/
+                    pause 200/
+                    emote Jacob 40 false/
+                    pause 200/
+                    faceDirection Jacob 2/
+                speak Jacob \"{{i18n:Events.OrcasStories_Calvin.Event4_18.Jacob}}\"/
+                    pause 100/
+                    animate OrcasStories_Calvin false true 500 16 17/
+                    pause 200/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_19.Calvin}}\"/
+                    advancedMove Jacob true 2 0 2 3000 -2 0 2 3000/
+                    pause 500/
+                    emote farmer 60 true/
+                    stopAnimation OrcasStories_Calvin 8/
+                    pause 100/
+                    emote OrcasStories_Calvin 8 false/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_20.Calvin}}\"/
+                    pause 100/
+                    faceDirection OrcasStories_Calvin 3/
+                    emote OrcasStories_Calvin 40 false/
+                    pause 200/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_21.Calvin}}\"/
+                    pause 300/
+                    faceDirection OrcasStories_Calvin 0/
+                    pause 100/
+                speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event4_22.Calvin}}\"/
+                    pause 300/
+                    emote farmer 32 true/
+                    jump farmer 8/
+                    pause 200/
+                    faceDirection OrcasStories_Calvin 3/
+                    pause 500/
+                globalFade/
+                    viewport -2000 -2000/
+                    action Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin/
+                    action Spiderbuttons.BETAS_UpdateAppearance Jacob/
+                    changePortrait OrcasStories_Calvin/
+                    changeSprite OrcasStories_Calvin/
+                    pause 200/
+                    end/
+                "
+            }
+        }
+
+    ]
+}
+//advancedMove OrcasStories_Calvin true 2 0 0 1 3 5000 0 -1 -2 0 2 7000/
+//#
+//  //  #
+//  # 
+//  #
+//  #
+// 
+
+//coordinates
+// farmer go to 60 114
+
+// 
+
+//...
+
+// "#
+// "
+//   Question Fork answers: 
+// # + 0 friendship
+// a flicker in the deep plays
+
+
+
+
+//  # + 125 friendship
+// icicles plays
+
+//  #
+// #
+// 
+// #
+// 
+// #
+// Quick question: Is he just as valuable as any human friend to you?
+
+//  + 125 friendship
+
+//  
+
+//  + 0 friendship
+
+// 
+
+
+// Well, thank you for answering. And for listening. # But I should get back to making sure Cetus is alright. #
+// This is still all a bit scary, but I know he'll be alright.
+
+// -- Jacob appears with a short conversation with Calvin as the farmer leaves.
+
+// Jacob and Calvin talk about what's happened to Cetus while the farmer awkwardly stands there.
+// Eventually the farmer asks how to help, and Calvin relents, allowing them to help as long as they don't touch Cetus, since they aren't licensed to take care of him.
+

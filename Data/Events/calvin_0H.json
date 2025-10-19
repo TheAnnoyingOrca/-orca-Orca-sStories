@@ -1,0 +1,114 @@
+{
+    "Changes": [
+        {
+            "LogName": "First Event, here we go BABEEEE",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_Event.OrcasStories_Calvin.0h/t 800 2100":"
+                    ocean/
+                    46 130/
+                    farmer 46 118 2 OrcasStories_Calvin 45 130 2/
+                    addTemporaryActor OrcasStories_Cetus 80 48 44 138 0 false Character/
+                    changeName OrcasStories_Cetus {{i18n:Core.NPCs.Cetus}}/
+                    showFrame OrcasStories_Cetus 28/
+                    ignoreCollisions OrcasStories_Calvin/
+                    ignoreCollisions farmer/
+                    ignoreCollisions OrcasStories_Cetus/
+                    addConversationTopic OrcaBoy/
+                    skippable/
+                        pause 5000/
+                        move farmer 0 9 2 false/
+                        emote OrcasStories_Calvin 8 false/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 3000/
+                        faceDirection OrcasStories_Calvin 2 true/
+                        emote OrcasStories_Calvin 40 true/
+                        animate OrcasStories_Calvin false true 200 72 73 74 75/
+                        pause 2000/
+                        emote farmer 8 true/
+                        pause 2000/
+                        stopAnimation OrcasStories_Calvin/
+                        pause 1000/
+                        faceDirection OrcasStories_Calvin 0 false/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_1}}\"/
+                        pause 4000/
+                        emote OrcasStories_Calvin 40 true/
+                        emote farmer 40 true/
+                        pause 2000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_2}}\"/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_3}}\"/
+                        pause 1000/
+                        faceDirection OrcasStories_Calvin 2/
+                        pause 1000/
+                        faceDirection OrcasStories_Calvin 0/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_4}}\"/
+                        emote farmer 32 false/
+                        move farmer 0 3 2 true/
+                        faceDirection OrcasStories_Calvin 2 true/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_5}}\"/
+                        faceDirection OrcasStories_Calvin 2/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_6}}\"/
+                        animate OrcasStories_Cetus false false 100 28 29 30 31 18/
+                        playSound pullItemFromWater/
+                        pause 300/
+                        stopAnimation OrcasStories_Cetus/
+                        showFrame OrcasStories_Cetus 18/
+                        jump farmer 8/
+                        pause 2000/
+                        advancedMove OrcasStories_Cetus false 0 -4 0/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_7}}\"/
+                        pause 500/
+                    speak OrcasStories_Cetus \"{{i18n:Events.OrcasStories_Calvin.Event0_8}}\"/
+                        emote farmer 32 false/
+                        animate OrcasStories_Calvin false true 90 40/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_9}}\"/
+                        pause 1000/
+                        stopAnimation OrcasStories_Calvin/
+                        advancedMove OrcasStories_Cetus true 6 0 0 5 -12 0 0 -5 6 0/
+                        emote farmer 56 false/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_10}}\"/
+                        emote farmer 28 true/
+                        pause 2000/
+                        faceDirection OrcasStories_Calvin 1 true/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_11}}\"/
+                        pause 1000/
+                        faceDirection OrcasStories_Calvin 2 false/
+                        animate OrcasStories_Calvin false true 90 68/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_12}}\"/
+                        stopAnimation OrcasStories_Calvin/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_13}}\"/
+                        shake OrcasStories_Calvin 500/
+                        animate OrcasStories_Calvin false true 90 67/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_14}}\"/
+                        stopAnimation OrcasStories_Calvin/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_15}}\"/
+                        pause 3000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_16}}\"/
+                        emote OrcasStories_Calvin 40 true/
+                        pause 5000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_17}}\"/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event0_End}}\"/
+                        pause 1000/
+                        emote farmer 40 true/
+                        faceDirection farmer 3 false/
+                        pause 1000/
+                        move farmer 0 -30 0 true/
+                        pause 3000
+                        globalfade 0.010 true/
+                        stopAdvancedMoves/
+                        viewport -1000 -1000/
+                    end"
+            }
+            
+
+            
+        }
+        
+    ]
+}

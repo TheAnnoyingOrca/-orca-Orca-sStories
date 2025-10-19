@@ -1,0 +1,271 @@
+{
+    "Changes": [
+		{
+			"LogName": "Dialogue Strings, Because it just Wasn't Enough was IT?",
+		    "Action": "EditData",
+		    "Target": "Strings/animationDescriptions",
+		    "Entries": {
+				"calvin_tidewalker": "{{i18n:Strings.OrcasStories_Calvin.calvin_tidewalker.{{Random:{{Range:1,3}}}}}}",
+				"calvin_note": "{{i18n:Strings.OrcasStories_Calvin.calvin_note.{{Random:{{Range:1,3}}}}}}",
+				"calvin_puter": "{{i18n:Strings.OrcasStories_Calvin.calvin_puter.{{Random:{{Range:1,5}}}}}}",
+				"calvin_snooze": "{{i18n:Strings.OrcasStories_Calvin.calvin_snoose.{{Random:{{Range:1,3}}}}}}",
+				"calvin_charliebrown": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown}}",
+				"calvin_lean": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown.{{Random:{{Range:1,5}}}}}}",
+				"calvin_lay": "{{i18n:Strings.OrcasStories_Calvin.calvin_lay.{{Random:{{Range:1,5}}}}}}",
+				"calvin_sit_kick": "{{i18n:Strings.OrcasStories_Calvin.calvin_sit_kick.{{Random:{{Range:1,5}}}}}}"
+			}
+
+		},
+		{
+			"LogName": "Dialogue Strings, Again",
+		    "Action": "EditData",
+		    "Target": "Strings/animationDescriptions/OrcasStories_Calvin",
+		    "Entries": {
+				"calvin_tidewalker": "{{i18n:Strings.OrcasStories_Calvin.calvin_tidewalker.{{Random:{{Range:1,3}}}}}}",
+				"calvin_note": "{{i18n:Strings.OrcasStories_Calvin.calvin_note.{{Random:{{Range:1,3}}}}}}",
+				"calvin_puter": "{{i18n:Strings.OrcasStories_Calvin.calvin_puter.{{Random:{{Range:1,5}}}}}}",
+				"calvin_snooze": "{{i18n:Strings.OrcasStories_Calvin.calvin_snoose.{{Random:{{Range:1,3}}}}}}",
+				"calvin_charliebrown": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown}}",
+				"calvin_lean": "{{i18n:Strings.OrcasStories_Calvin.calvin_lean.{{Random:{{Range:1,5}}}}}}",
+				"calvin_lay": "{{i18n:Strings.OrcasStories_Calvin.calvin_lay.{{Random:{{Range:1,5}}}}}}",
+				"calvin_sit_kick": "{{i18n:Strings.OrcasStories_Calvin.calvin_sit_kick.{{Random:{{Range:1,5}}}}}}"
+			}
+
+		},
+        {
+            "LogName": "Default Dialogue ",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/OrcasStories_Calvin",
+			"Condition": "!PLAYER_HAS_SEEN_EVENT Orca.OrcasStories_Events.OrcasStories_Calvin.8h",
+		    "Entries": {
+
+                //Dates
+                "": "",
+                "spring_Mon": "{{i18n:Core.OrcasStories_Calvin.spring_Mon.{{Random:{{Range:1,5}}}}}}",
+	            "spring_Tue": "{{i18n:Core.OrcasStories_Calvin.spring_Tue.{{Random:{{Range:1,5}}}}}}",
+	            "spring_Wed": "{{i18n:Core.OrcasStories_Calvin.spring_Wed.{{Random:{{Range:1,5}}}}}}",
+	            "spring_Thu": "{{i18n:Core.OrcasStories_Calvin.spring_Thu.{{Random:{{Range:1,5}}}}}}",
+	            "spring_Fri": "{{i18n:Core.OrcasStories_Calvin.spring_Fri.{{Random:{{Range:1,5}}}}}}",
+	            "spring_Sat": "{{i18n:Core.OrcasStories_Calvin.spring_Sat.{{Random:{{Range:1,5}}}}}}",
+	            "spring_Sun": "{{i18n:Core.OrcasStories_Calvin.spring_Sun.{{Random:{{Range:1,5}}}}}}",
+
+                "summer_Mon": "{{i18n:Core.OrcasStories_Calvin.summer_Mon.{{Random:{{Range:1,5}}}}}}",
+	            "summer_Tue": "{{i18n:Core.OrcasStories_Calvin.summer_Tue.{{Random:{{Range:1,5}}}}}}",
+	            "summer_Wed": "{{i18n:Core.OrcasStories_Calvin.summer_Wed.{{Random:{{Range:1,5}}}}}}",
+	            "summer_Thu": "{{i18n:Core.OrcasStories_Calvin.summer_Thu.{{Random:{{Range:1,5}}}}}}",
+	            "summer_Fri": "{{i18n:Core.OrcasStories_Calvin.summer_Fri.{{Random:{{Range:1,5}}}}}}",
+	            "summer_Sat": "{{i18n:Core.OrcasStories_Calvin.summer_Sat.{{Random:{{Range:1,5}}}}}}",
+	            "summer_Sun": "{{i18n:Core.OrcasStories_Calvin.summer_Sun.{{Random:{{Range:1,5}}}}}}",
+
+                "fall_Mon": "{{i18n:Core.OrcasStories_Calvin.fall_Mon.{{Random:{{Range:1,5}}}}}}",
+	            "fall_Tue": "{{i18n:Core.OrcasStories_Calvin.fall_Tue.{{Random:{{Range:1,5}}}}}}",
+	            "fall_Wed": "{{i18n:Core.OrcasStories_Calvin.fall_Wed.{{Random:{{Range:1,5}}}}}}",
+	            "fall_Thu": "{{i18n:Core.OrcasStories_Calvin.fall_Thu.{{Random:{{Range:1,5}}}}}}",
+	            "fall_Fri": "{{i18n:Core.OrcasStories_Calvin.fall_Fri.{{Random:{{Range:1,5}}}}}}",
+	            "fall_Sat": "{{i18n:Core.OrcasStories_Calvin.fall_Sat.{{Random:{{Range:1,5}}}}}}",
+	            "fall_Sun": "{{i18n:Core.OrcasStories_Calvin.fall_Sun.{{Random:{{Range:1,5}}}}}}",
+
+                "winter_Mon": "{{i18n:Core.OrcasStories_Calvin.winter_Mon.{{Random:{{Range:1,5}}}}}}",
+	            "winter_Tue": "{{i18n:Core.OrcasStories_Calvin.winter_Tue.{{Random:{{Range:1,5}}}}}}",
+	            "winter_Wed": "{{i18n:Core.OrcasStories_Calvin.winter_Wed.{{Random:{{Range:1,5}}}}}}",
+	            "winter_Thu": "{{i18n:Core.OrcasStories_Calvin.winter_Thu.{{Random:{{Range:1,5}}}}}}",
+	            "winter_Fri": "{{i18n:Core.OrcasStories_Calvin.winter_Fri.{{Random:{{Range:1,5}}}}}}",
+	            "winter_Sat": "{{i18n:Core.OrcasStories_Calvin.winter_Sat.{{Random:{{Range:1,5}}}}}}",
+	            "winter_Sun": "{{i18n:Core.OrcasStories_Calvin.winter_Sun.{{Random:{{Range:1,5}}}}}}",
+
+				"spring_1":"{{i18n:Core.OrcasStories_Calvin.spring_1}}",
+				"spring_1_2":"{{i18n:Core.OrcasStories_Calvin.spring_1_2}}",
+				"summer_1":"{{i18n:Core.OrcasStories_Calvin.summer_1}}",
+				"summer_1_2":"{{i18n:Core.OrcasStories_Calvin.summer_1_2}}",
+				"fall_1":"{{i18n:Core.OrcasStories_Calvin.fall_1}}",
+				"fall_1_2":"{{i18n:Core.OrcasStories_Calvin.fall_1_2}}",
+				"winter_1":"{{i18n:Core.OrcasStories_Calvin.winter_1}}",
+				"winter_1_2":"{{i18n:Core.OrcasStories_Calvin.winter_1_2}}",
+				"winter_28":"{{i18n:Core.OrcasStories_Calvin.winter_28}}",
+				"winter_28_2":"{{i18n:Core.OrcasStories_Calvin.winter_28_2}}",
+
+
+				//festival-prelude
+				"spring_12": "{{i18n:Core.OrcasStories_Calvin.eggfestprelude}}",
+				"spring_12_2": "{{i18n:Core.OrcasStories_Calvin.eggfestprelude}}",
+				//"spring_14(desert festival)":"{{i18n:}}",
+				"spring_23":"{{i18n:Core.OrcasStories_Calvin.flowerdance_prelude}}",
+				"spring_23_@":"{{i18n:Core.OrcasStories_Calvin.flowerdance_prelude}}",
+
+				"summer_10":"{{i18n:Core.OrcasStories_Calvin.luauprelude_year1}}",
+				"summer_10_2":"{{i18n:Core.OrcasStories_Calvin.luau_prelude}}",
+				"summer_11":"{{i18n:Core.OrcasStories_Calvin.luau_dayof_year1}}",
+				"summer_11_2":"{{i18n:Core.OrcasStories_Calvin.luau_dayof}}",
+
+				"summer_27":"{{i18n:Core.OrcasStories_Calvin.moonlight_prelude}}",
+				"summer_28":"{{i18n:Core.OrcasStories_Calvin.moonlight_dayof}}",
+				"summer_27_2":"{{i18n:Core.OrcasStories_Calvin.moonlight_prelude}}",
+				"summer_28_2":"{{i18n:Core.OrcasStories_Calvin.moonlight_dayof}}",
+
+				"summer_20":"{{i18n:Core.OrcasStories_Calvin.troutderby_start}}",
+				"summer_21":"{{i18n:Core.OrcasStories_Calvin.troutderby_end}}",
+				"summer_20_2":"{{i18n:Core.OrcasStories_Calvin.troutderby_start}}",
+				"summer_21_2":"{{i18n:Core.OrcasStories_Calvin.troutderby_end}}",
+
+				"fall_15": "{{i18n:Core.OrcasStories_Calvin.fair_prelude}}",
+				"fall_15_2": "{{i18n:Core.OrcasStories_Calvin.fair_prelude}}",
+
+				"fall_26":"{{i18n:Core.OrcasStories_Calvin.spiriteve_prelude}}",
+				"fall_27":"{{i18n:Core.OrcasStories_Calvin.spiriteve_missed}}",
+				"fall_26_2":"{{i18n:Core.OrcasStories_Calvin.spiriteve_prelude}}",
+				"fall_27_2":"{{i18n:Core.OrcasStories_Calvin.spiriteve_missed}}",
+
+				"winter_7":"{{i18n:Core.OrcasStories_Calvin.icefestival_prelude}}",
+				"winter_7_2":"{{i18n:Core.OrcasStories_Calvin.icefestival_prelude}}",
+
+				"winter_12":"{{i18n:Core.OrcasStories_Calvin.squidfest_start}}",
+				"winter_13":"{{i18n:Core.OrcasStories_Calvin.squidfest_end}}",
+				"winter_12_2":"{{i18n:Core.OrcasStories_Calvin.squidfest_start}}",
+				"winter_13_2":"{{i18n:Core.OrcasStories_Calvin.squidfest_end}}",
+
+				"winter_15":"{{i18n:Core.OrcasStories_Calvin.nightmarket_start}}",
+				"winter_16":"{{i18n:Core.OrcasStories_Calvin.nightmarket_middle}}",
+				"winter_17":"{{i18n:Core.OrcasStories_Calvin.nightmarket_end}}",
+				"winter_15_2":"{{i18n:Core.OrcasStories_Calvin.nightmarket_start}}",
+				"winter_16_2":"{{i18n:Core.OrcasStories_Calvin.nightmarket_middle}}",
+				"winter_17_2":"{{i18n:Core.OrcasStories_Calvin.nightmarket_end}}",
+
+				"winter_24":"{{i18n:Core.OrcasStories_Calvin.winterstar_prelude}}",
+				"winter_25":"{{i18n:Core.OrcasStories_Calvin.winterstar_missed}}",
+
+				//important Dates to Calvin
+				
+				"summer_14":"{{i18n:Core.OrcasStories_Calvin.birthday.{{Hearts:OrcasStories_Calvin |contains={{Range:0,5}}}}}}",
+				"summer_14_2":"{{i18n:Core.OrcasStories_Calvin.birthday.{{Hearts:OrcasStories_Calvin |contains={{Range:0,5}}}}}}",
+				"fall_2": "{{i18n:Core.OrcasStories_Calvin.badday.{{Hearts:OrcasStories_Calvin |contains={{Range:0,5}}}}}}",
+				"fall_2_2":"{{i18n:Core.OrcasStories_Calvin.badday.{{Hearts:OrcasStories_Calvin |contains={{Range:0,5}}}}}}",
+				"fall_11":"{{i18n:Core.OrcasStories_Calvin.cetusbirthday_prelude}}",
+				"fall_11_2":"{{i18n:Core.OrcasStories_Calvin.cetusbirthday_prelude}}",
+				"fall_5":"{{i18n:Core.OrcasStories_Calvin.cetusbirthday_week_prelude}}",
+				"fall_5_2":"{{i18n:Core.OrcasStories_Calvin.cetusbirthday_week_prelude}}",
+				"fall_12": "{{i18n:Core.OrcasStories_Calvin.cetusbirthday}}",
+				"fall_12_2": "{{i18n:Core.OrcasStories_Calvin.cetusbirthday}}",
+
+
+
+                //Weather ain't been bad, if you're into masochistic bullshit
+				"GreenRain": "{{i18n:Core.OrcasStories_Calvin.GreenRain}}",
+                "GreenRain2": "{{i18n:Core.OrcasStories_Calvin.GreenRain2}}",
+                "GreenRainFinished": "{{i18n:Core.OrcasStories_Calvin.GreenRainFinished}}",
+				"GreenRainFinished2": "{{i18n:Core.OrcasStories_Calvin.GreenRainFinished2}}",
+
+
+                //Times&Places&Animations
+                	//"EastScarp_VillageInn_27_27":"{{i18n:Core.OrcasStories_Calvin.eastScarpInnSleep}}",
+                	//"EastScarp_VillageInn_28_27":"{{i18n:Core.OrcasStories_Calvin.eastScarpInnPlay}}",
+					//"EastScarp_Village_44_88": "{{i18n:Core.OrcasStories_Calvin.eastScarpCavePeak}}",
+				"Forest_99_100": "{{i18n:Core.OrcasStories_Calvin.sewerCommentary}}",
+
+
+                //Basic
+				"DumpsterDiveComment": "{{i18n:Core.OrcasStories_Calvin.Dumpster}}",
+                "HitBySlingshot": "{{i18n:Core.OrcasStories_Calvin.Slingshot}}",
+
+				//Conversation Topics
+				"CalvinIceCream": "{{i18n:Core.OrcasStories_Calvin.CalvinIceCream}}",
+
+
+                //Intro
+                //"Introduction":"{{i18n:Core.OrcasStories_Calvin.Introduction}}",
+                "fishquestion_fishtastic": "{{i18n:Core.OrcasStories_Calvin.fishquestion_fishtastic}}",
+                "fishquestion_catfish": "{{i18n:Core.OrcasStories_Calvin.fishquestion_catfish}}",
+                "fishquestion_none": "{{i18n:Core.OrcasStories_Calvin.fishquestion_none}}",
+	            "fishquestion_followup": "{{i18n:Core.OrcasStories_Calvin.fishquestion_followup}}",
+
+                
+                //Extras
+                "Resort_Entering": "{{i18n:Core.OrcasStories_Calvin.Resort_Entering}}",
+			    "Resort": "{{i18n:Core.OrcasStories_Calvin.Resort}}",
+			    "Resort_Leaving": "{{i18n:Core.OrcasStories_Calvin.Resort_Leaving}}",
+			    "Resort_Shore": "{{i18n:Core.OrcasStories_Calvin.Resort_Shore}}",
+			    "Resort_Wander": "{{i18n:Core.OrcasStories_Calvin.Resort_Wander}}",
+			    "Resort_Wander_2": "{{i18n:Core.OrcasStories_Calvin.Resort_Wander_2}}",
+			    "Resort_Wander_3": "{{i18n:Core.OrcasStories_Calvin.Resort_Wander_3}}",
+			    "Resort_Chair": "{{i18n:Core.OrcasStories_Calvin.Resort_Chair}}",
+			    "Resort_Bar": "{{i18n:Core.OrcasStories_Calvin.Resort_Bar}}",
+
+				"calvin_tidewalker": "{{i18n:Strings.OrcasStories_Calvin.calvin_tidewalker.{{Random:{{Range:1,3}}}}}}",
+				"calvin_float": "{{i18n:Strings.OrcasStories_Calvin.calvin_float.{{Random:{{Range:1,3}}}}}}",
+				"calvin_note": "{{i18n:Strings.OrcasStories_Calvin.calvin_note.{{Random:{{Range:1,3}}}}}}",
+				"calvin_puter": "{{i18n:Strings.OrcasStories_Calvin.calvin_puter.{{Random:{{Range:1,5}}}}}}",
+				"calvin_snooze": "{{i18n:Strings.OrcasStories_Calvin.calvin_snooze.{{Random:{{Range:1,3}}}}}}",
+				"calvin_charliebrown": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown}}",
+				"calvin_lean": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown.{{Random:{{Range:1,5}}}}}}",
+				"calvin_lay": "{{i18n:Strings.OrcasStories_Calvin.calvin_lay.{{Random:{{Range:1,5}}}}}}",
+				"calvin_sit_kick": "{{i18n:Strings.OrcasStories_Calvin.calvin_sit_kick.{{Random:{{Range:1,5}}}}}}",
+				"calvin_think": "{{i18n:Strings.OrcasStories_Calvin.calvin_think.{{Random:{{Range:1,3}}}}}}"
+
+
+				//Interactions
+				
+
+
+
+				
+            }
+        },
+		{
+
+			//Map Strings
+            
+    		"LogName": "Snow Map Strings",
+    		"Action": "EditData",
+    		"Target": "strings/StringsFromMaps",
+    		"Entries": 
+        		{
+					"OrcasStoriesSnowCritter": "{{i18n:Strings.OrcasStories_Calvin.SnowCritter}}",
+					"OrcasStoriesSnowCalvinSnowCetus":"{{i18n:Strings.OrcasStories_Calvin.SnowPals}}"
+				
+				}
+        },
+        {
+
+			//Festival Dialogue
+            "LogName": "Calvin Luau",
+		    "Action": "EditData",
+		    "Target":"Data/Festivals/summer11",
+			"Entries": {
+			
+				"OrcasStories_Calvin": "{{i18n:Core.OrcasStories_Calvin.LuauDialogue}}"
+				}
+        },
+		{
+			"LogName": "Calvin Moonlight",
+		    "Action": "EditData",
+		    "Target":"Data/Festivals/summer28",
+			"Entries": {
+			
+				"OrcasStories_Calvin": "{{i18n:Core.OrcasStories_Calvin.MoonlightDialogue}}"
+				}
+            },
+		
+			//Crossover Dialogue
+        {
+            "LogName": "Crossover Dialogue",
+		    "Action": "EditData",
+		    "Target": "Characters/dialogue/Calvin",
+		    "Entries": {
+                 // Eli&Dylan
+				 "DylanIntro": "{{i18n:Core.OrcasStories_Calvin.DylanIntro}}",
+				 "DylanBeach": "{{i18n:Core.OrcasStories_Calvin.DylanBeach}}",
+				 "DylanCCAquarium": "{{i18n:Core.OrcasStories_Calvin.DylanCC.{{Hearts:OrcasStories_Calvin |contains={{Range:0,9}}}}}}"
+
+
+
+
+
+				 // Pride
+
+
+
+               
+
+            }
+        }
+    ]
+}

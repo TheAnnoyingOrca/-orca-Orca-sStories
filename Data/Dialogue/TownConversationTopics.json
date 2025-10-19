@@ -1,0 +1,133 @@
+{
+    "Changes": [
+        {
+            "LogName": "Abigail Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Abigail",
+		    "Entries": {
+                "CalvinAbigailNotes":"{{i18n:Core.Abigail.CalvinNotes}}",
+                "CalvinNoHangOut":"{{i18n:Core.Abigail.NoHangOut}}",
+                "CetusScare":"{{i18n:Core.Abigail.CetusScare}}",
+                "CalvinCrowd":"{{i18n:Core.Abigail.CalvinCrowd}}"
+
+            }
+        },
+        {
+            "LogName": "Demetrius Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Demetrius",
+		    "Entries": {
+                "CetusScare":"{{i18n:Core.Demetrius.CetusScare}}"
+
+            }
+        },
+        {
+            "LogName": "Elliott Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Elliott",
+		    "Entries": {
+                "CetusScare":"{{i18n:Core.Elliott.CetusScare}}",
+                "CalvinCrowd":"{{i18n:Core.Elliott.CalvinCrowd}}"
+
+            }
+        },
+        {
+            "LogName": "Emily Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Emily",
+		    "Entries": {
+                "CetusScare":"{{i18n:Core.Emily.CetusScare}}",
+                "EmilyFollowup":"{{i18n:Core.Emily.EmilyFollowup}}"
+
+            }
+        },
+        {
+            "LogName": "Jodi Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Jodi",
+		    "Entries": {
+                "CalvinEel":"{{i18n:Core.Jodi.CalvinEel}}",
+                "CetusScare":"{{i18n:Core.Jodi.CetusScare}}"
+
+            }
+        },
+        {
+            "LogName": "Leah Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Leah",
+		    "Entries": {
+                "CetusScare":"{{i18n:Core.Leah.CetusScare}}"
+
+            }
+        },
+        {
+            "LogName": "Lewis Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Lewis",
+		    "Entries": {
+                "CalvinLewisNegative":"{{i18n:Core.Lewis.CalvinLewisNegative}}",
+                "CalvinLewisPositive":"{{i18n:Core.Lewis.CalvinLewisPositive}}"
+
+            }
+        },
+        {
+            "LogName": "Penny Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Penny",
+		    "Entries": {
+                "CetusScare":"{{i18n:Core.Penny.CetusScare}}",
+                "CalvinCrowd":"{{i18n:Core.Penny.CalvinCrowd}}"
+
+            }
+        },
+        {
+            "LogName": "Sam Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Sam",
+		    "Entries": {
+                "CalvinNoHangOut":"{{i18n:Core.Sam.NoHangOut}}",
+                "CalvinLewisPositive":"{{i18n:Core.Sam.CalvinLewisPositive}}",
+                "CalvinLewisNegative":"{{i18n:Core.Sam.CalvinLewisNegative}}",
+                "CalvinCrowd":"{{i18n:Core.Sam.CalvinCrowd}}"
+
+            }
+        },
+        {
+            "LogName": "Vincent Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Vincent",
+		    "Entries": {
+                "CetusScare":"{{i18n:Core.Vincent.CetusScare}}"
+
+            }
+        },
+        {
+            "LogName": "Willy Conversation Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Willy",
+		    "Entries": {
+                "CalvinLewisNegative":"{{i18n:Core.Willy.CalvinLewisNegative}}",
+                "CalvinLewisPositive":"{{i18n:Core.Willy.CalvinLewisPositive}}"
+            }
+        },
+        {
+            "LogName": "East Scarp Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Aideen, Characters/Dialogue/Beatrice, Characters/Dialogue/Eloise, Characters/Dialogue/Jacob, Characters/Dialogue/OliverK, Characters/Dialogue/Rosa, Characters/Dialogue/ToriLK",
+		    "Entries": {
+                "OrcaBoy":"{{i18n:Core.{{TargetWithoutPath}}.OrcaBoy}}"
+
+            }
+        },
+        {
+            "LogName": "Pelican Town Universal Topics",
+		    "Action": "EditData",
+		    "Target": "Characters/Dialogue/Alex, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gus, Characters/Dialogue/Haley, Characters/Dialogue/Harvey, Characters/Dialogue/Jas, Characters/Dialogue/Kent, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/Maru, Characters/Dialogue/Pam, Characters/Dialogue/Pierre, Characters/Dialogue/Robin, Characters/Dialogue/Sandy, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Wizard, Characters/Dialogue/Dwarf, Characters/Dialogue/Krobus,",
+		    "Entries": {
+                "CetusScare":"{{i18n:Core.{{TargetWithoutPath}}.CetusScare}}"
+
+            }
+        }
+
+    ]
+}

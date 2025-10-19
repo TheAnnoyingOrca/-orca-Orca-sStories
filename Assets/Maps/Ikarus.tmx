@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="2" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
+ <tileset firstgid="1" name="Ikarus" tilewidth="16" tileheight="16" tilecount="20" columns="5">
+  <image source="theboysarefighting.png" width="80" height="64"/>
+ </tileset>
+ <layer id="4" name="Back" width="2" height="3">
+  <data encoding="csv">
+0,0,
+0,0,
+0,0
+</data>
+ </layer>
+ <layer id="1" name="Buildings" width="2" height="3">
+  <data encoding="csv">
+0,0,
+14,15,
+19,20
+</data>
+ </layer>
+ <layer id="2" name="Front" width="2" height="3">
+  <data encoding="csv">
+9,10,
+0,0,
+0,0
+</data>
+ </layer>
+ <layer id="3" name="AlwaysFront" width="2" height="3">
+  <data encoding="csv">
+0,0,
+0,0,
+0,0
+</data>
+ </layer>
+</map>

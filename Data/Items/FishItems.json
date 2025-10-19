@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "OrcasStories_SalmonShark": { 
+            "Name": "OrcasStories_SalmonShark", 
+            "DisplayName": "{{i18n:Core.Items.SalmonShark}}", 
+            "Description": "{{i18n:Core.Items.SalmonShark.Description}}",
+            "Type": "Fish", 
+            "Category": -4, 
+            "ExcludeFromRandomSale": true, 
+            "Price": 250, 
+            "Edibility": -10, 
+            "IsDrink": false, 
+            "Texture": "Mods/OrcasStories/Items", 
+            "SpriteIndex": 8, 
+            "ContextTags": [ 
+              "color_blue",
+              "fish_salmonshark"
+              ]
+          }
+        }
+      }
+  ]
+}

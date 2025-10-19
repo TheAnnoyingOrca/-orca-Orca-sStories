@@ -1,0 +1,386 @@
+{
+    "Format": "2.6.0",
+    "Changes": [
+        
+
+        //NPC Data
+        //{
+            //"LogName": "Cetus NPC Data",
+            //"Action": "EditData",
+                    //"Target": "Data/Characters",
+                    //"Entries": {
+                        //"OrcasStories_Cetus": {
+                            //"DisplayName": "Cetus", 
+                            //"BirthSeason": "Fall",
+                            //"BirthDay": 12,
+                            //"HomeRegion": "Beach",
+                            //"Gender": "Male",
+                            //"Age": "Adult",
+                            //"Manner": "Neutral",
+                            //"SocialAnxiety": "Neutral",
+                            //"Optimism": "Neutral",
+                            //"SocialTab": "UnknownUntilMet",
+
+                            //"Breather": false,
+                            //"Shadow": {
+                            //    "Visible": false
+                           // },
+
+                            //"CanBeRomanced": false,
+                            //"CanReceiveGifts": false,
+                            //"Size": { "X": 80, "Y": 48 },
+                            //"CustomFields": {
+                                //"poohnhi.PoohCore/WideCharacter": "true",
+                                //"poohnhi.PoohCore/HighCharacter": "true"
+                            //},
+                            
+
+
+                        //"Home": [
+                           // {
+                                //"Id": "Default",
+                                //"Location": "Beach",
+                                //"Tile": {
+                                //"X": 62,
+                                //"Y": 68
+                                //}
+                            //}
+                        //]
+                    //}
+            //}
+    
+        
+    
+            
+        //},
+        {
+                "LogName": "Calvin Data",
+                "Action": "EditData",
+                    "Target": "Data/Characters",
+                    "Entries": {
+                        "OrcasStories_Calvin": {
+                            "DisplayName": "{{i18n:Core.NPCs.Calvin}}", 
+                            "BirthSeason": "summer",
+                            "BirthDay": 14,
+                            "HomeRegion": "Town",
+                            "Gender": "Male",
+                            "Age": "Teen",
+                            "Manner": "Rude",
+                            "SocialAnxiety": "Outgoing",
+                            "Optimism": "Neutral",
+                            "SocialTab": "UnknownUntilMet",
+                            "SpawnIfMissing": true,
+
+                            "Breather": false,
+                            "DumpsterDiveEmote": "40",
+                            "DumpsterDiveFriendshipEffect":"0",
+
+                            "CanBeRomanced": false,
+                            "Appearance": [
+                                
+                                {
+                                    "Id": "Moonlight Jelly",
+                                    "Condition": "IS_EVENT festival_summer28",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_festivals",
+                                    "Sprite": "Characters/OrcasStories_Calvin_default",
+                                    "Precedence": -150
+                                },
+                                {
+                                    "Id": "Outdoor Summer",
+                                    "Condition": "SEASON Summer",
+                                    "Season": "summer",
+                                    "Indoors": false,
+                                    "Outdoors":true,
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_summer_outdoors",
+                                    "Sprite": "Characters/OrcasStories_Calvin_summer_outdoors",
+                                    "Precedence": -300
+                                },
+                                {       
+                                    "Id": "Summer",
+                                    "Condition": "SEASON Summer",
+                                    "Season": "summer",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_summer",
+                                    "Sprite": "Characters/OrcasStories_Calvin_summer",
+                                    "Precedence": -120
+                                },
+                                {
+                                    "Id": "Outdoor Default",
+                                    "Indoors": false,
+		                            "Outdoors": true,
+                                    "Condition": "!SEASON Summer",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_outdoors",
+                                    "Sprite": "Characters/OrcasStories_Calvin_outdoors",
+                                    "Precedence": -110
+                                },
+                                {       
+                                    "Id": "Default",
+                                    "Condition": "!SEASON Summer",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_default",
+                                    "Sprite": "Characters/OrcasStories_Calvin_default",
+                                    "Precedence": 0
+                                },
+                                {       
+                                    "Id": "Wetsuit",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_wetsuit",
+                                    "Sprite": "Characters/OrcasStories_Calvin_wetsuit",
+                                    "Precedence": 400
+                                }
+                            ],
+
+
+                        "Home": [
+                            {
+                                "Id": "Default",
+                                "Location": "EastScarp_VillageInn",
+                                "Tile": {
+                                "X": 27,
+                                "Y": 27
+                                },
+                                "Direction": "Down"
+                            }
+                        ]
+                    }
+                }
+        },
+        //Schedules
+            {
+                "LogName": "Cetus Schedule",
+                "Action": "Load",
+                    "Target": "Character/schedules/OrcasStories_Cetus",
+                    "FromFile": "Data/Schedules/Cetus/OrcasStories_Cetus_Schedule.json"
+            },
+            {
+                "LogName": "Calvin Schedule Vanilla",
+                "Action": "Load",
+                "Target": "Characters/schedules/OrcasStories_Calvin",
+                "FromFile": "Data/Schedules/Calvin/OrcasStories_Calvin_Schedule_Vanilla.json",
+                "When": {
+                        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+                    }
+            },
+            {
+                "LogName": "Calvin Schedule Expanded",
+                "Action": "Load",
+                "Target": "Characters/schedules/OrcasStories_Calvin",
+                "FromFile": "Data/Schedules/Calvin/OrcasStories_Calvin_Schedule_Expanded.json",
+                "When": {
+                        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+                    }
+            },
+        //Creature Spawning
+        
+        //Cetus!
+
+        {
+            "LogName": "Cetus Orca Spawning",
+            "Action": "EditData",
+            "Target": "MEEP/FarmAnimals/SpawnData",
+            "Entries": {
+                "Orca.OrcasStories.Cetus-EastScarp": {
+                  "AnimalId": "CetusOrca",
+                  "LocationId": "EastScarp_Village",
+                  "DisplayName": "Cetus",
+                  "PortraitTexture": "Portraits/OrcasStories_Cetus",
+                  "PetMessage": [
+                      "Eeeeeeeerrrrr!$0"
+                  ],
+                  
+                  "HomeTileX": 50,
+                  "HomeTileY": 140,
+                  "Condition": "DAY_OF_WEEK Mon Tue Fri Sat"
+                  //"Condition": "IsHost !PLAYER_HAS_SEEN_EVENT Orca.OrcasStories_Events.OrcasStories_Calvin.8h,  DAY_OF_WEEK Mon Tue Fri Sat"
+                },
+                "Orca.OrcasStories.Cetus-PelicanTown": {
+                  "AnimalId": "CetusOrca",
+                  "LocationId": "Beach",
+                  "DisplayName": "Cetus",
+                  "PortraitTexture": "Portraits/OrcasStories_Cetus",
+                  "PetMessage": [
+                      "Errrrrrrrkkkkkk.$0"
+                  ],
+                  
+                  "HomeTileX": 57,
+                  "HomeTileY": 37,
+                  "Condition": " DAY_OF_WEEK Wed Sun"
+                  //"Condition": "IsHost !PLAYER_HAS_SEEN_EVENT Orca.OrcasStories_Events.OrcasStories_Calvin.8h, PLAYER_HAS_SEEN_EVENT Orca.ORcasStories_Events.OrcasStories_Calvin.0h,  DAY_OF_WEEK Wed Sun"
+                }
+            }
+            
+        },
+        {
+            "LogName": "Cetus Orca Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries":{
+                "CetusOrca":{
+                    "DisplayName": "{{i18n:Core.NPCs.Cetus}}",
+                    "House": "The Ocean, Nerd",
+                    "Texture": "Characters/OrcasStories_Cetus",
+                    "SpriteWidth": 80,
+                    "SpriteHeight": 48,
+                    "UseFlippedRightForLeft": false,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "UpDownPetHitboxTileSize": "2.5, 2.75",
+                    "LeftRightPetHitboxTileSize": "5, 2.5",
+                    "Shadow": {
+                                "Visible": false
+                            }
+                    
+                }
+            }
+        },
+        //Gift Tastes
+        {
+            "LogName": "Calvin's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "OrcasStories_Calvin": "{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Love}}/107 242 FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Shark_Tooth FlashShifter.StardewValleyExpandedCP_Shark OrcasStories_SalmonShark /{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Like}}/fish fish_ocean fish_lake fish_river category_fish 152 153 157 169 198 209 212 213 214 219 225 226 227 228 265 392 393 394 397 424 426 728 730 732 733 812 SmokedFish SkillBook_1 Book_Crabbing Book_Roe FlashShifter.StardewValleyExpandedCP_Big_Conch FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed/{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Dislike}}/flower_item seeds 202 253 395 433 458 460 463 464 873 879 921 / {{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Hate}}/Trash 286 287 288 346 348 441 459 889 Book_Friendship/{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Neutral}}/ 166 275 305 685 686 687 691 692 693 694 695 703 769 774 856 874 877 908 SonarBobber DeluxeBait SpecificBait ChallengeBait /"
+            }
+        },
+        {
+            "LogName": "Everyone Hates Pickled Diamonds",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Universal_Hate": "Orca.OrcasStories_Items.PickledDiamond",
+                "Abigail": "{{i18n:Gifts.Abigail.GiftReaction.PickledDiamond}}/Orca.OrcasStories_Items.PickledDiamond/////////"
+            }
+        },
+
+        //Other
+        {
+			"Action": "Include",
+			"FromFile": "Data/LOADDAMNYOU.json"
+		},
+        //Map Patches
+        {
+            "LogName": "SnowFellas Patch",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "Assets/Maps/SnowCetusPatch.tmx",
+            "ToArea": {
+                "X": 65,
+                "Y": 74,
+                "Width": 4,
+                "Height": 2
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "Season": "winter"
+            }
+        },
+        {
+            "LogName": "SnowCritter Patch",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "Assets/Maps/SnowCritterPatch.tmx",
+            "ToArea": {
+                "X": 94,
+                "Y": 39,
+                "Width": 1,
+                "Height": 2
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "Season": "winter"
+            }
+        },
+        
+        // audio
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "OrcaJump": {
+                    "ID": "OrcaJump",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/OrcaJump.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": false
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "OrcaCrash": {
+                    "ID": "OrcaCrash",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/OrcaCrash.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "UseReverb": true,
+                    "Looped": false
+                }
+            }
+        },
+            {
+            "Logname": "Inject New Emotes I stole from Axell",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "TileSheets/emotes",
+            "FromFile": "Assets/Misc/ExtendedEmotes.png",
+            "ToArea": { "X": 0, "Y": 848, "Width": 64, "Height": 320 }
+        }
+
+        //212 - Thumbs Up
+        //216 - Thumbs Down
+        //220 - Poisoned
+        //224 - Laugh (Joy)
+        //228 - Shock
+        //232 - Raise hand/Reach
+        //236 - Laugh (Evil)
+        //240 - Smug/Annoyed
+        //244 - Lightbulb
+        //248 - Harp/Lyre
+        //252 - J...jar.
+        //256 - Orange heart
+        //260 - Purple heart
+        //264 - Green heart
+        //268 - Yellow heart
+        //272 - Blue heart
+        //276 - Sunset Heart
+        //280 - Shadow heart
+        //284 - Gray heart
+        //288 - Pink heart
+
+
+    ],
+    "DynamicTokens":[
+        {
+            "Name": "WeekDayList",
+            "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+        },
+        {
+            "Name": "WeekDay",
+            "Value": "{{WeekDayList |valueAt={{Query: {{Day}}%7}}}}"
+        },
+        {
+            "Name": "SeasonDayList",
+            "Value": "spring, summer, fall, winter"
+        },
+        {
+            "Name": "SeasonDay",
+            "Value": "{{SeasonDayList |valueAt={{Query: {{Season}}%4}}}}"
+        },
+        {
+            "Name": "Lewis_Orca_Reaction",
+            "Value": "pause 1000/speed Lewis 3/faceDirection Lewis 3/emote Lewis 40 false/faceDirection Lewis 2 false/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_34.Lewis}}\"/faceDirection Lewis 1 false/emote OrcasStories_Calvin 40/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_35.Calvin}}\"/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_36.Lewis}}\"/faceDirection Lewis 1 true/faceDirection OrcasStories_Calvin 2 false/emote OrcasStories_Cetus 32 false/emote Mateo? 32 true/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_37.Lewis}}\"/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_38.Calvin}}\"/move Lewis -5 0 3 true/waitForAllStationary/textABoveHead OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_39.Calvin}}\"/faceDirection OrcasStories_Calvin 3/faceDirection Lewis 1/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_40.Calvin}}\"/pause 500/ speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_41.Lewis}}\"/ move Lewis 0 -15 0 true/faceDirection Willy 2/pause 500/advancedMove farmer false 0 -1 4 0 1 10/emote OrcasStories_Calvin 28 true/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_42.Calvin}}\"/faceDirection OrcasStories_Calvin 2 true/faceDirection farmer 2 true/pause 1000/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_43.Calvin}}\"/addConversationTopic CalvinLewisPositive 3/",
+            "When": {
+                "Hearts:Lewis |contains={{Range:0,3}}": false
+            }
+        },
+        {
+            "Name": "Lewis_Orca_Reaction",
+            "Value": "shake Lewis 500/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_27.Lewis}}\"/animate OrcasStories_Calvin false true 200 68 69 70 71/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_28.Calvin}}\"/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_29.Lewis}}\"/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_30.Calvin}}\"/stopAnimation OrcasStories_Calvin/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_31.Lewis}}\"/speed Lewis 4/advancedMove Lewis false -5 0 0 -20 0 10/faceDirection Willy 2/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_32.Calvin}}\"/pause 1500/advancedMove farmer false 0 -1 4 0 1 10/faceDirection OrcasStories_Calvin 2 true/faceDirection farmer 2 true/emote OrcasStories_Calvin 28 true//showFrame OrcasStories_Calvin 67/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_33.Calvin}}\"/addConversationTopic CalvinLewisNegative 3/",
+            "When": {
+                "Hearts:Lewis |contains={{Range:0,3}}": true
+            }
+        }
+    ]
+
+    
+    
+    
+} 

@@ -1,0 +1,107 @@
+{
+    //Names
+        "Core.NPCs.Calvin": "Calvin",
+        "Core.NPCs.Cetus": "Cetus",
+
+
+    //Locations
+
+
+    
+
+
+    //Townsfolk Conversation Topics
+        //Abigail
+        "Core.Abigail.CalvinNotes":"Calvin and I have had to share some notes for this class we're taking. Different school and all but class work is virtually the same.$0#$b# Makes this class a little more bearable!$1",
+        "Core.Abigail.NoHangOut":"Is it just me, or has Calvin been acting a little weird lately?$6#$b# Should I try and talk to him? We aren't really close friends, but I feel bad for him.$2",
+        "Core.Abigail.CetusScare":"I heard we got a new resident in town, and they aren't exactly human.$0#$b# Which is honestly pretty rad, isn't it?$1",
+        "Core.Abigail.CalvinCrowd":"Poor Cal... it was getting pretty crowded, wasn't it?$2",
+        //Demetrius
+        "Core.Demetrius.CetusScare":"Did you hear? We have a live, young adult Orcinus orca living in our local waters!$1#$b# Pods of orca have been known to pass through our area often, but none have stuck around.$0#$b# I'll have to look into this more, it seems.$3",
+
+        //Elliott
+        "Core.Elliott.CetusScare":"Ugh, that child has no respect.$5#$b# My poor draft. I'll have to start from scratch...$2",
+        "Core.Elliott.CalvinCrowd":"I can't believe it, everyone crowding around that brat like he's the center of the world.$5#$b# I bet he enjoyed all of that attention.$5#$b# ... What? Am I wrong?$7",
+
+        //Emily
+        "Core.Emily.CetusScare":"Oh, orcas are just such fascinating creatures, aren't they? They've got such bright and colorful personalities!$1",
+        "Core.Emily.EmilyFollowup":"Calvin is doing better, I think.$1#$b# He's a strong kid, he just needs his space, that's all.$0",
+
+        //Jodi
+        "Core.Jodi.CetusScare":"Vincent has been very excited ever since we heard there was a whale out by the beach.$1#$b# I wonder if that boy, Calvin let's us get close to it.$0",
+        "Core.Jodi.CalvinEel":"Ugh, that boy Calvin was holding an eel like it was nothing... what's wrong with kids these days?$2",
+
+        //Leah
+        "Core.Leah.CetusScare":"Elliot is still pretty upset about that mess at the beach. I hope he can recreate that draft.$2",
+        //"Core.Leah.CritterLeah":"",
+
+        //Lewis
+        "Core.Lewis.CalvinLewisNegative":"That boy has absolutely no manners!$4#$b# He's lucky the governer is on his side with this one, if not, I'd have him on his way in no time.$3",
+        "Core.Lewis.CalvinLewisPositive":"Well... looks like Calvin was right. I found the... multiple letters stuffed away in some junk mail.$2#$b# But things will get sorted. In the meantime, I guess having a whale in town could drive up business!$1",
+
+        //Penny
+        "Core.Penny.CetusScare":"Everyone seems excited about something. I saw Elliot looking rather upset earlier.$2#$b# Does this have to do with that orca I heard we have now?$3",
+        "Core.Penny.CalvinCrowd":"Calvin looked like he got pretty overwhelmed there. I think he doesn't like the attention.$2",
+        
+        //Sam
+        "Core.Sam.NoHangOut":"Calvin looked at us a little weird earlier.$0#$b# It's like he had something to say, but couldn't find the words.$7#$b# Then he left. What a weird guy.$2",
+        "Core.Sam.CalvinLewisNegative":"Man, Lewis looked peaved!$2#$b# Wonder who got under his skin this time.$3",
+        "Core.Sam.CalvinLewisPositive":"So that guy Calvin brought a whale with him here, that's pretty cool.$0#$b# I already know Vincent is going to want me to take him to go see it.$1",
+        "Core.Sam.CalvinCrowd":"Man, poor Calvin. He looked pretty uncomfortable. Did someone say something he didn't like or something?$2",
+
+        //Vincent
+        "Core.Vincent.CetusScare":"We have our own shark in town!$0#$b# Huh? It's not a shark?$3#$b# It's still cool anyway!$1",
+
+        //Willy
+        "Core.Willy.CalvinLewisNegative":"Well, haven't seen Lewis that upset since Sebastian set a frog loose in his home.$2",
+        "Core.Willy.CalvinLewisPositive":"Calvin seems like an interesting lad. A man of the sea in the making, that one.$1",
+
+        //Pelican Town Misc
+        "Core.Alex.CetusScare":"Huh? Orcas? Cetus? Are you sure those are real words?$0",
+        "Core.Caroline.CetusScare":"That new boy, Calvin, seems very polite. But everyone seems to be in a fuss about something else.$0#$b# Am I missing somthing important?$2",
+        "Core.Clint.CetusScare":"Do you know if that new kid is looking to commission a whale-sized set of armor?$0#$b# Why? Wishful thinking, I suppose.$2",
+        "Core.Evelyn.CetusScare":"We have a whale friend in town now, do we? Oh, how delightful.$0#$b# Maybe my next batch of cookies will be whale shaped. Wouldn't that be fun?$1",
+        "Core.George.CetusScare":"Huh? No, I don't care to talk about fish. Go bother someone else with your fishy questions.$0",
+        "Core.Gus.CetusScare":"So we got a whale in town. Think we can get him to come in for a beer sometime?$1#$b# This town just gets more and more interesting, doesn't it?$0",
+        "Core.Haley.CetusScare":"Ugh, no. I have no interest in sea monsters. I'll stick to dry land, thanks.$3",
+        "Core.Harvey.CetusScare":"Had a nice chat with that Calvin boy earlier. He seems like a studious kid, though I don't think his particular field of interest is for me.$1",
+        "Core.Jas.CetusScare":"Uncle Shane told me there's a big sea creature living nearby! But I want to know what it is!$1#$b# Do you think he'll take me to go see it?$3",
+        "Core.Kent.CetusScare":"Heard that orca has been released from a theme park.$0#$b# I never gave whales in captivity much thought, to be honest, but...$2#$b# After everything, I don't think anything that smart deserves to be cooped up in a cage its entire life.$5",
+        "Core.Linus.CetusScare":"Ah, Calvin. Yes I've met him.$0#$b# He comes up here sometimes. Nice kid.$1#$b# Seems like something got on his nerves recently, though...$2",
+        "Core.Marnie.CetusScare":"Lewis looked pretty frustrated earlier... but he seemed too busy to talk about it. Do you know what happened?$2",
+        "Core.Maru.CetusScare":"Hm? Oh, no. I'm not up to date on what's been going on in town.$2#$b# My dad seems pretty excited, though. So it must be a good, right?$1",
+        "Core.Pam.CetusScare":"Yeah, I've heard about that orca. A little small, for such a large animal, isn't he?$1#$b# Just another one of Yoba's majestic creations.$0",
+        "Core.Pierre.CetusScare":"So we have a sea monster now? Are we going to have to close the beach?$2",
+        "Core.Robin.CetusScare":"Oh dear. Demetrius keeps going on and on about that whale.$6",
+        "Core.Sandy.CetusScare":"So the valley has its own resident whale?$0#$b# Looks like I might have to head in town sometime soon!$1",
+        "Core.Sebastian.CetusScare":"Orcas? Yeah, they're pretty cool, I guess.$1#$b# Kinda cool we got one now.$0",
+        "Core.Shane.CetusScare":"Heard Elliot lost it after getting drenched.$1#$b# Almost wish I was there to see it.$6",
+        "Core.Wizard.CetusScare":"So we have an orca in town, hm? They are seen as divine in some parts of the world.$0#$b# I have not spent any time around them, but I would not triffle with a creature of such magnitude. Magical or otherwise.$0",
+        "Core.Dwarf.CetusScare":"No. I don't know what an orca is. Cetus sounds like a made up name.$0",
+        "Core.Krobus.CetusScare":"An orca? Is that what you call that creature that's been swimming out there?$0#$b# I've been calling him Waldo!$7",
+
+
+
+
+        //East Scarp
+        "Core.Aideen.OrcaBoy":"What? No. I haven't met any orca recently.$6#$b# Why do you ask?$3",
+        "Core.Beatrice.OrcaBoy":"",
+        "Core.Eloise.OrcaBoy":"Dad told me there's an orca living here in town.$3#$b# I've never seen one before! Do you think dad will let me go meet it soon?$1",
+        "Core.Jacob.OrcaBoy":"That new kid, Calvin? Yeah I've met him. He's working with that rehabilitated orca.$0#$b# A bit odd that a kid his age has taken up that responsibility, but I can't lie, I'm curious about the whole thing.$2# I wonder if he'll let me run a checkup on Cetus at some point.$1",
+        "Core.OliverK.OrcaBoy":"Did you see that? In the water. There's something big out there today...$2",
+        "Core.Rosa.OrcaBoy":"That boy Calvin moved in recently. He's polite, but he seems pretty disinterested.$0#$b# He said he brought a friend with him, but I haven't met whoever that is yet.$1",
+        "Core.ToriLK.OrcaBoy":"So Calvin is that new kid? I've seen him walking around but I haven't bothered trying to get to know him.$2#$b# How do kids even greet each other nowadays? I wish talking to younger people was easier.$3",
+
+        //Townie Gift Dialogue
+        "Gifts.Abigail.GiftReaction.PickledDiamond": "Hey, how'd you know I was hungry? This looks delicious!",
+
+    //Items
+        "Core.Items.PickledDiamond": "Pickled Diamond",
+        "Core.Items.PickledDiamond.Description": "Literally just diamonds in preserving juices. Consumption is inadvisable.",
+
+        "Core.Items.SalmonShark": "Salmon Shark",
+        "Core.Items.SalmonShark.Description": "A small cold water shark that feeds on salmon. Has been seen rubbing on floating logs to scratch itches."
+
+
+
+}

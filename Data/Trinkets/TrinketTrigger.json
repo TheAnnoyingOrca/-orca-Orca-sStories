@@ -1,0 +1,33 @@
+{
+    
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        // when you eat (O)209 carp surprise, get swords for 1 day
+        "OrcasStories_CritterTrinketActivation": {
+          "Id": "OrcasStories_CritterTrinketActivation",
+          "Proc":"Always",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Condition": "ITEM_ID Input (O)OrcasStories_CritterTrinket",
+          "HostOnly": false,
+          "Action": "mushymato.TrinketTinker_EquipHiddenTrinket OrcasStories_CritterTrinket 0 0 1",
+          // there is a matching mushymato.TrinketTinker_UnequipHiddenTrinket for unequip but this example uses the day timeout
+          "MarkActionApplied": false
+        },
+        "OrcasStories_TheEndTrinketActivation": {
+          "Id": "OrcasStories_TheEndTrinketActivation",
+          "Proc":"Always",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Condition": "ITEM_ID Input (O)OrcasStories_OathkeeperTrinket",
+          "HostOnly": false,
+          "Action": "mushymato.TrinketTinker_EquipHiddenTrinket OrcasStories_OathkeeperTrinket 0 0 1",
+          // there is a matching mushymato.TrinketTinker_UnequipHiddenTrinket for unequip but this example uses the day timeout
+          "MarkActionApplied": false
+        }
+        
+      }
+    }
+  ]
+}

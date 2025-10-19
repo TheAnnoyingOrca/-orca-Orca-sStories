@@ -1,0 +1,287 @@
+{
+     "Changes":[
+        {
+            "LogName": "Calvin 2 Heart Event (Part 1/2)",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "Orca.OrcasStories_Event.OrcasStories_Calvin.2h/e Orca.OrcasStories_Event.OrcasStories_Calvin.1h/t 800 1300/w sunny/d Mon Tue Fri Sat/f OrcasStories_Calvin 500":"
+                    springtown/
+                    31 82/
+                    farmer 29 70 2 OrcasStories_Calvin 43 82 3 Emily 29 91 0 Nova.Eli? 53 81 3 Abigail 28 70 2 Sam 29 96 0 Maru 52 81 3 Penny 52 82 3 RodneyOBrien? 29 69 2 Elliott 28 69 2/
+                    addConversationTopic CalvinCrowd 3/
+                    ignoreCollisions Sam/
+
+                    skippable/
+                        advancedMove OrcasStories_Calvin false -9 0 3 10/
+                        advancedMove Emily false 0 -9 1 10/
+                        waitForAllStationary/
+                        jump Emily 3/
+                        pause 100/
+                    textAboveHead Emily \"{{i18n:Events.OrcasStories_Calvin.Event2_1.Emily}}\"/
+                        pause 300/
+                    textAboveHead OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_2.Calvin}}\"/
+                        advancedMove Emily false 2 0 1 10/
+                        waitForAllStationary/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2_3.Emily}}\"/
+                        pause 300/
+                        emote OrcasStories_Calvin 28 true/
+                        animate OrcasStories_Calvin false true 200 65 66/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_4.Calvin}}\"/
+                        stopAnimation OrcasStories_Calvin/
+                        pause 200/
+                        emote Emily 32 false/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2_5.Emily}}\"/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_6.Calvin}}\"/
+                        speed Abigail 3/
+                        advancedMove Abigail false 0 12 1 10/
+                        pause 200/
+                        emote Emily 56 false/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2_7.Emily}}\"/
+                        waitForAllStationary/
+                        emote OrcasStories_Calvin 8/
+                        faceDirection Emily 3/
+                        pause 100/
+                        jump Emily 2/
+                        pause 100/
+                    speak Abigail \"{{i18n:Events.OrcasStories_Calvin.Event2_8.Abigail}}\"/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_9.Calvin}}\"/
+                        jump Emily 3/
+                        faceDirection Emily 1/
+                        pause 50/
+                        faceDirection Emily 3/
+                        pause 50/
+                        faceDirection Emily 1/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2_10.Emily}}\"/
+                        faceDirection Emily 3/
+                        pause 50/
+                        faceDirection Emily 1/
+                        advancedMove Sam false 0 -12 4 10/
+                        pause 50/
+                        faceDirection Emily 3/
+                    speak Abigail \"{{i18n:Events.OrcasStories_Calvin.Event2_11.Abigail}}\"/
+                        waitForAllStationary/
+                        pause 100/
+                        faceDirection Abigail 2/ faceDirection Emily 2/ faceDirection OrcasStories_Calvin 2/
+                        pause 200/
+                    speak Sam \"{{i18n:Events.OrcasStories_Calvin.Event2_12.Sam}}\"/
+                        emote Emily 56 true/
+                        advancedMove farmer false 0 9 2 10/
+                        pause 300/
+                    speak Abigail \"{{i18n:Events.OrcasStories_Calvin.Event2_13.Abigail}}\"/
+                    textAboveHead Sam \"{{i18n:Events.OrcasStories_Calvin.Event2_14.Sam}}\"/
+                        emote farmer 8 true/
+                        pause 100/
+                        shake OrcasStories_Calvin 100/
+                        emote OrcasStories_Calvin 40 true/
+                        advancedMove Penny false -9 0 3 10/
+                        pause 100/
+                        advancedMove Maru false -9 0 3 10/
+                        waitForAllStationary/
+                        emote Penny 16 true/
+                        jump Penny 5/
+                        faceDirection Emily 1/
+                        pause 500/
+                        advancedMove Penny false -5 0 3 10/
+                        pause 300/
+                        advancedMove Maru false -5 0 3 10/
+                        faceDirection OrcasStories_Calvin 1/
+                        pause 300/
+                        faceDirection Abigail 1/
+                        emote Sam 8 true/
+                        emote Emily 32 true/
+                    speak Penny \"{{i18n:Events.OrcasStories_Calvin.Event2_15.Penny}}\"/
+                        faceDirection OrcasStories_Calvin 2/
+                        shake OrcasStories_Calvin 500/
+                        emote OrcasStories_Calvin 28 false/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_16.Calvin}}\"/
+                    speak Maru \"{{i18n:Events.OrcasStories_Calvin.Event2_17.Maru}}\"/
+                        showFrame OrcasStories_Calvin 67/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_18.Calvin}}\"/
+                        pause 500/
+                        move Abigail 1 0 2/
+                        advancedMove Nova.Eli? false -6 0 3 10/
+                        pause 500/
+                        move OrcasStories_Calvin 0 0 1 true/
+                        pause 100/
+                        faceDirection Penny 0/faceDirection Maru 2/
+                        emote Nova.Eli? 32 true/
+                        advancedMove Elliott false 0 8 2 10/
+                        pause 400/
+                        advancedMove RodneyOBrien? false 0 8 2 10/
+                        faceDirection OrcasStories_Calvin 3/
+                        waitForAllStationary/
+                        shake OrcasStories_Calvin 300000/
+                    textAboveHead Elliott \"{{i18n:Events.OrcasStories_Calvin.Event2_19.Elliott}}\"/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 2/
+                        showFrame OrcasStories_Calvin 67/
+                        emote RodneyOBrien? 8 true/
+                        pause 500/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2_20.Emily}}\"/
+                        pause 500/
+                        move OrcasStories_Calvin 0 0 3 true/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_21.Calvin}}\"/
+                        pause 500/
+                        shake OrcasStories_Calvin 300000/
+                        faceDirection OrcasStories_Calvin 2/
+                        showFrame OrcasStories_Calvin 67/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2_22.Calvin}}\"/
+                        stopMusic/
+                        speed OrcasStories_Calvin 6/
+                        advancedMove OrcasStories_Calvin false 0 5 2 10 2 0 1 10 0 4 2 10 4 0 1 10 0 6 2 10/
+                        pause 100/
+                        faceDirection Emily 2/
+                        jump Nova.Eli? 3/
+                        emote Nova.Eli? 16 true/
+                        emote Emily 16 true /
+                        pause 100/
+                        faceDirection Abigail 1/faceDirection Penny 3/faceDirection Maru 3/faceDirection Sam 1/
+                        waitForAllStationary/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2_23.Emily}}\"/
+                        pause 500/
+                        globalFade/
+                        viewport -2000 -2000/
+                        pause 300/
+                    message \"{{i18n:Events.OrcasStories_Calvin.Event2_24.End}}\"/
+                        pause 200/
+                    end/
+                "
+
+            }
+        },
+        {
+            "LogName": "Calvin 2 Heart Event (Part 2/2)",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "Orca.OrcasStories_Event.OrcasStories_Calvin.2.5h/e Orca.OrcasStories_Event.OrcasStories_Calvin.2h/t 800 1900/w sunny/d Mon Tue Fri Sat/f OrcasStories_Calvin 500":"
+                    ocean/
+                    15 39/
+                    farmer 12 29 2 OrcasStories_Calvin 12 39 2 Emily 12 26 2/
+                    addConversationTopic EmilyFollowup/
+                    addTemporaryActor OrcasStories_Cetus 80 48 10 43 0 false Character/
+                    changeName OrcasStories_Cetus Cetus/
+                    ignoreCollisions farmer/
+                    animate OrcasStories_Calvin false true 200 16 16 16 16 16 17 18 18 19 16 16 16/
+                    positionOffset OrcasStories_Calvin 0 32 true/
+                    animate OrcasStories_Cetus false true 400 18 19 18 19 18 19/
+
+                    skippable/
+                        move farmer 0 8 2 false/
+                        waitForAllStationary/
+                        emote OrcasStories_Cetus 32 false/
+                        emote OrcasStories_Calvin 8 false/
+                        pause 200/
+                        emote OrcasStories_Calvin 16 false/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_1.Calvin}}\"/
+                        pause 2000/
+                        emote OrcasStories_Calvin 40 false/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_2.Calvin}}\"/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_3.Calvin}}\"/
+                        pause 1000/
+                        stopAnimation OrcasStories_Calvin 16/
+                        positionOffset OrcasStories_Calvin 0 -32 true/
+                        showFrame OrcasStories_Calvin 67/
+                        pause 100/
+                        showFrame OrcasStories_Calvin 0/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 0/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_4.Calvin}}\"/
+                        pause 100/
+                        faceDirection OrcasStories_Calvin 1/
+                        pause 1000/
+                        faceDirection OrcasStories_Calvin 0/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_5.Calvin}}\"/
+                        pause 500/
+                    quickQuestion {{i18n:Events.OrcasStories_Calvin.Event2.5_6.QuickQuestion}}#{{i18n:Events.OrcasStories_Calvin.Event2.5_6.Answer1}}#{{i18n:Events.OrcasStories_Calvin.Event2.5_6.Answer2}} (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_7.CalvinAnswer1}}\" (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_7.CalvinAnswer2}}\"/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2.5_8.Emily}}\"/
+                        pause 100/
+                    textABoveHead OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_9.Calvin}}\"//
+                        emote farmer 8 true/
+                        pause 100/
+                        faceDirection farmer 0/
+                        advancedMove Emily false 0 10 2 10/
+                        pause 300/
+                        advancedMove farmer false 1 0 4 10/
+                        waitForAllStationary/
+                        faceDirection farmer 3/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2.5_10.Emily}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_11.Calvin}}\"/
+                        pause 300/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2.5_12.Emily}}\"/
+                        pause 100/
+                        faceDirection OrcasStories_Calvin 1/
+                        pause 100/
+                        faceDirection farmer 2/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_13.Calvin}}\"/
+                        pause 400/
+                        faceDirection OrcasStories_Calvin 0/
+                        pause 100/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2.5_14.Emily}}\"/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 1/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_15.Calvin}}\"/
+                        pause 100/
+                        faceDirection OrcasStories_Calvin 2/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_16.Calvin}}\"/
+                        pause 500/
+                        advancedMove OrcasStories_Cetus false 0 1 4 10/
+                        waitForAllStationary/
+                        animate OrcasStories_Cetus false true 400 18 19 18 19 18 19/
+                        pause 200/
+                        advancedMove OrcasStories_Cetus false 0 1 4 10/
+                        waitForAllStationary/
+                        animate OrcasStories_Cetus false true 400 18 19 18 19 18 19/
+                        pause 200/
+                        showFrame OrcasStories_Calvin 67/
+                        emote OrcasStories_Calvin 12 true/
+                        pause 100/
+                        emote farmer 56 true/
+                        advancedMove OrcasStories_Cetus false 0 1 4 10/
+                        waitForAllStationary/
+                        animate OrcasStories_Cetus false true 400 18 19 18 19 18 19/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_17.Calvin}}\"/
+                        move OrcasStories_Calvin 0 0 0 true/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_18.Calvin}}\"/
+                        pause 200/
+                        emote OrcasStories_Cetus 32/
+                        jump Emily 3/
+                    speak Emily \"{{i18n:Events.OrcasStories_Calvin.Event2.5_19.Emily}}\"/
+                        emote farmer 32 true/
+                        pause 100/
+                        faceDirection farmer 0/
+                        jump Emily 3/
+                        advancedMove Emily false 0 -12 4 10/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_20.Calvin}}\"/
+                        pause 50/
+                        faceDirection farmer 3/
+                        advancedMove OrcasStories_Calvin false 0 -2 1 10/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event2.5_21.Calvin}}\"/
+                        pause 100/
+                        advancedMove OrcasStories_Calvin false 0 -12 4 10/
+                        pause 200/
+                        faceDirection farmer 0/
+                        pause 500/
+                        advancedMove farmer false -1 0 3 10 0 2 2 10/
+                        waitForAllStationary/
+                        emote OrcasStories_Cetus 56/
+                        globalFade/
+                        viewport -2000 -2000/
+                    end/
+                    "
+            }
+        }
+    ]
+}

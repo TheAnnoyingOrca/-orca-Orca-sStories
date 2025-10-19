@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="23" nextobjectid="189">
+ <editorsettings>
+  <export target="." format="tmx"/>
+ </editorsettings>
+ <tileset firstgid="1" name="OrcasStories_Snowbeasts" tilewidth="16" tileheight="16" tilecount="14" columns="7">
+  <image source="OrcasStories_Snowbeasts.png" width="112" height="32"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="2">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="14" name="Back2" width="4" height="2">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="15" name="Back2"/>
+ <layer id="16" name="Back3" width="4" height="2">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="17" name="Back3"/>
+ <layer id="3" name="Buildings" width="4" height="2">
+  <data encoding="csv">
+0,0,0,0,
+11,12,13,14
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="188" name="TileData" x="0" y="16" width="64" height="16.0008">
+   <properties>
+    <property name="Action" value="Message OrcasStoriesSnowCalvinSnowCetus"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Paths" width="4" height="2">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="Front" width="4" height="2">
+  <data encoding="csv">
+4,5,6,7,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Front"/>
+ <layer id="11" name="AlwaysFront" width="4" height="2">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="AlwaysFront"/>
+</map>

@@ -1,0 +1,179 @@
+{
+    "Changes": [
+
+        //Default
+
+            //Luau
+            {
+                "Action": "EditData",
+                "Target": "Data/Festivals/summer11",
+                "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true },
+                "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                        "Value": "OrcasStories_Calvin 40 45 2",
+                        "Delimiter": "/"
+                    },
+                    {
+
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 60 60 60 60"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                        "Value": "OrcasStories_Calvin 40 45 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up_y2", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 60 60 60 60"
+                    },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 28 48 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up_y2", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 28 48 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        }
+			        
+                ]
+            },
+            {
+                "Action": "EditData",
+                "Target": "Data/Festivals/summer11",
+                "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
+                "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                        "Value": "OrcasStories_Calvin 40 45 2",
+                        "Delimiter": "/"
+                    },
+                    {
+
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 60 60 60 60"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                        "Value": "OrcasStories_Calvin 40 45 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up_y2", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 60 60 60 60"
+                    },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 28 48 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up_y2", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 28 48 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        }
+                ]
+            },
+
+            //Moonlight
+            {
+                "Action": "EditData",
+                "Target": "Data/Festivals/summer28",
+                "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true },
+                "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                        "Value": "OrcasStories_Calvin 48 26 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                        "Value": "OrcasStories_Calvin 50 26 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up_y2", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                    },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 46 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up_y2", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 50 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        }
+                ]
+            },
+            {
+                "Action": "EditData",
+                "Target": "Data/Festivals/summer28",
+                "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
+                "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                        "Value": "OrcasStories_Calvin 48 26 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                        "Value": "OrcasStories_Calvin 48 26 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up_y2", 5],
+                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                    },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 46 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "set-up_y2", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 46 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        }
+                ]
+            }
+
+
+
+
+        //After Story
+
+
+
+
+
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "Changes": [
+        
+        //Overworld
+
+            //Cetus
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Cetus",
+		        "FromFile": "Assets/Characters/Cetus/OrcasStories_Cetus.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Cetus_Jump_TAS",
+		        "FromFile": "Assets/Characters/Cetus/OrcasStories_Cetus_Jump_TAS.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Cetus_Jump_TempActor",
+		        "FromFile": "Assets/Characters/Cetus/OrcasStories_Cetus_Jump_TempActor.png"
+        },
+
+            //Calvin
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin",
+		        "FromFile": "Assets/Characters/Calvin/OrcasStories_Calvin.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin_default",
+		        "FromFile": "Assets/Characters/Calvin/OrcasStories_Calvin_default.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin_summer",
+		        "FromFile": "Assets/Characters/Calvin/OrcasStories_Calvin_summer.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin_summer_outdoors",
+		        "FromFile": "Assets/Characters/Calvin/OrcasStories_Calvin_summer_outdoors.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin_outdoors",
+		        "FromFile": "Assets/Characters/Calvin/OrcasStories_Calvin_outdoors.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin_wetsuit",
+		        "FromFile": "Assets/Characters/Calvin/OrcasStories_Calvin_wetsuit.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin_beach",
+		        "FromFile": "Assets/Characters/Festivals/OrcasStories_Calvin_beach.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/OrcasStories_Calvin_Moonlight",
+		        "FromFile": "Assets/Characters/Festivals/OrcasStories_Calvin_moonlight.png"
+        },
+        //East Scarp
+        {
+            "Action": "Load",
+			    "Target": "Characters/Jacob_Overalls",
+		        "FromFile": "Assets/Characters/EastScarp/Jacob_overalls.png"
+        },
+        {
+            "Action": "Load",
+			    "Target": "Characters/Jacob_Waves",
+		        "FromFile": "Assets/Characters/EastScarp/Jacob_waves.png"
+        },
+
+
+
+        // Portraits
+
+            //Cetus
+        {
+            "Action": "Load",
+                "Target": "Portraits/OrcasStories_Cetus",
+                "FromFile": "Assets/Portraits/Cetus/OrcasStories_Cetus_portrait.png"
+        },
+            //Calvin
+            
+            {
+                "LogName": "Calvin",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait.png"
+            },
+            {
+                "LogName": "Calvin Summer",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin_portrait_summer",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait_summer.png"
+            },
+            {
+                "LogName": "Calvin Summer Outdoors",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin_portrait_summer_outdoors",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait_summer_outdoors.png"
+            },
+            {
+                "LogName": "Calvin Default",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin_portrait_default",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait_default.png"
+            },
+            {
+                "LogName": "Calvin Outdoors",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin_portrait_outdoors",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait_outdoors.png"
+            },
+            {
+                "LogName": "Calvin Wetsuit",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin_portrait_wetsuit",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait_wetsuit.png"
+            },
+            {
+                "LogName": "Calvin Beach",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin_portrait_beach",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait_beach.png"
+            },
+            {
+                "LogName": "Calvin Festivals",
+                "Action": "Load",
+                    "Target": "Portraits/OrcasStories_Calvin_portrait_festivals",
+                    "FromFile": "Assets/Portraits/Calvin/OrcasStories_Calvin_portrait_festivals.png"
+            },
+            //East Scarp
+            {
+                "LogName": "Jacob Overalls",
+                "Action": "Load",
+			        "Target": "Portraits/Jacob_Overalls_portrait",
+		            "FromFile": "Assets/Portraits/EastScarp/Jacob_waves.png"
+            },
+            {
+                "LogName": "Jacob Waves",
+                "Action": "Load",
+			        "Target": "Portraits/Jacob_Waves_portrait",
+		            "FromFile": "Assets/Portraits/EastScarp/Jacob_waves.png"
+            },
+        // Outfit Changes
+        
+            {
+                "LogName": "Jacob Outfits",
+                "Action": "EditData",
+                    "Target": "Data/Characters",
+                    "Entries": {
+                        "Jacob": {
+                            "Appearance": [
+                                    {
+                            "ID": "JacobSpring",
+                            "Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob",
+                            "Sprite": "Characters/Jacob",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JacobSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob_Summer",
+                            "Sprite": "Characters/Jacob_Summer",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JacobFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob_Fall",
+                            "Sprite": "Characters/Jacob_Fall",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JacobWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob_Winter",
+                            "Sprite": "Characters/Jacob_Winter",
+                            "Precedence": -10
+                        },
+                        {
+                            "Id": "JacobSpirit",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+                            "Sprite": "Characters/Jacob_magician",
+                            "Portrait": "Portraits/Jacob_magician",
+                            "Precedence": -20
+                        },
+                                {
+                                    "Id": "JacobEventLand",
+                                    "Portrait": "Portraits/Jacob_Overalls_portrait",
+                                    "Sprite": "Characters/Jacob_Overalls",
+                                    "Precedence": 400
+                                },
+                                {
+                                    "Id": "JacobEventSea",
+                                    "Portrait": "Portraits/Jacob_Waves_portrait",
+                                    "Sprite": "Characters/Jacob_Waves",
+                                    "Precedence": 399
+                                }
+                            ]
+                     }
+                }
+        },
+
+
+
+        // Animations!!!! WOW
+        {
+            "LogName":"Calvin Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "calvin_sit_kick": "16/16 16 16 16 16 17 18 18 19 16 16 16/16/Characters\\Dialogue\\OrcasStories_Calvin:calvin_sit_kick/offset 0 80/laying_down",
+                "calvin_lay": "28/28 28 28 29 29 29 30 30 30 31 31 31/28/Characters\\Dialogue\\OrcasStories_Calvin:calvin_lay/offset 0 32/laying_down",
+                "calvin_note": "32/32 32 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 32 32/32/Characters\\Dialogue\\OrcasStories_Calvin:calvin_note",
+                "calvin_puter": "20/20 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 25 26 26 26 26 26 26 26 27 27 20/20/Characters\\Dialogue\\OrcasStories_Calvin:calvin_puter/offset 0 -64/laying_down",
+                "calvin_laugh": "40/40/40",
+                "calvin_laugh_left":"41/41/41",
+                "calvin_laugh_right":"42/42/42",
+                "calvin_fright":"43/43/43",
+                "calvin_science":"44/44 45 45 44 44 45 45 44 44 45 45 44/44",
+                "calvin_lean":"47/8 8 8 47 46 46 46 46 46 46 46 46 46 46 46 46 47 47 47 8 8 8 8 8 8 8 8 8 47 47 47 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 46 47 47 47 47 8 8 8 8 8 8 8 8 8 47 47 47 46 46 46 46 46 46 46 46 46 46 46/47/Characters\\Dialogue\\OrcasStories_Calvin:calvin_lean",
+                "calvin_tidewalker":"52 53 53/48 49 50 51 49 50 51 49 50 51 49 50 51 49 50 51 49 50 51 49 50 51 49 50 51 48 48/54 54 55/Characters\\Dialogue\\OrcasStories_Calvin:calvin_tidewalker/offset 0 60/laying_down",
+                "calvin_float":"56/56 56 56 56 57 57 57 57 58 58 58 58 59 59 59 59/56/Characters\\Dialogue\\OrcasStories_Calvin:calvin_float/offset 0 120/laying_down",
+                "calvin_charliebrown":"0/60/0/Characters\\Dialogue\\OrcasStories_Calvin:calvin_charliebrown/offset 0 16/laying_down",
+                "calvin_snooze":"62/61/62/Characters\\Dialogue\\OrcasStories_Calvin:calvin_snooze/offset 16 -50/laying_down",
+                "calvin_jelly":"63//63/63/offset 0 240/laying_down",
+                "calvin_embarassed":"64/65 65 65 66 66 66/64",
+                "calvin_annoyed":"67/67/67",
+                "calvin_impatient":"67/68 68 69 69 70 70 71 71/67",
+                "calvin_think":"0/72 72 73 73 74 74 75 75/72/Characters\\Dialogue\\OrcasStories_Calvin:calvin_think"
+
+                //entry frames/repeat frames/leaving frames/message key/offset X Y/laying_down
+            }
+            
+        },
+        //ITEMA ND SUF
+        {
+            "Action": "Load",
+			    "Target": "Mods/OrcasStories/Items",
+		        "FromFile": "Assets/Items/OSObjects.png"
+        }
+
+    ]
+}

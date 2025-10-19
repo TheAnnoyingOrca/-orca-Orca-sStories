@@ -1,0 +1,44 @@
+{
+    "Name": "Orca's Box of Curiosities",
+    "Author": "OrcaRequiem",
+    "Version": "0.5.1",
+    "Description": "A mod adding various npc content from the mind of Orca.",
+    "UniqueID": "Orca.OrcasStories",
+    "UpdateKeys": [], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "DH.MEEP.FarmAnimalSpawns":[
+        "Orca.OrcasStories.Cetus-PelicanTown"
+    ],
+    "Dependencies": [
+        {
+            "UniqueID": "poohnhi.PoohCore",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "Spiderbuttons.BETAS",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lemurkat.EastScarp",
+            "IsRequired": true
+        }
+    ]
+}

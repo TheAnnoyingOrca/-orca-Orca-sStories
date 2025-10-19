@@ -1,0 +1,178 @@
+{
+    "Changes": [
+
+        //Assets
+        {
+            "LogName": "Oathkeeper Sprites",
+            "Action": "Load",
+            "Target": "OrcasStories/oathkeeper",
+            "FromFile": "Assets/Trinkets/oathkeeper_trinket.png"
+        },
+        {
+            "LogName": "Oblivion Sprites",
+            "Action": "Load",
+            "Target": "OrcasStories/oblivion",
+            "FromFile": "Assets/Trinkets/oathkeeper_trinket_2.png"
+        },
+        {
+            "LogName": "Interception",
+            "Action": "Load",
+            "Target": "OrcasStories/interception",
+            "FromFile": "Assets/Trinkets/interception.png"
+        },
+
+        //Oathkeeper
+            {
+            "LogName": "The End Trinket",
+            "Action": "EditData",
+            "Target": "Data/Trinkets",
+            "Entries": {
+                "OrcasStories_OathkeeperTrinket": {
+               "Id": "OrcasStories_OathkeeperTrinket",
+               "DisplayName": "{{i18n:Core.OrcasStories_OathkeeperTrinket.DisplayName}}",
+               "Description": "{{i18n:Core.OrcasStories_OathkeeperTrinket.Description}}",
+               "Texture": "OrcasStories/oathkeeper",
+               "Width": "48",
+               "Height": "48",
+                "SheetIndex": 0,
+                "DropsNaturally": false,
+               "CanBeReforged": true
+             }
+          }
+      },
+      {
+      "LogName": "Oathkeeper Tinker",
+      "Action": "EditData",
+          "Target": "mushymato.TrinketTinker/Tinker",
+          "Entries": {
+            "OrcasStories_OathkeeperTrinket": {
+                  "Variants": [
+            {
+              "Texture": "OrcasStories/oathkeeper",
+              "Width": 48,
+              "Height": 48,
+              "ShadowScale": 0
+            }
+          ],
+            "Motion": {
+                "MotionClass": "Hover",
+                "DirectionMode": "DRUL",
+                "FrameLength": 1
+            },
+            "Abilities": [
+            // level 0
+            [
+              // this ability is always active and will hit any monsters coming over
+              {
+                "Id": "Basic-Hitscan",
+                "AbilityClass": "Hitscan",
+                "Proc": "Timer",
+                "ProcTimer": 100,
+                "Args": {
+                  "Min": 100,
+                  "Max": 300,
+                  "Knockback": 2.4,
+                  "Range": 182,
+                  "Hits": 1,
+                  "HitsDelay": 500,
+                  "FacingDirectionOnly": true
+                }
+              },
+              {
+                "AbilityClass": "Projectile",
+                "Proc": "Timer",
+                "ProcTimer": 5000,
+                "ProcSound": "fireball",
+                "IgnoreObjectCollisions": true,
+                "Args": {
+                  "Min": 80,
+                  "Max": 150,
+                  "Knockback": 2,
+                  "Range": 320,
+                  "Texture": "OrcasStories/interception",
+                  "Width": 16,
+                  "Height": 16,
+                  "Acceleration": 5,
+                  "MinVelocity": 2,
+                  "MaxVelocity": 30,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true
+                }
+              }
+                ]
+            ]
+          }
+          
+        }
+      },
+      {
+      "LogName": "Oblivion Tinker",
+      "Action": "EditData",
+          "Target": "mushymato.TrinketTinker/Tinker",
+          "Entries": {
+            "OrcasStories_OblivionTrinket": {
+                  "Variants": [
+            {
+              "Texture": "OrcasStories/oblivion",
+              "Width": 48,
+              "Height": 48,
+              "ShadowScale": 0
+            }
+          ],
+            "Motion": {
+                "MotionClass": "Hover",
+                "DirectionMode": "DRUL",
+                "FrameLength": 1
+            },
+            "Abilities": [
+            // level 0
+            [
+              // this ability is always active and will hit any monsters coming over
+              {
+                "Id": "Basic-Hitscan",
+                "AbilityClass": "Hitscan",
+                "Proc": "Timer",
+                "ProcTimer": 100,
+                "Args": {
+                  "Min": 100,
+                  "Max": 300,
+                  "Knockback": 2.4,
+                  "Range": 182,
+                  "Hits": 1,
+                  "HitsDelay": 500,
+                  "FacingDirectionOnly": true
+                }
+              },
+              {
+                "AbilityClass": "Projectile",
+                "Proc": "Timer",
+                "ProcTimer": 5000,
+                "ProcSound": "fireball",
+                "IgnoreObjectCollisions": true,
+                "Args": {
+                  "Min": 80,
+                  "Max": 150,
+                  "Knockback": 2,
+                  "Range": 320,
+                  "Texture": "OrcasStories/interception",
+                  "Width": 16,
+                  "Height": 16,
+                  "Acceleration": 5,
+                  "MinVelocity": 2,
+                  "MaxVelocity": 30,
+                  "Homing": true,
+                  "IgnoreObjectCollisions": true
+                }
+              }
+                ]
+            ]
+          }
+          
+        }
+      }
+    ]
+
+
+
+    
+}

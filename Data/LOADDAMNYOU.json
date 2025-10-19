@@ -1,0 +1,15 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/OrcasStories_Calvin",
+            "FromFile": "Data/blank.json"
+        },
+        
+        {
+			"Action": "Include",
+			"FromFile": "Data/Content/SpriteLoader.json, Data/Dialogue/CalvinDialogue.json, Data/Dialogue/TownConversationTopics.json, Data/Dialogue/OSGiftDialogue.json, Data/Content/FestivalPlacer.json, Data/Events/calvin_0H.json, Data/Events/calvin_1H.json, Data/Events/calvin_2H.json, Data/Events/calvin_4H.json, Data/Events/calvin_6H.json, Data/Content/Fish.json, Data/Items/PickledDiamond.json, Data/Items/FishItems.json, Data/Trinkets/TestTrinket.json, Data/Trinkets/TheEnd.json, Data/Trinkets/TrinketTrigger.json"
+		}
+    ]
+
+}

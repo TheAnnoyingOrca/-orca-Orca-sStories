@@ -1,0 +1,257 @@
+{
+    "Changes": [
+        {
+            "LogName": "The Beginning of the End",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_Event.OrcasStories_Calvin.6h/e Orca.OrcasStories_Event.OrcasStories_Calvin.4h/t 2000 200/w sunny/d Wed Thu Sun/f OrcasStories_Calvin 1500":"
+                    ocean/
+                    73 130/
+                    farmer 70 123 2 OrcasStories_Calvin 72 131 2 Elliott 71 106 2 SenS? 74 124 2/ 
+                    addTemporaryActor OrcasStories_Cetus 80 48 56 140 1 false Character/
+                    showFrame OrcasStories_Cetus 28/
+                    action Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin Default/
+                    addLantern 735 75 131 5/
+                    skippable/
+                        animate OrcasStories_Calvin false true 200 80 80 80 81 82 83 80 80 80/
+                        advancedMove farmer false 0 5 2 10/
+                        waitForAllStationary/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_1.Calvin}}\"/
+                        pause 300/
+                        stopAnimation OrcasStories_Calvin 84/
+                        emote farmer 16 true/
+                        jump farmer 5/
+                        pause 200/
+                        animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99/
+                        pause 1000/
+                        playSound cast/
+                        pause 1000/
+                        playSound dropItemInWater/
+                        stopAnimation OrcasStories_Calvin 84/
+                        showFrame OrcasStories_Calvin 84/
+                        pause 400/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_2.Calvin}}\"/
+                        pause 200/
+                        emote OrcasStories_Calvin 224 true/
+                        emote farmer 60 true/
+                        pause 500/
+                        animate OrcasStories_Calvin false true 200 80 80 80 81 82 83 80 80 80/
+                    quickQuestion #{{i18n:Events.OrcasStories_Calvin.Event6_3.Question1}}#{{i18n:Events.OrcasStories_Calvin.Event6_3.Question2}} (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_4.CalvinAnswer1}}\"\\ pause 500\\  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_5.CalvinAnswer1}}\"\\ pause 600\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 0\\ speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_6.CalvinAnswer1}}\"\\ showFrame OrcasStories_Calvin 67\\ pause 200\\  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_7.CalvinAnswer1}}\"\\ animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99\\ pause 1000\\ playSound cast\\ pause 1000\\ playSound dropItemInWater\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 84 (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_4.CalvinAnswer2}}\"\\ emote OrcasStories_Calvin 224 false\\ emote farmer 28 false\\ speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_5.CalvinAnswer2}}\"\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 84\\ pause 500\\  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_6.CalvinAnswer2}}\"\\ animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99\\ pause 1000\\ playSound cast\\ pause 1000\\ playSound dropItemInWater\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 84/
+                        showFrame OrcasStories_Calvin 85/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_8.Calvin}}\"/
+                        pause 300/
+                        move OrcasStories_Calvin 0 0 3 true/
+                        pause 300/
+                        move OrcasStories_Calvin 0 0 0 true/
+                        pause 600/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_9.Calvin}}\"/
+                        pause 300/
+                        emote farmer 8 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_10.Calvin}}\"/
+                        pause 300/
+                        move OrcasStories_Calvin 0 0 3 true/
+                        pause 300/
+                        move OrcasStories_Calvin 0 0 2 true/
+                        showFrame OrcasStories_Calvin 84/
+                        pause 400/
+                        stopMusic/
+                        quickQuestion {{i18n:Events.OrcasStories_Calvin.Event6_11.Question}}#{{i18n:Events.OrcasStories_Calvin.Event6_11.Answer1}}#{{i18n:Events.OrcasStories_Calvin.Event6_11.Answer2}} (break) switchEvent Orca.OrcasStories_CalvinCasual (break) switchEvent Orca.OrcasStories_CalvinVent/
+                    end/
+                "
+            }
+        },
+        {
+            "LogName": "Calvin tries to Play it Cool",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_CalvinCasual":"
+                    pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_12.Calvin}}\"/
+                        pause 500/
+                        animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99/
+                        pause 1000/
+                        playSound cast/
+                        pause 1000/
+                        playSound dropItemInWater/
+                        stopAnimation OrcasStories_Calvin 84/
+                        showFrame OrcasStories_Calvin 84/
+                        pause 400/
+                        advancedMove OrcasStories_Calvin false 0 -1 4 10 2 0 1 10 0 1 2 10/
+                        pause 300/
+
+                "
+            }
+        },
+        {
+            "LogName": "Calvin Vents",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_CalvinVent":"
+                    pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_12.Calvin}}\"/
+                        pause 500/
+                        animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99/
+                        pause 1000/
+                        playSound cast/
+                        pause 1000/
+                        playSound dropItemInWater/
+                        stopAnimation OrcasStories_Calvin 84/
+                        showFrame OrcasStories_Calvin 84/
+                        pause 400/
+                        advancedMove OrcasStories_Calvin false 0 -1 4 10 2 0 1 10 0 1 2 10/
+                        pause 200/
+                        advancedMove farmer false 0 1 2 10 3 0 1 10 0 2 2 10/
+                        pause 1900/
+                        showFrame OrcasStories_Calvin 0/
+                        animate OrcasStories_Calvin false true 250 16 16 16 16 16 17 18 18 19 16 16 16/
+                        waitForAllStationary/
+                        showFrame farmer 70 false/
+                        positionOffset farmer 0 16/
+                        pause 1000/
+
+
+                "
+            }
+        }
+    ]
+}
+// x Farmer walks up to Calvin
+// x Calvin is throwing rocks into the ocean off of the lighthouse peak
+// x "Hey @."
+// x Farmer is surprised
+// x "What? So I've gotten pretty good at predicting when you'd appear, so what?" 
+// x Calvin laughs, farmer is a bit embarassed.
+// x Farmer speaks : (1) "Nice arm. You'd make a great pitcher." (2) "Well, you are pretty easy to predict, too."
+// x Calvin stops throwing temporarily, and tosses a rock in the air and catches it over and over.
+
+// (1) 
+// x "Oh, you know it. I got good practice by pitching shots at Joja executives' car windshields." "Strong enough throw to crack the glass, but far enough away for plausible deniability."
+// x "... " "Heh, actually, my dad taught me." "He really wanted me to join the local youth baseball team growing up." "The... Southridge Sailfish, I think the name was."
+// x "But I never had any interest in sports, really. I only did it because it something to do with my dad, so I never ended up joining. Good team name though."
+// x "There's a lot that my parents wanted me to be. Not a whole lot that hope did for them, though."
+// x Calvin pitches another rock.
+
+// (2) 
+// x "Ohoho. Following my movements are you?" "Drat! I knew I should've been more careful, you're so close to finding out my evil secret." "The secret that, I am in fact... very boring."
+// x Calvin laughs
+// x "I've just got my own little routine. I get things done in the way I need to, and I like it that way."
+// x "I'm sure you, as a farmer, understand the need for routine, right?"
+// x Calvin pitches another rock.
+
+// x "Actually though, I was kinda hoping you'd show up."
+// x Calvin turns to the farmer.
+// x "I've just been in a bit of a mood lately. Well, more of a mood than usual."
+// x "At this point, I've known you for a while. And I feel that I can confide in you about something."
+// x Calvin faces the ocean again.
+// x "Would you mind?"
+// x Farmer answers : (1) "I don't think I'm in the best place for that right now." (2) "Not at all! Listening is what I'm good at."
+
+// (1)
+// x switchEvent CalvinCasual
+// -- Start CalvinCasual --
+// x "Heh, fair. I wouldn't want to listen to myself complain either."
+// x Calvin throws one more rock, and then sits on the bench.
+// x Farmer joins him.
+// x pause 
+// Cetus slowly glides from one side of the screen to the other, he is asleep 
+// "Pretty night, huh?"
+// Farmer smiles.
+// awkward pause
+// "Look at him, even in his sleep, he's still on the move."
+// "It's actually pretty normal. Cetaceans aren't usually ever "fully asleep", since half of their brain remains awake while the other half rests." "This allows them to continue to provide motor functions without thinking."
+// "Ya know, so they don't drown."
+// "So he's always on the move. Kinda... like me I guess."
+// pause
+// "Man, I'm gonna miss him. He's doing so well, and I'm so happy for him, but..."
+// "Is it selfish to be sad?"
+// pause
+// "Sorry, you said you weren't here for that. It's just... it's all that's really on my mind now. Hard to focus on much else."
+// awkward pause
+// "Ya know, the orcas around here are pretty interesting." "There are several kinds, actually. Some eat fish, others eat seals and larger marine mammals. But they aren't the same culture, so they rarely interact." "Neat, right?"
+// farmer approves
+// another awkward pause
+// "Sorry... I... I'm just not good right now. I'm stressed and I'm scared." "Don't want to bug you about it, though, so I'm gonna call it a night."
+// Calvin stands
+// "Good night, @."
+// Calvin leaves as the farmer watches him leave, nervously.
+// switchEvent CalvinLighthouseEnd
+
+// (2)
+// x switchEvent CalvinVent
+// -- Start CalvinVent --
+// "Heh, yeah I guess it is, isn't it? Then I'll just cut to the chase."
+// Calvin throws one more rock, and then sits on the bench.
+// Farmer joins him.
+// Cetus slowly glides from one side of the screen to the other, he is asleep 
+// "I'm sure it's no secret that I'm no the most socially adept person." "But, the truth is, I've really only ever gotten anywhere by losing people."
+// "Often times its not my fault. A lot of the time it is."
+// "With my parents, it was that I just never did what they wanted." "They wanted an all star baseball champion son, but they got boy in love with sea instead."
+// "They wanted a popular kid with loads of friends, but got a nerd who's best friend was living in a big concrete fish bowl." "They wanted a boy who'd bring a girl home, and give them grandkids some day. But all they got was a kid who wanted to be alone."
+// "They would never support my dreams, so I didn't bother sticking around." "That was a good idea, ultimately. Probably just as good for them, too."
+// pause
+// "I was on my own for a while, before my aunt took me in. She got me into college, and I spent my first 2 years there, with her help."
+// "She worked 2 jobs, and still managed to live for herself and support me with tuition. A real hero, that one." "..."
+// "I wanted to give back, but I had nothing." "And yet she told me everything was alright, that I had nothing to worry about."
+// pause
+// Farmer asks question: (1) And you believed her? (2) But something went wrong?
+// (1) "I did, foolishly." "I sure am naive, aren't I?"
+// (2) "Bud, you don't know the half of it."
+// "I know drunk people aren't always themselves..." "But sometimes you just hear people say things, even things they don't mean, and you can't unhear them." "So, I ran away. Again."
+// "I was an adult by then, fully responsible for myself. Thankfully, though, I had already gotten into contact with IWOA through school, who had taken an interest in me." "And more importantly, in Cetus."
+// "I let them know everything about him. His condition, how long he'd been there, everything." "And in exchange, they helped me pick back up where I had left off with my education."
+// "..." "All that access to the park the owner gave me to see Cetus, and I'd betrayed him, too."
+// "But I had to. This was for Cetus's freedom. And if there is ever anything that I will never regret, it's making that decision."
+// "After all what's one more torn bond?"
+// pause
+// Calvin curls up, arms around legs
+// "And now... it's Cetus who's leaving me." "But obviously, this is what's best. It's what we've worked so hard to achieve." "And now that we're here, I... I'm just scared."
+// "Once he's left, I'll have no reason to stay." "I love this valley, but I was never sent here to stay permanently." "Just more ties to break. Pretty soon, I'll be left with nobody."
+// "And that loneliness, that uncertainty of the future. It's terrifying in a way I don't have words for."
+// Calvin hides his head in his arms
+// "I just feel so selfish. For being scared, for feeling like I don't want this to happen." "Even though I know, deep down, this is what I truly want."
+// farmer comforts Calvin 
+// long pause
+// Calvin uncurls, sitting back as usual
+// "..." "Phew! Wow... uh." "That was... a lot to get out all at once." "Felt good. Felt... needed."
+// "But that's enough sentimental garbage for one night, yeah?" "Thanks for listening, @. I mean it." "You've been... you've been good."
+// Calvin stands
+// "Think I'll call it here, though. It's late. You should probably also get to bed soon, too." "You gotta get up early, dontcha?"
+// Calvin begins to walk away.
+// "Thanks again, really."
+// Calvin leaves as the farmer watches him leave, before turning and staring at the sea.
+// switchEvent CalvinLighthouseEnd
+
+// -- Start CalvinLightHouseEnd -- 
+// Calvin walks up past the lighthouse, where Elliott is walking down towards.
+// "Oh, Calvin, there you are."
+// "Elliott? What brings you out here? And at this hour of all times."
+// "Well, nothing like a nice nighttime walk, yes?" "Well, in truth, I was looking for you."
+// "(Oh boy). Oh yeah? What for?"
+// "I wanted to... apologize for my past transgressions with you. We did not start out on the best of terms, but I remained petty, and that was unprofessional of me."
+// "Oh, um. I'm sorry too." "I... cefinitely could've handled that better. It's just..." "The things you said about Cetus really got under my skin."
+// "And you were right to be frustrated. My draft may have been ruined, but I, as the senior gentleman, should've taken it with more responsibility." "And for what it is worth, I truly am sorry for what I said about your friend." "Cetus is his name, yes? He truly is a marvel."
+// Calvin turns, putting his hands behind his head casually.
+// "He sure is something, isn't he? He'd be flattered."
+// "I'm sure." 
+// awkward pause
+// "So, does this mean we can start over, from scratch?"
+// "Of course! After all, starting over from scratch often leads to the best results." "Just looking at my newest draft, it's the best it's ever been!"
+// "Really? I'm glad to hear it. And that you were able to get some good out of a bad situation."
+// "Indeed! In fact, you should give it a read sometime."
+// "Oh, well-- ya know what? Yeah. I'd love to."
+// "Splendid!" 
+// Pause, as Elliot looks around
+// "Oh dear, sure got late, didn't it?"
+// "Sure did. That's why I'm surprised you're all the way out here."
+// "True, I should probably get going." "And isn't it past your bed time, too?"
+// "Har har, very funny." "Good night, Elliott."
+// "Good night, Calvin."
+// Elliot turns and walks away
+// Calvin waits and sighs, before beginning to walk away
+// fade to black
+// end Event 

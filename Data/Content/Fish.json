@@ -1,0 +1,107 @@
+{
+    "Changes": [
+        {
+        
+            //Fish Spawning
+		"LogName": "Fish Spawning ES",
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"TargetField": [
+			"EastScarp_Village",
+			"Fish"
+		],
+		"Entries": {
+			"OrcasStories_SalmonShark": {
+				"Id": "OrcasStories_SalmonShark",
+				"ItemId": "(O)OrcasStories_SalmonShark",
+                "Condition": "LOCATION_Season Here winter",
+				"FishAreaId": "ESBay"
+			}
+		}
+	    },
+
+
+        //Fish Data
+        {
+        "Action": "EditData",
+        "Target": "Data/Fish",
+        "Entries": {
+          "OrcasStories_SalmonShark": "Salmon Shark/80/mixed/36/72/600 1400/fall winter/rainy/null/4/.3/.5/5/false"
+        }
+      },
+      {
+        "LogName": "Orca's Aquarium Sprites",
+        "Action": "Load",
+        "Target": "Mods/OrcasStories/OrcaFish",
+        "FromFile": "Assets/Misc/OrcasAquariumFish.png"
+    },
+
+    {
+        "LogName": "Orca's Aquarium Data",
+        "Action": "EditData",
+        "Target": "Data/AquariumFish",
+        "Entries": {
+          "OrcasStories_SalmonShark": "0/float/0 0 0 0 0 1 1 1 2 2 2 2 2 3 3 3/1/4/2/Mods\\OrcasStories\\OrcaFish"
+        }
+    },
+
+    {
+        "Action": "EditData",
+        "Target": "Data/FishPondData",
+        "Entries": {
+        "OrcasStories_SalmonShark": {
+            "ID": "OrcasStories_SalmonShark",
+            "RequiredTags": [
+            "fish_salmonshark" 
+            ],
+            "Precedence": 0,
+            "SpawnTime": -1,
+            "ProducedItems": [
+              {
+                "RequiredPopulation": 7,
+                "Chance": 0.1,
+                "ItemID": "(O)797",
+                "MinQuantity": 1, 
+                "MaxQuantity": 1 
+              },
+              {
+                "RequiredPopulation": 5,
+                "Chance": 0.1,
+                "ItemID": "(O)466", 
+                "MinQuantity": 1,
+                "MaxQuantity": 5
+              },
+              {
+                "RequiredPopulation": 3,
+                "Chance": 0.1,
+                "ItemID": "(O)394",
+                "MinQuantity": 1,
+                "MaxQuantity": 6
+              },
+              {
+                "RequiredPopulation": 0,
+                "Chance": 0.7,
+                "ItemID": "(O)812",
+                "MinQuantity": 1,
+                "MaxQuantity": 3
+              }
+            ],
+            "PopulationGates": {    ///when the fish gives you a quest to expand population
+              "3": [ //3 is the number of fishies
+                "(O)296 8",
+                "(O)139 3"
+
+              ],
+              "5": [
+                "(O)212 1",
+                "(O)StardewValleyExpandedCP_King_Salmon? 1" //Aquamarine
+              ],
+              "7": [
+                "(O)795 3"
+              ]
+            }
+          }
+        }
+    }
+    ]
+}
