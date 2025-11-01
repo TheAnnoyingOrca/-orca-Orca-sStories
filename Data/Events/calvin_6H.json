@@ -8,9 +8,10 @@
                 "Orca.OrcasStories_Event.OrcasStories_Calvin.6h/e Orca.OrcasStories_Event.OrcasStories_Calvin.4h/t 2000 200/w sunny/d Wed Thu Sun/f OrcasStories_Calvin 1500":"
                     ocean/
                     73 130/
-                    farmer 70 123 2 OrcasStories_Calvin 72 131 2 Elliott 71 106 2 SenS? 74 124 2/ 
+                    farmer 70 123 2 OrcasStories_Calvin 72 131 2 Elliott 72 98 2 SenS? 74 124 2/ 
                     addTemporaryActor OrcasStories_Cetus 80 48 56 140 1 false Character/
                     showFrame OrcasStories_Cetus 28/
+                    speed OrcasStories_Cetus 2/
                     action Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin Default/
                     addLantern 735 75 131 5/
                     skippable/
@@ -39,6 +40,15 @@
                         animate OrcasStories_Calvin false true 200 80 80 80 81 82 83 80 80 80/
                     quickQuestion #{{i18n:Events.OrcasStories_Calvin.Event6_3.Question1}}#{{i18n:Events.OrcasStories_Calvin.Event6_3.Question2}} (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_4.CalvinAnswer1}}\"\\ pause 500\\  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_5.CalvinAnswer1}}\"\\ pause 600\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 0\\ speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_6.CalvinAnswer1}}\"\\ showFrame OrcasStories_Calvin 67\\ pause 200\\  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_7.CalvinAnswer1}}\"\\ animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99\\ pause 1000\\ playSound cast\\ pause 1000\\ playSound dropItemInWater\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 84 (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_4.CalvinAnswer2}}\"\\ emote OrcasStories_Calvin 224 false\\ emote farmer 28 false\\ speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_5.CalvinAnswer2}}\"\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 84\\ pause 500\\  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_6.CalvinAnswer2}}\"\\ animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99\\ pause 1000\\ playSound cast\\ pause 1000\\ playSound dropItemInWater\\ stopAnimation OrcasStories_Calvin 84\\ showFrame OrcasStories_Calvin 84/
                         showFrame OrcasStories_Calvin 85/
+                            advancedMove SenS? false -4 0 2 10/
+                            waitForAllStationary/
+                            pause 500/
+                            jump SenS? 3/
+                            emote SenS? 16 true/
+                            pause 400/
+                            speed SenS? 5/
+                            advancedMove SenS? false -2 0 2 10/
+                            shake SenS? 1000/
                         pause 500/
                     speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_8.Calvin}}\"/
                         pause 300/
@@ -57,21 +67,23 @@
                         move OrcasStories_Calvin 0 0 2 true/
                         showFrame OrcasStories_Calvin 84/
                         pause 400/
-                        stopMusic/
                         quickQuestion {{i18n:Events.OrcasStories_Calvin.Event6_11.Question}}#{{i18n:Events.OrcasStories_Calvin.Event6_11.Answer1}}#{{i18n:Events.OrcasStories_Calvin.Event6_11.Answer2}} (break) switchEvent Orca.OrcasStories_CalvinCasual (break) switchEvent Orca.OrcasStories_CalvinVent/
                     end/
                 "
             }
         },
         {
-            "LogName": "Calvin tries to Play it Cool",
+            "LogName": "Calvin Chill",
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
+            "Conditions": {
+                "HasMod |contains=stinkyvicki.IdunoftheOpenWater": "true",
+                "PLAYER_HAS_SEEN_EVENT Host IdunoftheOpenWater_Idun0Hearts": "true"
+            },
             "Entries": {
                 "Orca.OrcasStories_CalvinCasual":"
                     pause 200/
                     speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_12.Calvin}}\"/
-                        pause 500/
                         animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99/
                         pause 1000/
                         playSound cast/
@@ -81,8 +93,247 @@
                         showFrame OrcasStories_Calvin 84/
                         pause 400/
                         advancedMove OrcasStories_Calvin false 0 -1 4 10 2 0 1 10 0 1 2 10/
+                        pause 200/
+                        advancedMove farmer false 0 1 2 10 3 0 1 10 0 2 2 10/
+                        pause 1800/
+                        jump OrcasStories_Calvin 3/
+                        showFrame OrcasStories_Calvin 0/
+                        animate OrcasStories_Calvin false true 250 16 16 16 16 16 17 18 18 19 16 16 16/
+                        waitForAllStationary/
+                        jump farmer 3/
+                        showFrame farmer 70 false/
+                        positionOffset farmer 0 16/
+                        pause 500/
+                        animate OrcasStories_Cetus false false 100 28 29 30 31 18/
+                        playSound pullItemFromWater/
                         pause 300/
-
+                        stopAnimation OrcasStories_Cetus/
+                        showFrame OrcasStories_Cetus 18/
+                        pause 200/
+                        speed OrcasStories_Cetus 1/
+                        advancedMove OrcasStories_Cetus true 24 0 0 10 -24 0 0 -10/
+                        pause 1500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_13.Calvin}}\"/
+                        pause 200/
+                        emote farmer 32 false/
+                        pause 1500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_14.Calvin}}\"/
+                        pause 300/
+                        emote OrcasStories_Cetus 24 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_15.Calvin}}\"/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_16.Calvin}}\"/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_17.Calvin}}\"/
+                        pause 300/
+                        stopAnimation OrcasStories_Calvin/
+                        showFrame OrcasStories_Calvin 100/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Calvin}}\"/
+                    quickQuestion #\"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Answer1}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Answer2}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Answer3}}\"(break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer1}}\"(break)speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer2}}\"(break)speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer3}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_20.Calvin}}\"/
+                        pause 200/
+                        showframe OrcasStories_Calvin 16/
+                        pause 800/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_21.Calvin}}\"/
+                        pause 300/
+                        emote farmer 32 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_22.Calvin}}\"/
+                        pause 300/
+                        emote farmer 8 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_23.Calvin}}\"/
+                        pause 200/
+                        showframe OrcasStories_Calvin 103/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_24.Calvin}}\"/
+                        pause 100/
+                        emote farmer 16 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_25.Calvin}}\"/
+                        pause 200/
+                        emote farmer 228 false/
+                        pause 150/
+                        showFrame OrcasStories_Calvin 100/
+                        pause 100/
+                        speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_25.CalvinIdunComment}}\"/
+                        pause 300/
+                        showFrame OrcasStories_Calvin 16/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_26.Calvin}}\"/
+                        pause 300/
+                        emote farmer 28 false/
+                        pause 150/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_27.Calvin}}\"/
+                        pause 300/
+                        ignoreMovementAnimation OrcasStories_Calvin true/
+                        jump OrcasStories_Calvin 5/
+                        advancedMove OrcasStories_Calvin false 0 -1 2 10/
+                        pause 500/
+                        positionOffset farmer 0 -16/
+                        advancedMove farmer false 0 -1 1 10/
+                        pause 200/
+                        ignoreMovementAnimation OrcasStories_Calvin false/
+                        faceDirection OrcasStories_Calvin 3/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_28.Calvin}}\"/
+                        pause 200/
+                        faceDirection OrcasStories_Calvin 2/
+                        pause 1500/
+                        faceDirection OrcasStories_Calvin 3/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_29.Calvin}}\"/
+                        pause 300/
+                        emote farmer 60 false/
+                        pause 150/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_30.Calvin}}\"/
+                        pause 300/
+                        advancedMove OrcasStories_Calvin false 0 -1 3 10 -4 0 4 10 0 -1 2 10/
+                        pause 500/
+                        faceDirection farmer 0 true/
+                        pause 500/
+                        faceDirection farmer 3 true/
+                        pause 2000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_31.Calvin}}\"/
+                        pause 500/
+                        emote farmer 32 false/
+                        pause 300/
+                        stopAdvancedMoves/
+                        pause 100/
+                        animate OrcasStories_Cetus false true 400 18 19 18 19 18 19/
+                        switchEvent Orca.OrcasStories_CalvinElliott/
+                    end/
+                "
+            }
+        },
+        {
+            "LogName": "Calvin Chill",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Conditions": {
+                "PLAYER_HAS_SEEN_EVENT Host IdunoftheOpenWater_Idun0Hearts": "false"
+            },
+            "Entries": {
+                "Orca.OrcasStories_CalvinCasual":"
+                    pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_12.Calvin}}\"/
+                        animate OrcasStories_Calvin false false 100 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99/
+                        pause 1000/
+                        playSound cast/
+                        pause 1000/
+                        playSound dropItemInWater/
+                        stopAnimation OrcasStories_Calvin 84/
+                        showFrame OrcasStories_Calvin 84/
+                        pause 400/
+                        advancedMove OrcasStories_Calvin false 0 -1 4 10 2 0 1 10 0 1 2 10/
+                        pause 200/
+                        advancedMove farmer false 0 1 2 10 3 0 1 10 0 2 2 10/
+                        pause 1800/
+                        jump OrcasStories_Calvin 3/
+                        showFrame OrcasStories_Calvin 0/
+                        animate OrcasStories_Calvin false true 250 16 16 16 16 16 17 18 18 19 16 16 16/
+                        waitForAllStationary/
+                        jump farmer 3/
+                        showFrame farmer 70 false/
+                        positionOffset farmer 0 16/
+                        pause 500/
+                        animate OrcasStories_Cetus false false 100 28 29 30 31 18/
+                        playSound pullItemFromWater/
+                        pause 300/
+                        stopAnimation OrcasStories_Cetus/
+                        showFrame OrcasStories_Cetus 18/
+                        pause 200/
+                        speed OrcasStories_Cetus 1/
+                        advancedMove OrcasStories_Cetus true 24 0 0 10 -24 0 0 -10/
+                        pause 1500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_13.Calvin}}\"/
+                        pause 200/
+                        emote farmer 32 false/
+                        pause 1500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_14.Calvin}}\"/
+                        pause 300/
+                        emote OrcasStories_Cetus 24 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_15.Calvin}}\"/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_16.Calvin}}\"/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_17.Calvin}}\"/
+                        pause 300/
+                        stopAnimation OrcasStories_Calvin/
+                        showFrame OrcasStories_Calvin 100/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Calvin}}\"/
+                    quickQuestion #\"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Answer1}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Answer2}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event6A_18.Answer3}}\"(break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer1}}\"(break)speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer2}}\"(break)speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer3}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_20.Calvin}}\"/
+                        pause 200/
+                        showframe OrcasStories_Calvin 16/
+                        pause 800/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_21.Calvin}}\"/
+                        pause 300/
+                        emote farmer 32 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_22.Calvin}}\"/
+                        pause 300/
+                        emote farmer 8 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_23.Calvin}}\"/
+                        pause 200/
+                        showframe OrcasStories_Calvin 103/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_24.Calvin}}\"/
+                        pause 100/
+                        emote farmer 16 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_25.Calvin}}\"/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_26.Calvin}}\"/
+                        pause 300/
+                        emote farmer 28 false/
+                        pause 150/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_27.Calvin}}\"/
+                        pause 300/
+                        ignoreMovementAnimation OrcasStories_Calvin true/
+                        jump OrcasStories_Calvin 5/
+                        advancedMove OrcasStories_Calvin false 0 -1 2 10/
+                        pause 500/
+                        positionOffset farmer 0 -16/
+                        advancedMove farmer false 0 -1 1 10/
+                        pause 200/
+                        ignoreMovementAnimation OrcasStories_Calvin false/
+                        faceDirection OrcasStories_Calvin 3/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_28.Calvin}}\"/
+                        pause 200/
+                        faceDirection OrcasStories_Calvin 2/
+                        pause 800/
+                        faceDirection OrcasStories_Calvin 3/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_29.Calvin}}\"/
+                        pause 300/
+                        emote farmer 60 false/
+                        pause 150/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_30.Calvin}}\"/
+                        pause 300/
+                        advancedMove OrcasStories_Calvin false 0 -1 3 10 -4 0 4 10 0 -1 2 10/
+                        pause 500/
+                        faceDirection farmer 0 true/
+                        pause 500/
+                        faceDirection farmer 3 true/
+                        pause 2000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6A_31.Calvin}}\"/
+                        pause 500/
+                        emote farmer 32 false/
+                        pause 300/
+                        stopAdvancedMoves/
+                        pause 100/
+                        animate OrcasStories_Cetus false true 400 18 19 18 19 18 19/
+                        switchEvent Orca.OrcasStories_CalvinElliott/
+                    end/
                 "
             }
         },
@@ -106,20 +357,410 @@
                         advancedMove OrcasStories_Calvin false 0 -1 4 10 2 0 1 10 0 1 2 10/
                         pause 200/
                         advancedMove farmer false 0 1 2 10 3 0 1 10 0 2 2 10/
-                        pause 1900/
+                        pause 1800/
+                        jump OrcasStories_Calvin 3/
                         showFrame OrcasStories_Calvin 0/
                         animate OrcasStories_Calvin false true 250 16 16 16 16 16 17 18 18 19 16 16 16/
                         waitForAllStationary/
+                        jump farmer 3/
                         showFrame farmer 70 false/
                         positionOffset farmer 0 16/
+                        pause 500/
+                        animate OrcasStories_Cetus false false 100 28 29 30 31 18/
+                        playSound pullItemFromWater/
+                        pause 300/
+                        stopAnimation OrcasStories_Cetus/
+                        showFrame OrcasStories_Cetus 18/
+                        pause 200/
+                        advancedMove OrcasStories_Cetus true 24 0 0 10 -24 0 0 -10/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_13.Calvin}}\"/
+                        pause 500/
+                        emote farmer 8 false/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_14.Calvin}}\"/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_15.Calvin}}\"/
+                        pause 200/
+                        stopAnimation OrcasStories_Calvin 16/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_16.Calvin}}\"/
                         pause 1000/
+                        emote farmer 28 false/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_17.Calvin}}\"/
+                        pause 250/
+                        showFrame OrcasStories_Calvin 100/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_18.Calvin}}\"/
+                        showFrame OrcasStories_Calvin 16/
+                        pause 1000/
+                    quickQuestion #{{i18n:Events.OrcasStories_Calvin.Event6B_19.Question1}}#{{i18n:Events.OrcasStories_Calvin.Event6B_19.Question2}} (break)  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_20.CalvinAnswer1}}\" (break)  speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_20.CalvinAnswer2}}\"/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_21.Calvin}}\"/
+                        pause 250/
+                        showFrame OrcasStories_Calvin 100/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_22.Calvin}}\"/
+                        pause 250/
+                        showFrame OrcasStories_Calvin 16/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_23.Calvin}}\"/
+                        pause 500/
+                        showFrame OrcasStories_Calvin 101/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_24.Calvin}}\"/
+                        pause 750/
+                        emote farmer 40 false/
+                        pause 200/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_25.Calvin}}\"/
+                        stopMusic/
+                        pause 250/
+                        playMusic echos/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_26.Calvin}}\"/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_27.Calvin}}\"/
+                        pause 500/
+                        showFrame OrcasStories_Calvin 102/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_28.Calvin}}\"/
+                        pause 2000/
+                    question null #\"{{i18n:Events.OrcasStories_Calvin.Event6B_29.Question1}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event6B_29.Question2}}\"/
+                        pause 300/
+                        showFrame OrcasStories_Calvin 101/
+                        pause 3500/
+                        showFrame OrcasStories_Calvin 103/
+                        stopMusic/
+                        playMusic ocean/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_30.Calvin}}\"/
+                        pause 250/
+                        ignoreMovementAnimation OrcasStories_Calvin true/
+                        jump OrcasStories_Calvin 5/
+                        advancedMove OrcasStories_Calvin false 0 -1 2 10/
+                        pause 100/
+                        positionOffset farmer 0 -16/
+                        advancedMove farmer false 0 -1 1 10/
+                        pause 200/
+                        ignoreMovementAnimation OrcasStories_Calvin false/
+                        faceDirection OrcasStories_Calvin 3/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_31.Calvin}}\"/
+                        advancedMove OrcasStories_Calvin false 0 -1 3 10 -4 0 4 10 0 -1 2 10/
+                        pause 500/
+                        faceDirection farmer 0 true/
+                        pause 500/
+                        faceDirection farmer 3 true/
+                        pause 2000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6B_32.Calvin}}\"/
+                        pause 500/
+                        emote farmer 32 false/
+                        pause 300/
+                        stopAdvancedMoves/
+                        pause 100/
+                        animate OrcasStories_Cetus false true 400 18 19 18 19 18 19/
+                        switchEvent Orca.OrcasStories_CalvinElliott/
+                    end/
 
 
                 "
             }
-        }
+        },
+        {
+            "LogName": "Calvin Elliott Lighthouse Ending",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "When": {
+                        "HasMod |contains=7thAxis.LitD": "false"
+                    },
+            "Entries": {
+                "Orca.OrcasStories_CalvinElliott":"
+                    advancedMove OrcasStories_Calvin false 0 -5 4 10 2 0 4 10 0 -7 4 10/
+                        viewport move 0 -3 4900/
+                        faceDirection farmer 2 true/
+                        advancedMove Elliott false 0 13 2 10/
+                        pause 1000/
+                        pause 4000/
+                        stopMusic/
+                        playMusic nightTime/
+                        pause 2500/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_33.Elliott}}\"/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_34.Calvin}}\"/
+                        pause 500/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_35.Elliott}}\"/
+                        pause 250/
+                        faceDirection OrcasStories_Calvin 1 false/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_36.Calvin}}\"/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_37.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_38.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_39.Elliott}}\"/
+                        pause 300/
+                        showFrame OrcasStories_Calvin 41/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_40.Calvin}}\"/
+                        pause 250/
+                        showFrame OrcasStories_Calvin 8/
+                        pause 250/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_41.Elliott}}\"/
+                        pause 1500/
+                        emote OrcasStories_Calvin 40 true/
+                        emote Elliott 40 false/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 1 false/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_42.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_43.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_44.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_45.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_46.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_47.Elliott}}\"/
+                        pause 1000/
+                        faceDirection Elliott 1 false/
+                        pause 250/
+                        faceDirection Elliott 3 false/
+                        pause 250/
+                        faceDirection Elliott 2 false/
+                        pause 500/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_48.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_49.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_50.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_51.Calvin}}\"/
+                        pause 250/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_52.Elliott}}\"/
+                        pause 750/
+                        faceDirection Elliott 0 false/
+                        advancedMove Elliott false 0 -20 2 10/
+                        pause 750/
+                        emote OrcasStories_Calvin 28 false/
+                        pause 700/
+                        advancedMove OrcasStories_Calvin false 0 -20 4 10/
+                        pause 800/
+                        globalFade/
+                        viewport -2000 -2000/
+                    end position 73 129/
+                "
+            }
+        },
+        {
+            "LogName": "Calvin Elliott Lighthouse Ending",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "When": {
+                        "HasMod |contains=7thAxis.LitD": "true"
+                    },
+            "Entries": {
+                "Orca.OrcasStories_CalvinElliott":"
+                        advancedMove SenS false 4 0 4 10 0 -9 3 10 -3 0 2 10/
+                        jump SenS 3/
+                        shake SenS 8000/
+                        playSound leafrustle/
+                        pause 1000/
+                        emote OrcasStories_Calvin 16 false/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 500/
+                        emote OrcasStories_Calvin 40 false/
+                        proceedPosition SenS/
+                        playSound leafrustle/
+                        advancedMove OrcasStories_Calvin false 0 -5 4 10 2 0 4 10 0 -7 4 10/
+                        viewport move 0 -3 4900/
+                        faceDirection farmer 2 true/
+                        advancedMove Elliott false 0 13 2 10/
+                        pause 1000/
+                        positionOffset SenS 16 32/
+                        showFrame SenS 31/
+                        pause 4000/
+                        stopMusic/
+                        playMusic nightTime/
+                        pause 2500/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_33.Elliott}}\"/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_34.Calvin}}\"/
+                        pause 500/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_35.Elliott}}\"/
+                        pause 250/
+                        faceDirection OrcasStories_Calvin 1 false/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_36.Calvin}}\"/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_37.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_38.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_39.Elliott}}\"/
+                        pause 300/
+                        showFrame OrcasStories_Calvin 41/
+                        pause 100/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_40.Calvin}}\"/
+                        pause 250/
+                        showFrame OrcasStories_Calvin 8/
+                        pause 250/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_41.Elliott}}\"/
+                        pause 1500/
+                        emote OrcasStories_Calvin 40 true/
+                        emote Elliott 40 false/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 1 false/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 250/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_42.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_43.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_44.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_45.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_46.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_47.Elliott}}\"/
+                        pause 1000/
+                        faceDirection Elliott 1 false/
+                        pause 250/
+                        faceDirection Elliott 3 false/
+                        pause 250/
+                        faceDirection Elliott 2 false/
+                        pause 500/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_48.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_49.Calvin}}\"/
+                        pause 300/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_50.Elliott}}\"/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_51.Calvin}}\"/
+                        pause 250/
+                    speak Elliott \"{{i18n:Events.OrcasStories_Calvin.Event6_52.Elliott}}\"/
+                        pause 750/
+                        faceDirection Elliott 0 false/
+                        advancedMove Elliott false 0 -20 2 10/
+                        pause 750/
+                        emote OrcasStories_Calvin 28 false/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 3 false/
+                        pause 100/
+                     switchEvent Orca.OrcasStories_SenExist.{{SenExist}}/
+                    end/
+                ",
+                
+                "Orca.OrcasStories_SenExist.1":"
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_53.CalvinSenRelationshipAcknowledge}}\"/
+                        pause 500/
+                        emote SenS? 40 false/
+                        pause 500/
+                        speed SenS? 3/
+                        advancedMove SenS false 2 0 2 10 0 1 2 10 2 0 2 10 0 8 3 10 -3 0 2 10/
+                        playSound leafrustle/
+                        pause 700/
+                        faceDirection OrcasStories_Calvin 2/
+                        pause 200/
+                        advancedMove OrcasStories_Calvin false 0 -20 4 10/
+                        pause 800/
+                        globalFade/
+                        viewport -2000 -2000/
+                    end position 73 129/
+                ",
+                "Orca.OrcasStories_SenExist.1":"
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_53.CalvinSenAcknowledge}}\"/
+                        pause 250/
+                        shake SenS 10000/
+                        emote SenS? 16 false/
+                        pause 250/
+                        emote OrcasStories_Calvin 40 false/
+                        pause 700/
+                        advancedMove OrcasStories_Calvin false 0 -20 4 10/
+                        pause 800/
+                        globalFade/
+                        viewport -2000 -2000/
+                    end position 73 129/
+                "
+            }
+        }  
     ]
 }
+
+//shake SenS 10000/
+                    //speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_53.CalvinSenAcknowledge}}\"/
+                        //pause 250/
+                        //emote OrcasStories_Calvin 40 false/
+
+
+
+// (1)
+// x switchEvent CalvinCasual
+// -- Start CalvinCasual --
+// x "Heh, fair. I wouldn't want to listen to myself complain either."
+// x Calvin throws one more rock, and then sits on the bench.
+// x Farmer joins him.
+// x pause 
+// Cetus slowly glides from one side of the screen to the other, he is asleep 
+// 13 "Pretty night, huh?"
+// Farmer smiles.
+// awkward pause
+// 14 "Look at him, even in his sleep, he's still on the move."
+// 15 "It's actually pretty normal. Cetaceans aren't usually ever "fully asleep", since half of their brain remains awake while the other half rests." "This allows them to continue to provide motor functions without thinking."
+// 15 "Ya know, so they don't drown."
+// 16 "So he's always on the move. Kinda... like me I guess."
+// pause
+// 17 "So... you come from the big city, aye? You worked at Joja?   No judgment, of course, they got their grubby hands on everyone's necks nowadays. 
+// Calvin looks at farmer
+// 18 question "But if I can ask, what was it like for you? When you decided to leave and fill your grandfather's shoes?"
+// 18 Farmer answers : (1) "A bit scary, but I don't regret it." (2) "Honestly, I don't really think about it much." (3) "Liberating."
+// 19 (1) "Aye, I'd imagine. It's a lot... quieter out here. For better or worse.  But I get it, really. I think about the sea and think the same thing."
+// 19 (2) "Ah, interesting. I suppose it's best not to dwell on the past. Perhaps I should take a page out of your book."
+// 19 (3) "Cheers to that! I might've been a big leap, but I don't think I'd go back, if it were up to me."
+// 20 "There's something about this valley, something I've never really been able to experience."
+// Calvin looks back to the sea 
+// pause
+// 21 "I think he'll love it here. Cetus, I mean."
+// farmer smiles
+// 22 "He's done so well here, and he seems happier than ever. I'm just a little nervous about how everything will go down."
+// farmer is confused
+// 23 "Well, you don't really think it's all just going to be off without an issue, do you? Not all orcas are the same."
+// Calvin splays out his legs
+// 24 "Cetus is a fish-eating orca, and his primary prey consists of salmonids. And orcas of the same diet do pass through these waters, other orcas do as well."
+// Farmer is surprised
+// 25 "Aye, some hunt seals, sea lions and other marine mammals. And those orcas don't really get along with the fish-eating ones."
+// (if has Idun of Open Water) Farmer is shocked (228) 
+// (if has Idun of Open Water) "Huh? What's that look for? Got seals you've got to worry about? Well don't worry, Cetus won't be any bother to them."
+// 26 "But regardless, Cetus wouldn't be able to join that sort of pod. They just sadly aren't compatible. In fact there's no guarantee that even his own kind will either."
+// farmer is sad
+// 27 "Aye, it's sad. But we have to believe in Cetus. He can't stay here forever."
+// Calvin stands, farmer follows short behind.
+// 28 "Even if... we wish he could."
+// Calvin looks off to the sea one last time.
+// pause
+// Calvin looks back to farmer
+// 29 "Well. I think that's enough mushy talk for one night, aye?"
+// farmer is nervous
+// 30 "Thanks for visiting, as always, @."
+// Calvin begins to walk away, as farmer watches.
+// 31 "Night."
+
+
+// Calvin stands
+// "Good night, @."
+// Calvin leaves as the farmer watches him leave, nervously.
+// switchEvent CalvinLighthouseEnd
+
+
+
+
+
+
+//COMPLETED
 // x Farmer walks up to Calvin
 // x Calvin is throwing rocks into the ocean off of the lighthouse peak
 // x "Hey @."
@@ -151,106 +792,76 @@
 // x "Would you mind?"
 // x Farmer answers : (1) "I don't think I'm in the best place for that right now." (2) "Not at all! Listening is what I'm good at."
 
-// (1)
-// x switchEvent CalvinCasual
-// -- Start CalvinCasual --
-// x "Heh, fair. I wouldn't want to listen to myself complain either."
-// x Calvin throws one more rock, and then sits on the bench.
-// x Farmer joins him.
-// x pause 
-// Cetus slowly glides from one side of the screen to the other, he is asleep 
-// "Pretty night, huh?"
-// Farmer smiles.
-// awkward pause
-// "Look at him, even in his sleep, he's still on the move."
-// "It's actually pretty normal. Cetaceans aren't usually ever "fully asleep", since half of their brain remains awake while the other half rests." "This allows them to continue to provide motor functions without thinking."
-// "Ya know, so they don't drown."
-// "So he's always on the move. Kinda... like me I guess."
-// pause
-// "Man, I'm gonna miss him. He's doing so well, and I'm so happy for him, but..."
-// "Is it selfish to be sad?"
-// pause
-// "Sorry, you said you weren't here for that. It's just... it's all that's really on my mind now. Hard to focus on much else."
-// awkward pause
-// "Ya know, the orcas around here are pretty interesting." "There are several kinds, actually. Some eat fish, others eat seals and larger marine mammals. But they aren't the same culture, so they rarely interact." "Neat, right?"
-// farmer approves
-// another awkward pause
-// "Sorry... I... I'm just not good right now. I'm stressed and I'm scared." "Don't want to bug you about it, though, so I'm gonna call it a night."
-// Calvin stands
-// "Good night, @."
-// Calvin leaves as the farmer watches him leave, nervously.
-// switchEvent CalvinLighthouseEnd
-
 // (2)
 // x switchEvent CalvinVent
 // -- Start CalvinVent --
-// "Heh, yeah I guess it is, isn't it? Then I'll just cut to the chase."
-// Calvin throws one more rock, and then sits on the bench.
-// Farmer joins him.
-// Cetus slowly glides from one side of the screen to the other, he is asleep 
-// "I'm sure it's no secret that I'm no the most socially adept person." "But, the truth is, I've really only ever gotten anywhere by losing people."
-// "Often times its not my fault. A lot of the time it is."
-// "With my parents, it was that I just never did what they wanted." "They wanted an all star baseball champion son, but they got boy in love with sea instead."
-// "They wanted a popular kid with loads of friends, but got a nerd who's best friend was living in a big concrete fish bowl." "They wanted a boy who'd bring a girl home, and give them grandkids some day. But all they got was a kid who wanted to be alone."
-// "They would never support my dreams, so I didn't bother sticking around." "That was a good idea, ultimately. Probably just as good for them, too."
-// pause
-// "I was on my own for a while, before my aunt took me in. She got me into college, and I spent my first 2 years there, with her help."
-// "She worked 2 jobs, and still managed to live for herself and support me with tuition. A real hero, that one." "..."
-// "I wanted to give back, but I had nothing." "And yet she told me everything was alright, that I had nothing to worry about."
-// pause
-// Farmer asks question: (1) And you believed her? (2) But something went wrong?
-// (1) "I did, foolishly." "I sure am naive, aren't I?"
-// (2) "Bud, you don't know the half of it."
-// "I know drunk people aren't always themselves..." "But sometimes you just hear people say things, even things they don't mean, and you can't unhear them." "So, I ran away. Again."
-// "I was an adult by then, fully responsible for myself. Thankfully, though, I had already gotten into contact with IWOA through school, who had taken an interest in me." "And more importantly, in Cetus."
-// "I let them know everything about him. His condition, how long he'd been there, everything." "And in exchange, they helped me pick back up where I had left off with my education."
-// "..." "All that access to the park the owner gave me to see Cetus, and I'd betrayed him, too."
-// "But I had to. This was for Cetus's freedom. And if there is ever anything that I will never regret, it's making that decision."
-// "After all what's one more torn bond?"
-// pause
-// Calvin curls up, arms around legs
-// "And now... it's Cetus who's leaving me." "But obviously, this is what's best. It's what we've worked so hard to achieve." "And now that we're here, I... I'm just scared."
-// "Once he's left, I'll have no reason to stay." "I love this valley, but I was never sent here to stay permanently." "Just more ties to break. Pretty soon, I'll be left with nobody."
-// "And that loneliness, that uncertainty of the future. It's terrifying in a way I don't have words for."
-// Calvin hides his head in his arms
-// "I just feel so selfish. For being scared, for feeling like I don't want this to happen." "Even though I know, deep down, this is what I truly want."
-// farmer comforts Calvin 
-// long pause
+// x "Heh, yeah I guess it is, isn't it? Then I'll just cut to the chase."
+// x Calvin throws one more rock, and then sits on the bench.
+// x Farmer joins him.
+// x Cetus slowly glides from one side of the screen to the other, he is asleep 
+// 13 x "I'm sure it's no secret that I'm no the most socially adept person." "But, the truth is, I've really only ever gotten anywhere by losing people."
+// 13 x "Often times its not my fault. A lot of the time it is."
+// 14 x "With my parents, it was that I just never did what they wanted." "They wanted an all star baseball champion son, but they got boy in love with sea instead."
+// 15 x "They wanted a popular kid with loads of friends, but got a nerd who's best friend was living in a big concrete fish bowl." "They wanted a boy who'd bring a girl home, and give them grandkids some day. But all they got was a kid who wanted to be alone."
+// 16 x "They would never support my dreams, so I didn't bother sticking around." "That was a good idea, ultimately. Probably just as good for them, too."
+// x pause
+// 17 x "I was on my own for a while, before my aunt took me in. She got me into college, and I spent my first 2 years there, with her help."
+// 17 x "She worked 2 jobs, and still managed to live for herself and support me with tuition. A real hero, that one." "..."
+// 18 x "I wanted to give back, but I had nothing." "And yet she told me everything was alright, that I had nothing to worry about."
+// x pause
+// 19 x Farmer asks question: (1) And you believed her? (2) But something went wrong?
+// 20 x (1) "I did, foolishly." "I sure am naive, aren't I?"
+// 20 x (2) "My friend, you don't know the half of it."
+// 21 x "I know drunk people aren't always themselves..." "But sometimes you just hear people say things, even things they don't mean, and you can't unhear them." "So, I ran away. Again."
+// 22 x ""
+// 22 x ""
+// 23 x ""
+// 23 x ""
+// 24 x "After all what's one more torn bond?"
+// x Calvin curls up, arms around legs
+// x pause
+// 25 x "And now... it's Cetus who's leaving me." "But obviously, this is what's best. It's what we've worked so hard to achieve." "And now that we're here, I... I'm just scared."
+// 26 x "Once he's left, I'll have no reason to stay." "I love this valley, but I was never sent here to stay permanently." "Just more ties to break. Pretty soon, I'll be left with nobody."
+// 27 x "And that loneliness, that uncertainty of the future. It's terrifying in a way I don't have words for."
+// x Calvin hides his head in his arms
+// 28 x "I just feel so selfish. For being scared, for feeling like I don't want this to happen." "Even though I know, deep down, this is what I truly want."
+// 29 x farmer comforts Calvin (question null)
+// x long pause
 // Calvin uncurls, sitting back as usual
-// "..." "Phew! Wow... uh." "That was... a lot to get out all at once." "Felt good. Felt... needed."
-// "But that's enough sentimental garbage for one night, yeah?" "Thanks for listening, @. I mean it." "You've been... you've been good."
+// 30 "..." "Phew! Wow... uh." "That was... a lot to get out all at once." "Felt good. Felt... needed."
+// 30 "But that's enough sentimental garbage for one night, yeah?" "Thanks for listening, @. I mean it." "You've been... you've been good."
 // Calvin stands
-// "Think I'll call it here, though. It's late. You should probably also get to bed soon, too." "You gotta get up early, dontcha?"
+// 31 "Think I'll call it here, though. It's late. You should probably also get to bed soon, too." "You gotta get up early, dontcha?"
 // Calvin begins to walk away.
-// "Thanks again, really."
+// 32 "Thanks again, really."
 // Calvin leaves as the farmer watches him leave, before turning and staring at the sea.
 // switchEvent CalvinLighthouseEnd
 
 // -- Start CalvinLightHouseEnd -- 
-// Calvin walks up past the lighthouse, where Elliott is walking down towards.
-// "Oh, Calvin, there you are."
-// "Elliott? What brings you out here? And at this hour of all times."
-// "Well, nothing like a nice nighttime walk, yes?" "Well, in truth, I was looking for you."
-// "(Oh boy). Oh yeah? What for?"
-// "I wanted to... apologize for my past transgressions with you. We did not start out on the best of terms, but I remained petty, and that was unprofessional of me."
-// "Oh, um. I'm sorry too." "I... cefinitely could've handled that better. It's just..." "The things you said about Cetus really got under my skin."
-// "And you were right to be frustrated. My draft may have been ruined, but I, as the senior gentleman, should've taken it with more responsibility." "And for what it is worth, I truly am sorry for what I said about your friend." "Cetus is his name, yes? He truly is a marvel."
+//  Calvin walks up past the lighthouse, where Elliott is walking down towards.
+// 33 "Oh, Calvin, there you are."
+// 34 "Elliott? What brings you out here? And at this hour of all times."
+// 35 "Well, nothing like a nice nighttime walk, yes?" "Ahem, well. In truth, I was looking for you."
+// 36 "(Oh boy). Oh yeah? What for?"
+// 37 "I wanted to apologize for my past transgressions with you. We did not start out on the best of terms, but I remained petty, and that was unprofessional of me."
+// 38 "Oh, um. I'm sorry too." "I... cefinitely could've handled that better. It's just..." "The things you said about Cetus really got under my skin."
+// 39 "And you were right to be frustrated. My draft may have been ruined, but I, as the senior gentleman, should've taken it with more responsibility." "And for what it is worth, I am sorry for what I said about your friend." "Cetus is his name, yes? He truly is a marvel."
 // Calvin turns, putting his hands behind his head casually.
-// "He sure is something, isn't he? He'd be flattered."
-// "I'm sure." 
+// 40 "He sure is something, isn't he? He'd be flattered."
+// 41 "I'm sure." 
 // awkward pause
-// "So, does this mean we can start over, from scratch?"
-// "Of course! After all, starting over from scratch often leads to the best results." "Just looking at my newest draft, it's the best it's ever been!"
-// "Really? I'm glad to hear it. And that you were able to get some good out of a bad situation."
-// "Indeed! In fact, you should give it a read sometime."
-// "Oh, well-- ya know what? Yeah. I'd love to."
-// "Splendid!" 
+// 42 "So, does this mean we can start over, from scratch?"
+// 43 "Of course! After all, starting over from scratch often leads to the best results." "Just looking at my newest draft, it's the best it's ever been!"
+// 44 "Really? I'm glad to hear it. And that you were able to get some good out of a bad situation."
+// 45 "Indeed! In fact, you should give it a read sometime."
+// 46 "Oh, well-- ya know what? Yeah. I'd love to."
+// 47 "Splendid!" 
 // Pause, as Elliot looks around
-// "Oh dear, sure got late, didn't it?"
-// "Sure did. That's why I'm surprised you're all the way out here."
-// "True, I should probably get going." "And isn't it past your bed time, too?"
-// "Har har, very funny." "Good night, Elliott."
-// "Good night, Calvin."
+// 48 "Oh dear, time does fly, doesn't it?"
+// 49 "Sure does. That's why I'm surprised you're all the way out here."
+// 50 "True, I should probably get going." "And isn't it past your bed time, too?"
+// 51 "Har har, very funny." "Good night, Elliott."
+// 52 "Good night, Calvin."
 // Elliot turns and walks away
 // Calvin waits and sighs, before beginning to walk away
 // fade to black

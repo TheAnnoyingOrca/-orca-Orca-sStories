@@ -348,6 +348,7 @@
 
     ],
     "DynamicTokens":[
+        //Time and Weather
         {
             "Name": "WeekDayList",
             "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
@@ -364,6 +365,7 @@
             "Name": "SeasonDay",
             "Value": "{{SeasonDayList |valueAt={{Query: {{Season}}%4}}}}"
         },
+        //Calvin Events
         {
             "Name": "Lewis_Orca_Reaction",
             "Value": "pause 1000/speed Lewis 3/faceDirection Lewis 3/emote Lewis 40 false/faceDirection Lewis 2 false/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_34.Lewis}}\"/faceDirection Lewis 1 false/emote OrcasStories_Calvin 40/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_35.Calvin}}\"/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_36.Lewis}}\"/faceDirection Lewis 1 true/faceDirection OrcasStories_Calvin 2 false/emote OrcasStories_Cetus 32 false/emote Mateo? 32 true/speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_37.Lewis}}\"/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_38.Calvin}}\"/move Lewis -5 0 3 true/waitForAllStationary/textABoveHead OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_39.Calvin}}\"/faceDirection OrcasStories_Calvin 3/faceDirection Lewis 1/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_40.Calvin}}\"/pause 500/ speak Lewis \"{{i18n:Events.OrcasStories_Calvin.Event1_41.Lewis}}\"/ move Lewis 0 -15 0 true/faceDirection Willy 2/pause 500/advancedMove farmer false 0 -1 4 0 1 10/emote OrcasStories_Calvin 28 true/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_42.Calvin}}\"/faceDirection OrcasStories_Calvin 2 true/faceDirection farmer 2 true/pause 1000/speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event1_43.Calvin}}\"/addConversationTopic CalvinLewisPositive 3/",
@@ -377,6 +379,36 @@
             "When": {
                 "Hearts:Lewis |contains={{Range:0,3}}": true
             }
+        },
+        {
+            "Name": "Sen_Hidden",
+            "Value": "speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_53.CalvinSenAcknowledge}}\"/pause 250/shake SenS 10000/emote SenS? 16 false/pause 250/emote OrcasStories_Calvin 40 false/",
+            "When": {
+                "Relationship:SenS |contains={{Married, Dating, Engaged}}": false
+            }
+        },
+        {
+            "Name": "Sen_Hidden",
+            "Value": "speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_53.CalvinSenRelationshipAcknowledge}}\"/pause 500/emote SenS? 40 false/pause 500/speed SenS? 3/advancedMove SenS false 2 0 2 10 0 1 2 10 2 0 2 10 0 8 3 10 -3 0 2 10/playSound leafrustle/pause 700/faceDirection OrcasStories_Calvin 2/",
+            "When": {
+                "Relationship:SenS |contains={{Married, Dating, Engaged}}": true
+            }
+        },
+        { 
+            "Name": "SenExist", 
+            "Value": "1",
+            "When": { 
+                "HasMod |contains=7thAxis.LitD": true,
+                "Relationship:SenS |contains={{Married, Dating, Engaged}}": true
+            } 
+        },
+        { 
+            "Name": "SenExist", 
+            "Value": "2",
+            "When": { 
+                "HasMod |contains=7thAxis.LitD": true,
+                "Relationship:SenS |contains={{Married, Dating, Engaged}}": false 
+            } 
         }
     ]
 

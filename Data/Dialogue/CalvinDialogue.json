@@ -88,9 +88,9 @@
 				//festival-prelude
 				"spring_12": "{{i18n:Core.OrcasStories_Calvin.eggfestprelude}}",
 				"spring_12_2": "{{i18n:Core.OrcasStories_Calvin.eggfestprelude}}",
-				//"spring_14(desert festival)":"{{i18n:}}",
+				"spring_14_2":"{{i18n:Core.OrcasStories_Calvin.desertfestivalprelude}}",
 				"spring_23":"{{i18n:Core.OrcasStories_Calvin.flowerdance_prelude}}",
-				"spring_23_@":"{{i18n:Core.OrcasStories_Calvin.flowerdance_prelude}}",
+				"spring_23_2":"{{i18n:Core.OrcasStories_Calvin.flowerdance_prelude}}",
 
 				"summer_10":"{{i18n:Core.OrcasStories_Calvin.luauprelude_year1}}",
 				"summer_10_2":"{{i18n:Core.OrcasStories_Calvin.luau_prelude}}",

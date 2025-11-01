@@ -12,33 +12,15 @@
         "Orca.OrcasStories.Cetus-PelicanTown"
     ],
     "Dependencies": [
-        {
-            "UniqueID": "poohnhi.PoohCore",
-            "IsRequired": true
-        },
-        {
-            "UniqueID": "spacechase0.SpaceCore",
-            "IsRequired": true
-        },
-        {
-            "UniqueID": "Spiderbuttons.BETAS",
-            "IsRequired": true
-        },
-        {
-            "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
-            "IsRequired": true
-        },
-        {
-            "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
-            "IsRequired": true
-        },
-        {
-            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
-            "IsRequired": false
-        },
-        {
-            "UniqueID": "Lemurkat.EastScarp",
-            "IsRequired": true
-        }
+
+        {"UniqueID": "spacechase0.SpaceCore","IsRequired": true},
+        {"UniqueID": "Spiderbuttons.BETAS","IsRequired": true},
+        {"UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties","IsRequired": true},
+        {"UniqueID": "Lemurkat.EastScarp","IsRequired": true},
+
+        {"UniqueID": "7thAxis.LitD","IsRequired": false},
+        {"UniqueID": "stinkyvicki.IdunoftheOpenWater","IsRequired": false},
+        {"UniqueID": "FlashShifter.StardewValleyExpandedCP","IsRequired": false},
+        {"UniqueID": "poohnhi.PoohCore","IsRequired": false}
     ]
 }
