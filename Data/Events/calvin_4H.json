@@ -19,6 +19,7 @@
                     hideShadow OrcasStories_Calvin true/
                     action Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin Wetsuit/
                     action Spiderbuttons.BETAS_UpdateAppearance Jacob JacobEventLand/
+                    setSkipActions Spiderbuttons.BETAS_UpdateAppearance Jacob# Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin/
                     speed OrcasStories_Calvin 2/
                     ignoreCollisions OrcasStories_Calvin/
                     ignoreCollisions farmer/
@@ -210,6 +211,7 @@
                     faceDirection OrcasStories_Calvin 3/
                     hideShadow Jacob true/
                     action Spiderbuttons.BETAS_UpdateAppearance Jacob JacobEventSea/
+                    playSound dropItemInWater/
                     pause 200/
                     waitForAllStationary/
                 speak Jacob \"{{i18n:Events.OrcasStories_Calvin.Event4_13.Jacob}}\"/

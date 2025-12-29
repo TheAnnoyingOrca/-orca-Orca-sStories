@@ -92,6 +92,7 @@
                 "Target": "Data/Festivals/summer28",
                 "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true },
                 "TextOperations": [
+                    ///y1 set up
                     {
                         "Operation": "Append",
                         "Target": [ "Entries", "Set-Up_additionalCharacters" ],
@@ -101,28 +102,78 @@
                     {
                         "Operation": "Append",
                         "Target": [ "Fields", "set-up", 5],
-                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 200 24 24 24 24"
+                    },
+                    //y1 main
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                        "Value": "OrcasStories_Calvin 20 34 2",
+                        "Delimiter": "/"
                     },
                     {
                         "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent", 5],
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 250 25 25 26 26"
+                    },
+                    //FIX CETUS DIVE ANIMATION FOR ALL VERSIONS!!!!!!!!!!!!!!!
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent", 34],
+                        "Value": "/stopAnimation OrcasStories_Calvin 25/stopAnimation OrcasStories_Cetus 18/animate OrcasStories_Calvin false false 100 25 28 29 30 31 32 33 34 35 27/pause 700/animate OrcasStories_Cetus false false 100 18 32 33 34 35 28/playSound pullItemFromWater/animate OrcasStories_Calvin false true 100 27 27/pause 100/playSound pullItemFromWater/pause 450/animate OrcasStories_Cetus false true 250 28 28 28"
+                    },
+                    //y2 set up
+                    {
+                        "Operation": "Append",
                         "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
-                        "Value": "OrcasStories_Calvin 50 26 2",
+                        "Value": "OrcasStories_Calvin 48 26 2",
                         "Delimiter": "/"
                     },
                     {
                         "Operation": "Append",
                         "Target": [ "Fields", "set-up_y2", 5],
-                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 200 24 24 24 24"
                     },
+                    //y2 main
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                        "Value": "OrcasStories_Calvin 20 34 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent_y2", 5],
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 250 25 25 26 26"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent_y2", 34],
+                        "Value": "/stopAnimation OrcasStories_Calvin 25/stopAnimation OrcasStories_Cetus 18/animate OrcasStories_Calvin false false 100 25 28 29 30 31 32 33 34 35 27/pause 700/animate OrcasStories_Cetus false false 100 18 32 33 34 35 28/playSound pullItemFromWater/animate OrcasStories_Calvin false true 100 27 27/pause 100/playSound pullItemFromWater/pause 450/animate OrcasStories_Cetus false true 250 28 28 28"
+                    },
+                    //y1 Cetus set up
                     {
 				        "Operation": "Append",
 				        "Target": [ "Fields", "set-up", 5],
 				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 46 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
 			        },
+                    //y1 Cetus main
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "mainEvent", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 14 36 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    //y2 Cetus set up
                     {
 				        "Operation": "Append",
 				        "Target": [ "Fields", "set-up_y2", 5],
-				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 50 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 46 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    //y2 Cetus main
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "mainEvent_y2", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 14 36 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
 			        }
                 ]
             },
@@ -131,6 +182,7 @@
                 "Target": "Data/Festivals/summer28",
                 "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
                 "TextOperations": [
+                    ///y1 set up
                     {
                         "Operation": "Append",
                         "Target": [ "Entries", "Set-Up_additionalCharacters" ],
@@ -140,8 +192,27 @@
                     {
                         "Operation": "Append",
                         "Target": [ "Fields", "set-up", 5],
-                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 200 24 24 24 24"
                     },
+                    //y1 main
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                        "Value": "OrcasStories_Calvin 20 34 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent", 5],
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 250 25 25 26 26"
+                    },
+                    //FIX CETUS DIVE ANIMATION FOR ALL VERSIONS!!!!!!!!!!!!!!!
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent", 34],
+                        "Value": "/stopAnimation OrcasStories_Calvin 25/stopAnimation OrcasStories_Cetus 18/animate OrcasStories_Calvin false false 100 25 28 29 30 31 32 33 34 35 27/pause 700/animate OrcasStories_Cetus false false 100 18 32 33 34 35 28/playSound pullItemFromWater/animate OrcasStories_Calvin false true 100 27 27/pause 100/playSound pullItemFromWater/pause 450/animate OrcasStories_Cetus false true 250 28 28 28"
+                    },
+                    //y2 set up
                     {
                         "Operation": "Append",
                         "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
@@ -151,17 +222,48 @@
                     {
                         "Operation": "Append",
                         "Target": [ "Fields", "set-up_y2", 5],
-                        "Value": "/animate OrcasStories_Calvin false true 100 63 63 63 63"
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 200 24 24 24 24"
                     },
+                    //y2 main
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                        "Value": "OrcasStories_Calvin 20 34 2",
+                        "Delimiter": "/"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent_y2", 5],
+                        "Value": "/hideShadow OrcasStories_Calvin true/animate OrcasStories_Calvin false true 250 25 25 26 26"
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "mainEvent_y2", 34],
+                        "Value": "/stopAnimation OrcasStories_Calvin 25/stopAnimation OrcasStories_Cetus 18/animate OrcasStories_Calvin false false 100 25 28 29 30 31 32 33 34 35 27/pause 700/animate OrcasStories_Cetus false false 100 18 32 33 34 35 28/playSound pullItemFromWater/animate OrcasStories_Calvin false true 100 27 27/pause 100/playSound pullItemFromWater/pause 450/animate OrcasStories_Cetus false true 250 28 28 28"
+                    },
+                    //y1 Cetus set up
                     {
 				        "Operation": "Append",
 				        "Target": [ "Fields", "set-up", 5],
 				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 46 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
 			        },
+                    //y1 Cetus main
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "mainEvent", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 14 36 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    //y2 Cetus set up
                     {
 				        "Operation": "Append",
 				        "Target": [ "Fields", "set-up_y2", 5],
 				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 46 31 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
+			        },
+                    //y2 Cetus main
+                    {
+				        "Operation": "Append",
+				        "Target": [ "Fields", "mainEvent_y2", 5],
+				        "Value": "/addTemporaryActor OrcasStories_Cetus 80 48 14 36 2 false Character/animate OrcasStories_Cetus false true 250 18 18 19 19"
 			        }
                 ]
             }

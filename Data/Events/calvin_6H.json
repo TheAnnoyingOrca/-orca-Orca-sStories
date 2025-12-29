@@ -8,12 +8,15 @@
                 "Orca.OrcasStories_Event.OrcasStories_Calvin.6h/e Orca.OrcasStories_Event.OrcasStories_Calvin.4h/t 2000 200/w sunny/d Wed Thu Sun/f OrcasStories_Calvin 1500":"
                     ocean/
                     73 130/
-                    farmer 70 123 2 OrcasStories_Calvin 72 131 2 Elliott 72 98 2 SenS? 74 124 2/ 
+                    farmer 70 123 2 OrcasStories_Calvin 72 131 2 Elliott 72 98 2 SenS? 74 124 2/
+                    action Spiderbuttons.BETAS_UpdateAppearance SenS SenS_Default/ 
+                    setSkipActions Spiderbuttons.BETAS_UpdateAppearance SenS# Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin/
                     addTemporaryActor OrcasStories_Cetus 80 48 56 140 1 false Character/
                     showFrame OrcasStories_Cetus 28/
                     speed OrcasStories_Cetus 2/
                     action Spiderbuttons.BETAS_UpdateAppearance OrcasStories_Calvin Default/
                     addLantern 735 75 131 5/
+                    addLantern 735 70 112 5/
                     skippable/
                         animate OrcasStories_Calvin false true 200 80 80 80 81 82 83 80 80 80/
                         advancedMove farmer false 0 5 2 10/
@@ -78,7 +81,7 @@
             "Target": "Data/Events/EastScarp_Village",
             "Conditions": {
                 "HasMod |contains=stinkyvicki.IdunoftheOpenWater": "true",
-                "PLAYER_HAS_SEEN_EVENT Host IdunoftheOpenWater_Idun0Hearts": "true"
+                "PLAYER_HAS_SEEN_EVENT Host stinkyvicki.IdunoftheOpenWater_Idun0Hearts": "true"
             },
             "Entries": {
                 "Orca.OrcasStories_CalvinCasual":"
@@ -214,7 +217,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
             "Conditions": {
-                "PLAYER_HAS_SEEN_EVENT Host IdunoftheOpenWater_Idun0Hearts": "false"
+                "PLAYER_HAS_SEEN_EVENT Host stinkyvicki.IdunoftheOpenWater_Idun0Hearts": "false"
             },
             "Entries": {
                 "Orca.OrcasStories_CalvinCasual":"
@@ -578,7 +581,7 @@
                         faceDirection farmer 2 true/
                         advancedMove Elliott false 0 13 2 10/
                         pause 1000/
-                        positionOffset SenS 16 32/
+                        positionOffset SenS 12 28/
                         showFrame SenS 31/
                         pause 4000/
                         stopMusic/
@@ -654,25 +657,28 @@
                      switchEvent Orca.OrcasStories_SenExist.{{SenExist}}/
                     end/
                 ",
-                
                 "Orca.OrcasStories_SenExist.1":"
+                    pause 100/
                     speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_53.CalvinSenRelationshipAcknowledge}}\"/
                         pause 500/
-                        emote SenS? 40 false/
+                        emote SenS 60 false/
                         pause 500/
-                        speed SenS? 3/
-                        advancedMove SenS false 2 0 2 10 0 1 2 10 2 0 2 10 0 8 3 10 -3 0 2 10/
+                        speed SenS 2/
+                        positionOffset SenS -12 0/
+                        advancedMove SenS false 2 0 2 10 0 10 3 10 -2 0 2 10 0 5 2 10/
                         playSound leafrustle/
-                        pause 700/
+                        pause 900/
                         faceDirection OrcasStories_Calvin 2/
-                        pause 200/
+                        pause 1000/
                         advancedMove OrcasStories_Calvin false 0 -20 4 10/
                         pause 800/
                         globalFade/
                         viewport -2000 -2000/
+                        action Spiderbuttons.BETAS_UpdateAppearance SenS/ 
                     end position 73 129/
                 ",
-                "Orca.OrcasStories_SenExist.1":"
+                "Orca.OrcasStories_SenExist.2":"
+                    pause 100/
                     speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event6_53.CalvinSenAcknowledge}}\"/
                         pause 250/
                         shake SenS 10000/
@@ -684,8 +690,9 @@
                         pause 800/
                         globalFade/
                         viewport -2000 -2000/
+                        action Spiderbuttons.BETAS_UpdateAppearance SenS/ 
                     end position 73 129/
-                "
+                " 
             }
         }  
     ]

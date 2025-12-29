@@ -4,10 +4,42 @@
         "Core.NPCs.Cetus": "Cetus",
 
 
+
+    //Pets
+        "Core.Pets.Goober": "Goober",
+
+
     //Locations
         "Strings.OrcasStories_Calvin.SnowCritter":"It's a Snow Critter! But you aren't supposed to know what that is yet.",
         "Strings.OrcasStories_Calvin.SnowPals":"It's a Snow Calvin and a Snow Cetus!",
-    
+
+        //Calvin's Boat Stuff
+        "Core.Locations.CalBoat":"Calvin's Boat",
+
+        "Strings.OrcasStories_Calvin.CalvinBed":"It’s Calvin’s bed! There’s a plush orca on the bed. It looks weathered... but well loved.",
+        "Strings.OrcasStories_Calvin.CalvinBook.1":"There’s an old book on the counter. The title says 'Davy's Dream', it seems important to Calvin.",
+        "Strings.OrcasStories_Calvin.CalvinBook.2": "Above the book is a shelf with various figures.# A kiln-fired clay model of Cetus sits gently there, almost smiling.",
+        "Strings.OrcasStories_Calvin.CalvinBook.3": "Above the book is a shelf with various figures.# A cool dinosaur figure stands posed, silently roaring in triumph.",
+        "Strings.OrcasStories_Calvin.CalvinBook.4": "Above the book is a shelf with various figures.# A strange colorful moth figure stares back with green eyes.",
+        "Strings.OrcasStories_Calvin.CalvinBook.5": "Above the book is a shelf with various figures.# A boy with large shoes holds a comically large key. This seems to be a character from one of his games.",
+        "Strings.OrcasStories_Calvin.ShipReference.1":"There’s a wooden boat model here. The initials VH are carved into the side.",
+        "Strings.OrcasStories_Calvin.ShipReference.2":"Inside this tiny ship is an even tinier whale skull.# Looking at it is a bit uncomfortable…",
+        "Strings.OrcasStories_Calvin.CalvinFridge.1":"The fridge is filled with various jars.# Mayonnaise, grape jelly, orange juice... jellyfish samples...?",
+        "Strings.OrcasStories_Calvin.CalvinFridge.2":"There’s a drawing held on the fridge by a magnet. It appears to be a name tag with the name ‘Calvin’ drawn in letters made up of different objects.# Underneath it is an orca that looks a lot like Cetus. If Cetus was drawn by a child.",
+        "Strings.OrcasStories_Calvin.CalvinRadio.1":"A voice crackles over the radio...# ‘The song of dragons… brings misfortune…’# ...# The radio has gone silent.",
+        "Strings.OrcasStories_Calvin.CalvinRadio.2":"A voice crackles over the radio...# ‘...when the guardian of the old castle...# ...dances...by the window...you shall...# ...be granted permission...by the heavens…’# ...# The radio has gone silent.",
+        "Strings.OrcasStories_Calvin.CalvinRadio.3":"A voice crackles over the radio...# ‘...you will be granted...an audience...# ...at the edge of the end of the crimson waters...’# ...# The radio has gone silent.",
+        "Strings.OrcasStories_Calvin.CalvinRadio.4":"A voice crackles over the radio...# ‘Yes I’ll have the—'# 'Oh whoops, sorry, wrong number.’# ...# The radio has gone silent.",
+        "Strings.OrcasStories_Calvin.CalvinRadio.5":"A voice crackles over the radio...# ...# But it was only garbage noise.",
+        "Strings.OrcasStories_Calvin.CalvinLog.1":"It’s a log of Calvin’s dives. Seems like he’s had quite a few night dives lately.",
+        "Strings.OrcasStories_Calvin.CalvinLog.2":"It’s a log of Calvin’s dives. His dive partner for most of these is labeled as, unsurprisingly, Cetus.",
+        "Strings.OrcasStories_Calvin.CalvinLog.3":"There’s a journal on the desk full of Calvin’s notes. Seems like he’s keeping track of the strange creatures around the valley.# Junimos, shadows and dwarves included.",
+        "Strings.OrcasStories_Calvin.CalvinLog.4":"There’s a journal on the desk full of Calvin’s sketches and doodles. Some are recognizable... some not human.# One is of a strange, small creature wielding a large sword.",
+        "Strings.OrcasStories_Calvin.CalvinLaptop.1":"Calvin’s laptop. He has a bunch of random note tabs open.",
+        "Strings.OrcasStories_Calvin.CalvinLaptop.2":"Calvin’s laptop. Seems like he was last working in some report.",
+        "Strings.OrcasStories_Calvin.CalvinLaptop.3":"Calvin’s laptop. He left a game running... the music from it is pleasant, at least.",
+        "Strings.OrcasStories_Calvin.CalvinTank":"It's a specimen tank. Calvin must use this for samples.",
+
 
     
 

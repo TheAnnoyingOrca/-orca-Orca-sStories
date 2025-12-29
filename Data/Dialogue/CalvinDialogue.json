@@ -10,7 +10,7 @@
 				"calvin_puter": "{{i18n:Strings.OrcasStories_Calvin.calvin_puter.{{Random:{{Range:1,5}}}}}}",
 				"calvin_snooze": "{{i18n:Strings.OrcasStories_Calvin.calvin_snoose.{{Random:{{Range:1,3}}}}}}",
 				"calvin_charliebrown": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown}}",
-				"calvin_lean": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown.{{Random:{{Range:1,5}}}}}}",
+				"calvin_lean": "{{i18n:Strings.OrcasStories_Calvin.calvin_lean.{{Random:{{Range:1,5}}}}}}",
 				"calvin_lay": "{{i18n:Strings.OrcasStories_Calvin.calvin_lay.{{Random:{{Range:1,5}}}}}}",
 				"calvin_sit_kick": "{{i18n:Strings.OrcasStories_Calvin.calvin_sit_kick.{{Random:{{Range:1,5}}}}}}"
 			}
@@ -195,7 +195,7 @@
 				"calvin_puter": "{{i18n:Strings.OrcasStories_Calvin.calvin_puter.{{Random:{{Range:1,5}}}}}}",
 				"calvin_snooze": "{{i18n:Strings.OrcasStories_Calvin.calvin_snooze.{{Random:{{Range:1,3}}}}}}",
 				"calvin_charliebrown": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown}}",
-				"calvin_lean": "{{i18n:Strings.OrcasStories_Calvin.calvin_charliebrown.{{Random:{{Range:1,5}}}}}}",
+				"calvin_lean": "{{i18n:Strings.OrcasStories_Calvin.calvin_lean.{{Random:{{Range:1,5}}}}}}",
 				"calvin_lay": "{{i18n:Strings.OrcasStories_Calvin.calvin_lay.{{Random:{{Range:1,5}}}}}}",
 				"calvin_sit_kick": "{{i18n:Strings.OrcasStories_Calvin.calvin_sit_kick.{{Random:{{Range:1,5}}}}}}",
 				"calvin_think": "{{i18n:Strings.OrcasStories_Calvin.calvin_think.{{Random:{{Range:1,3}}}}}}"
@@ -219,8 +219,15 @@
     		"Entries": 
         		{
 					"OrcasStoriesSnowCritter": "{{i18n:Strings.OrcasStories_Calvin.SnowCritter}}",
-					"OrcasStoriesSnowCalvinSnowCetus":"{{i18n:Strings.OrcasStories_Calvin.SnowPals}}"
-				
+					"OrcasStoriesSnowCalvinSnowCetus":"{{i18n:Strings.OrcasStories_Calvin.SnowPals}}",
+					"CalvinBed": "{{i18n:Strings.OrcasStories_Calvin.CalvinBed}}",
+					"CalvinBook": "{{i18n:Strings.OrcasStories_Calvin.CalvinBook.{{Random:{{Range:1,5}}}}}}",
+					"ShipReference": "{{i18n:Strings.OrcasStories_Calvin.ShipReference.{{Random:{{Range:1,2}}}}}}",
+					"CalvinFridge": "{{i18n:Strings.OrcasStories_Calvin.CalvinFridge.{{Random:{{Range:1,2}}}}}}",
+					"CalvinRadio": "{{i18n:Strings.OrcasStories_Calvin.CalvinRadio.{{Random:{{Range:1,5}}}}}}",
+					"CalvinLog": "{{i18n:Strings.OrcasStories_Calvin.CalvinLog.{{Random:{{Range:1,4}}}}}}",
+					"CalvinLaptop": "{{i18n:Strings.OrcasStories_Calvin.CalvinLaptop.{{Random:{{Range:1,3}}}}}}",
+					"CalvinTank": "{{i18n:Strings.OrcasStories_Calvin.CalvinTank}}"
 				}
         },
         {
@@ -240,7 +247,8 @@
 		    "Target":"Data/Festivals/summer28",
 			"Entries": {
 			
-				"OrcasStories_Calvin": "{{i18n:Core.OrcasStories_Calvin.MoonlightDialogue}}"
+				"OrcasStories_Calvin": "{{i18n:Core.OrcasStories_Calvin.MoonlightDialogue}}",
+				"OrcasStories_Calvin_y2": "{{i18n:Core.OrcasStories_Calvin.MoonlightDialogue_Y2}}"
 				}
             },
 		

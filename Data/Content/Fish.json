@@ -26,7 +26,7 @@
         "Action": "EditData",
         "Target": "Data/Fish",
         "Entries": {
-          "OrcasStories_SalmonShark": "Salmon Shark/80/mixed/36/72/600 1400/fall winter/rainy/null/4/.3/.5/5/false"
+          "OrcasStories_SalmonShark": "Salmon Shark/80/mixed/36/72/600 1400/fall winter/both/null/4/.3/.5/5/false"
         }
       },
       {

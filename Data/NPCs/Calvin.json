@@ -1,0 +1,147 @@
+{
+    "Changes": [
+        {
+                "LogName": "Calvin Data",
+                "Action": "EditData",
+                    "Target": "Data/Characters",
+                    "Entries": {
+                        "OrcasStories_Calvin": {
+                            "DisplayName": "{{i18n:Core.NPCs.Calvin}}", 
+                            "BirthSeason": "summer",
+                            "BirthDay": 14,
+                            "HomeRegion": "Town",
+                            "Gender": "Male",
+                            "Age": "Teen",
+                            "Manner": "Rude",
+                            "SocialAnxiety": "Outgoing",
+                            "Optimism": "Neutral",
+                            "SocialTab": "UnknownUntilMet",
+                            "SpawnIfMissing": true,
+
+                            "Breather": false,
+                            "DumpsterDiveEmote": "40",
+                            "DumpsterDiveFriendshipEffect":"0",
+
+                            "CanBeRomanced": false,
+                            "Appearance": [
+                                
+                                {
+                                    "Id": "Moonlight Jelly",
+                                    "Condition": "IS_EVENT festival_summer28",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_wetsuit",
+                                    "Sprite": "Characters/OrcasStories_Calvin_wetsuit",
+                                    "Precedence": -400
+                                },
+                                {
+                                    "Id": "Outdoor Summer",
+                                    "Condition": "SEASON Summer",
+                                    "Season": "summer",
+                                    "Indoors": false,
+                                    "Outdoors":true,
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_summer_outdoors",
+                                    "Sprite": "Characters/OrcasStories_Calvin_summer_outdoors",
+                                    "Precedence": -300
+                                },
+                                {       
+                                    "Id": "Summer",
+                                    "Condition": "SEASON Summer",
+                                    "Season": "summer",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_summer",
+                                    "Sprite": "Characters/OrcasStories_Calvin_summer",
+                                    "Precedence": -120
+                                },
+                                {
+                                    "Id": "Outdoor Default",
+                                    "Indoors": false,
+		                            "Outdoors": true,
+                                    "Condition": "!SEASON Summer",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_outdoors",
+                                    "Sprite": "Characters/OrcasStories_Calvin_outdoors",
+                                    "Precedence": -110
+                                },
+                                {       
+                                    "Id": "Default",
+                                    "Condition": "!SEASON Summer",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_default",
+                                    "Sprite": "Characters/OrcasStories_Calvin_default",
+                                    "Precedence": 0
+                                },
+                                {       
+                                    "Id": "Wetsuit",
+                                    "Portrait": "Portraits/OrcasStories_Calvin_portrait_wetsuit",
+                                    "Sprite": "Characters/OrcasStories_Calvin_wetsuit",
+                                    "Precedence": 400
+                                }
+                            ],
+
+
+                        "Home": [
+                            {
+                                "Id": "Default",
+                                "Location": "EastScarp_VillageInn",
+                                "Tile": {
+                                "X": 27,
+                                "Y": 27
+                                },
+                                "Direction": "Down"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "LogName": "Calvin Schedule Vanilla",
+                "Action": "Load",
+                "Target": "Characters/schedules/OrcasStories_Calvin",
+                "FromFile": "Data/Schedules/Calvin/OrcasStories_Calvin_Schedule_Vanilla.json",
+                "When": {
+                        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+                    }
+            },
+            {
+                "LogName": "Calvin Schedule Expanded",
+                "Action": "Load",
+                "Target": "Characters/schedules/OrcasStories_Calvin",
+                "FromFile": "Data/Schedules/Calvin/OrcasStories_Calvin_Schedule_Expanded.json",
+                "When": {
+                        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+                    }
+            },
+            {
+            "LogName": "Gift Tastes Empty Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": { "OrcasStories_Calvin": "//////////" }
+        },
+            {
+            "LogName": "Calvin's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Fields": {
+                "OrcasStories_Calvin":{
+                //Love
+                    "0": "{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Love}}",
+                    "1": "107 242 FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Shark_Tooth FlashShifter.StardewValleyExpandedCP_Shark OrcasStories_SalmonShark ",
+
+                    //Like
+                    "2": "{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Like}}",
+                    "3": "fish fish_ocean fish_lake fish_river category_fish 152 153 157 169 198 209 212 213 214 219 225 226 227 228 265 392 393 394 397 424 426 728 730 732 733 812 SmokedFish SkillBook_1 Book_Crabbing Book_Roe FlashShifter.StardewValleyExpandedCP_Big_Conch FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
+
+                    //Dislike
+                    "4": "{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Dislike}}",
+                    "5": "flower_item seeds 202 253 395 433 458 460 463 464 873 879 921",
+
+                    //Hate
+                    "6": "{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Hate}}",
+                    "7": "Trash Junk 286 287 288 346 348 441 459 889 Book_Friendship",
+
+                    //Neutral
+                    "8": "{{i18n:Gifts.OrcasStories_Calvin.GiftReaction.Neutral}}",
+                    "9": "166 275 305 685 686 687 691 692 693 694 695 703 769 774 856 874 877 908 SonarBobber DeluxeBait SpecificBait ChallengeBait"
+                }
+            }
+        }
+
+    ]
+}
+    

@@ -1,0 +1,218 @@
+{
+    "Changes": [
+        {
+            "LogName": "Departure",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "Orca.OrcasStories_Event.OrcasStories_Calvin.8h/e Orca.OrcasStories_Event.OrcasStories_Calvin.6h/t 600 1200/d Mon Tue Wed Fri Sat Sun/f OrcasStories_Calvin 2000":"
+                    continue/
+                    64 15/
+                    farmer 64 16 2 OrcasStories_Calvin 64 18 0/
+                    setSkipActions SetNpcInvisible OrcasStories_Calvin 1/
+                    addConversationTopic CalvinCetusGone 1/
+                    skippable/
+                        pause 1500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8_1.Calvin}}\"/
+                        pause 1000/
+                        faceDirection OrcasStories_Calvin 1 false/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8_2.Calvin}}\"/
+                        pause 200/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 700/
+                    quickQuestion #\"{{i18n:Events.OrcasStories_Calvin.Event8_3.Question1}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event8_3.Question2}}\" (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8_4.CalvinAnswer1}}\" (break) speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8_4.CalvinAnswer2}}\"/
+                        faceDirection OrcasStories_Calvin 1 false/
+                        pause 100/
+                        faceDirection OrcasStories_Calvin 2 false/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8_5.Calvin}}\"/                        
+                        pause 800/
+                        globalFade/
+                        viewport -2000 -2000/
+                        action SetNpcInvisible OrcasStories_Calvin 1/
+                    end/
+
+
+            "
+            }
+        },
+        {
+            "LogName": "It Didn't Work",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Orca.OrcasStories_Event.OrcasStories_Calvin.8.2h/e Orca.OrcasStories_Event.OrcasStories_Calvin.8h/NPCVisible OrcasStories_Calvin/A EastScarp_Village/t 1900 2400/f OrcasStories_Calvin 2000":"
+                    ocean/
+                    46 130/
+                    farmer 46 118 2 OrcasStories_Calvin 45 130 2/
+                    addTemporaryActor OrcasStories_Cetus 80 48 44 134 0 false Character/
+                    changeName OrcasStories_Cetus {{i18n:Core.NPCs.Cetus}}/
+                    showFrame OrcasStories_Cetus 8/
+                    ignoreCollisions OrcasStories_Calvin/
+                    ignoreCollisions farmer/
+                    ignoreCollisions OrcasStories_Cetus/
+                    addLantern 735 44 130 5/
+                    addConversationTopic OrcaBoy/
+                    skippable/
+                        pause 5000/
+                        move farmer 0 9 2 false/
+                        emote OrcasStories_Calvin 8 false/
+                        faceDirection OrcasStories_Calvin 0 false/
+                        pause 1000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_1}}\"/
+                        pause 1000/
+                        faceDirection OrcasStories_Calvin 2 false/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_2}}\"/
+                        showFrame OrcasStories_Calvin 67/
+                        pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_3}}\"/
+                        pause 500/
+                         showFrame OrcasStories_Calvin 68/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_4}}\"/
+                        pause 200/
+                        emote farmer 60 false/
+                        faceDirection OrcasStories_Calvin 1 false/
+                        pause 400/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_5}}\"/
+                        pause 500/
+                        faceDirection OrcasStories_Calvin 2 false/
+                        showFrame OrcasStories_Calvin 67/
+                        shake OrcasStories_Calvin 5000/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_6}}\"/
+                        pause 300/
+                        emote OrcasStories_Cetus 28 false/
+                        pause 1000/
+                    question null #\"{{i18n:Events.OrcasStories_Calvin.Event8.2_7.Question1}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event8.2_7.Question2}}\"/
+                        friendship OrcasStories_Calvin 125/
+                        pause 200/
+                        move farmer 0 3 3 true/
+                        faceDirection OrcasStories_Calvin 1 true/
+                        showFrame OrcasStories_Calvin 4/
+                        pause 300/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_8}}\"/
+                        pause 200/
+                        emote farmer 40 false/
+                        faceDirection farmer 2 true/
+                        pause 100/
+                        faceDirection OrcasStories_Calvin 2 false/
+                        stopMusic/
+                    quickQuestion #\"{{i18n:Events.OrcasStories_Calvin.Event8.2_9.Question1}}\"#\"{{i18n:Events.OrcasStories_Calvin.Event8.2_9.Question2}}\" (break) switchEvent Orca.OrcasStories_Mad (break) switchEvent Orca.OrcasStories_Valid/
+                    end/
+                ",
+                "Orca.OrcasStories_Mad":"
+                    pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_Mad_1}}\"/
+                        pause 500/
+                ",
+                "Orca.OrcasStories_Valid":"
+                    pause 500/
+                    speak OrcasStories_Calvin \"{{i18n:Events.OrcasStories_Calvin.Event8.2_Valid_1}}\"/
+                        pause 500/
+                ",
+            }
+
+
+        }
+    ]
+}
+
+
+
+
+
+
+
+// Choice 1:
+// Calvin: ""
+// Calvin faces ocean with Farmer
+// long pause
+// farmer turns and is about to speak...
+// Calvin: "I know, I know. Mopping about it won't help. Being mad, won't help. But what are we even supposed to do?"
+// both stare at Cetus for a while
+
+// Choice 2:
+// add friendship 125
+// Calvin: ""
+// Calvin looks to farmer, who looks at Calvin
+// Farmer choice: "It happens, but you must focus on what's best for Cetus." or "You're human. You're complicated. Feelings aren't simple.
+// Choice 2a:
+// Calvin faces sea
+// "Yeah... you're right. I just... have to keep my head up and focus on the goal. I believe in Cetus, he just needs time."
+// pause
+// Farmer turns to face ocean
+// more pause 
+// Choice 2b:
+// add friendship 125
+// Calvin: "... I guess so. Orcas are pretty complicated too, all animals are. I'm sure if the roles were reversed, Cetus would be conflicted too."
+// Calvin looks to sea, farmer follows
+// long pause
+// Calvin: "Ah, you're surprisingly good at spontaneous pep talks, ya know that?" 
+// farmer smiles
+// long pause while they stare at the ocean
+
+
+// after pause 
+// Calvin and Farmer face each other
+// Calvin: "Alright. I guess that's enough moping around here for now. We're all tired, it's late, and I imagine Cetus is out of it too." 
+// Farmer agrees
+// Calvin: "It's going to take a lot of work to pick up where we've been left, but somehow... I feel like it's gonna turn out alright."
+// Farmer smiles
+// Calvin faces Cetus
+// Calving: "Goodnight, bud. We'll figure this out, I promise. Rest well, okay?"
+// Cetus smiles.
+// Calvin and farmer turn to leave
+// Cetus turns around and swims for a bit
+// everyone stops at a splashing sound
+// all turn to the right to see 3 dolphins swim up, Cetus's friends
+// They swim around and stop in front of Cetus. 
+// Calvin: "Hey, it's Cetus's friends. I almost can't believe their timing."
+// cal and farmer face each other
+// Calvin: "Those dolphins have been good friends to him so far. And they're increidbly empathetic creatures. They must've noticed how quiet Cetus has been and came to check on him."
+// dolphins and Cetus sing to each other.
+// both face ocean again
+// Calvin: "Wait... you don't think...!"
+// Calvin rushes to the water's edge
+// Calvin: "Cetus... are you... going to join them?"
+// Cetus pauses
+// Calvin: "They're you're friends, Cetus. They might be a bit different from you but..."
+// Calvin turns to farmer
+// Calvin: "Family comes in all shapes."
+// Cetus is sad, and moves towards Calvin
+// Calvin: "I know, bud. It's scary. But you're ready! I know you are. You've earned this."
+// Cetus pauses
+// Calvin: "And remember what I said to you before. We'll still be friends. No matter how far apart we are. I'll still think of you, even though I know you'll be okay without me."
+// Catus cries
+// Calvin begisn to cry
+// Calvin sits at the edge of the dock
+// Calvin: "And you can always come visit your friends here! Even if I'm gone, @ will still be around. And maybe, someday, the stars will align, and I can come back in the future! And we'll see each other again..."
+// Cetus swims up clsoe to Calvin
+// Calvin hugs Cetus
+// Calvin: "You'll do great, I know it."
+// cetus cries again
+// pause on hug
+// Calvin eventually lets go
+// Calvin: "It's been one heck of a ride, bud. I'll see you around, yeah?"
+// Cetus sings, before backing away.
+// Cetus looks at the dolphins again, who also sing
+// the dolphins swim away to the right, and Cetus follows
+// Calvin and farmer watch
+// pause
+// Calvin: "And there he goes..."
+// Calvin slowly turns to look at farmer
+// Calvin: "I... I don't think I want to stand here any longer. 
+// Calvin turns around the walk, farmer looks after him
+// Calvin stops and turns around.
+// Calvin: "Hey, uh. I don't... really want to be alone right now. Do you wanna chill at the inn for a bit? We could just talk, or sit around or..."
+// Calvin turns back around.
+// Calvin: "It's up to you. 
+// Farmer choice: Stay with Calvin (end day) or I got places to be (leave)
+// choice 1: 
+// Calvin: Thanks, @. I appreciate it."
+//both walk off and fade to black, end day
+
+//choice 2: 
+// Calvin: "I see."
+// Calvin walks off as the farmer watches
+// event end

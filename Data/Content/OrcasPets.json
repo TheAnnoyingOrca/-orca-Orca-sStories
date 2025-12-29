@@ -1,0 +1,61 @@
+{
+ "Changes": [
+    { 
+      "Action": "EditData",
+      "Target": "Data/Pets",
+	  "Entries": {
+		"Orca.Goober": {
+			"Id": "Orca.Goober",
+			"DisplayName": "{{i18n:Core.Pets.Goober}}",
+			"BarkSound": "serpentHit", 
+			"ContentSound": "batScreech", 
+			"AdoptEventLocation": "",
+			"AdoptionEventId": "",
+			"SummitPerfectionEvent": {
+				"SourceRect": {
+					"X": 0,
+					"Y": 96,
+					"Width": 32,
+					"Height": 32
+				},
+			"AnimationLength": 4,
+			"Flipped": false,
+			"Motion": "-4, 0",
+			"PingPong": false
+			},
+			"MoveSpeed": 4,
+			"SleepOnBedChance": 0.1,
+			"SleeponRugChance": 0.2,
+			"SleepNearBedChance": 0.3,
+			
+			
+			"Behaviors": [
+
+
+            ],
+			"Breeds": [
+              {
+                "Id": "Orca.Goober_Goober",
+                "Texture": "Mods\\Orca.OrcasStories\\Toothless",
+                "IconTexture": "Mods\\Wem.Toothless\\ToothlessIcon",
+                "IconSourceRect": {
+                  "X": 0,
+                  "Y": 0,
+                  "Width": 16,
+                  "Height": 16,
+                },
+                "CanBeChosenAtStart": true,
+                "CanBeAdoptedFromMarnie": false,
+              },  
+			],
+			"GiftChance": 0.3,
+			"Gifts": [
+
+
+
+            ]
+        }
+    }
+    }
+    ]
+}

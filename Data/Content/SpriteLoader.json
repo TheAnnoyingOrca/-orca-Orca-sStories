@@ -223,8 +223,8 @@
             "Action": "EditData",
             "Target": "Data/animationDescriptions",
             "Entries": {
-                "calvin_sit_kick": "16/16 16 16 16 16 17 18 18 19 16 16 16/16/Characters\\Dialogue\\OrcasStories_Calvin:calvin_sit_kick/offset 0 80/laying_down",
-                "calvin_lay": "28/28 28 28 29 29 29 30 30 30 31 31 31/28/Characters\\Dialogue\\OrcasStories_Calvin:calvin_lay/offset 0 32/laying_down",
+                "calvin_sit_kick": "16/16 16 16 16 16 17 18 18 19 16 16 16/16/Characters\\Dialogue\\OrcasStories_Calvin:calvin_sit_kick/offset 0 15/laying_down",
+                "calvin_lay": "28/28 28 28 29 29 29 30 30 30 31 31 31/28/Characters\\Dialogue\\OrcasStories_Calvin:calvin_lay/offset 0 0/laying_down",
                 "calvin_note": "32/32 32 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 33 34 35 32 32/32/Characters\\Dialogue\\OrcasStories_Calvin:calvin_note",
                 "calvin_puter": "20/20 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 21 22 23 24 25 26 26 26 26 26 26 26 27 27 20/20/Characters\\Dialogue\\OrcasStories_Calvin:calvin_puter/offset 0 -64/laying_down",
                 "calvin_laugh": "40/40/40",

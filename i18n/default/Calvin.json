@@ -60,7 +60,7 @@
         "Core.OrcasStories_Calvin.spring_Fri.2":"Don't tell anyone, but I'm not actually good at Prarie King. I just... I don't know it doesn't click!$4",
         "Core.OrcasStories_Calvin.spring_Fri.3":"Fridays have lost all of their grandure to me.$0#$b# Since weekends are more of the same, Friday is just another weekday.$0",
         "Core.OrcasStories_Calvin.spring_Fri.4":"Are you going to spend any time by the water? Cetus will appreciate it!# You're like one of his top five favorite people.",
-        "Core.OrcasStories_Calvin.spring_Fri.5":"I managed to pick up an eel with my gloves the other day. It was a wee bit squirmy, but I was gentle.$0#$b# Poor Jodi, she looked at me like I had spider crawling out of my ears.$1#$b# The eel was returned safely, so alls well that ends well.$0# $t CalvinEel 3",
+        "Core.OrcasStories_Calvin.spring_Fri.5":"I managed to pick up an eel with my gloves the other day. It was a wee bit squirmy, but I was gentle.$0#$b# Poor Jodi, she looked at me like I had spider crawling out of my ears.$1#$b# The eel was returned safely, so alls well that ends well.$0#$t CalvinEel 3",
 
         "Core.OrcasStories_Calvin.spring_Sat.1":"Cetus is turning out to be a pretty good hunter. He's feeding himself rather well without needing to rely on me already.$6# This is surprising, since he's always been the laziest organism on this planet I've ever had the pleasure of working with!$1",
         "Core.OrcasStories_Calvin.spring_Sat.2":"What? Expecting me to party today or something?$3#$b# Nah. I'd rather be staring at fish all day, actually.$0",
@@ -92,7 +92,7 @@
         "Core.OrcasStories_Calvin.summer_Wed.2":"Wow, no assignments to work on is pretty great!$6# Well, I suppose I do have some later in the summer, but now is all the fun part. Field work!$1",
         "Core.OrcasStories_Calvin.summer_Wed.3":"I must admit, Pelican Town is quite pretty in the summer.$0#$b# Though I think I appreciate the coziness of ol' Scarp more.$20",
         "Core.OrcasStories_Calvin.summer_Wed.4":"Thinking about tracking the migratory patterns of the local bird species, but I don't really know where to start.$0",
-        "Core.OrcasStories_Calvin.summer_Wed.5":"Should I ask Abigail or Sam if I could hang out with them sometime? No... I probably shouldn't.# If only orcas could play video games. $t CalvinNoHangOut 3",
+        "Core.OrcasStories_Calvin.summer_Wed.5":"Should I ask Abigail or Sam if I could hang out with them sometime? No... I probably shouldn't.$20#$b# If only orcas could play video games.$2#$t CalvinNoHangOut 3",
 
         "Core.OrcasStories_Calvin.summer_Thu.1":"Make sure to pick up any trash you see lying around, farmer. The ecosystem needs our help in order to keep safe... from ourselves.$3",
         "Core.OrcasStories_Calvin.summer_Thu.2":"Man, it's such a nice day... I kinda wish I could spend the day in the water with Cetus, but he's out today.$0#$b# We used to swim laps back at the park. He won most of the time... and I think the times he didnt he lost intentionally...$4",
@@ -100,7 +100,7 @@
         "Core.OrcasStories_Calvin.summer_Thu.4":"Buy any fun summer seeds from Pierre's recently?$0#$b# Sorry, that's a weird question, I'm just trying to relate to your interests or whatever.$20",
         "Core.OrcasStories_Calvin.summer_Thu.5":"I wonder what it would be like to be up in the mountains when it's late. Listening to toad chorus and the symphony of crickets.$0# The sound of waves is wonderful but sometimes a change of pace is good, ya know?$17",
 
-        "Core.OrcasStories_Calvin.summer_Fri.1":"Today seems like a good day for ice cream, doesn't it? Guess I'll need to pay Alex a visit.$13 $t CalvinIceCream 1",
+        "Core.OrcasStories_Calvin.summer_Fri.1":"Today seems like a good day for ice cream, doesn't it? Guess I'll need to pay Alex a visit.$13#$t CalvinIceCream 1",
         "Core.OrcasStories_Calvin.summer_Fri.2":"I don't suppose you've ever played Kingdom Cross have you?$0# Ah, who am I kidding, you're probably way too busy to sit down and play that.$4",
         "Core.OrcasStories_Calvin.summer_Fri.3":"Fridays feel even less special in the summer.$3#$b# What am I gonna do, sit around and do nothing? I could be doing /something/ right?$1",
         "Core.OrcasStories_Calvin.summer_Fri.4":"So many people down at the beach on days like these! Cetus definitely loves the attention!$6#$b# I just hope people don't freak out when he inevitably decides to get a little closer.$4",
@@ -132,7 +132,7 @@
         "Core.OrcasStories_Calvin.fall_Tue.4":"If I ever tell you I'm gonna try and get up early, tell me I'm crazy to my face. Slap me if I don't believe you.$5",
         "Core.OrcasStories_Calvin.fall_Tue.5":"I watched a squirrel bury one last acorn before climbing back into a tree and disappearing.$0#$b# It's funny, countless trees make are planted each year, purely because those silly little guys forget about the things they've put in the ground.$1",
 
-        "Core.OrcasStories_Calvin.fall_Wed.1":"Abigail and I have a very similar class, despite our different cirriculums.$0#$b# So we've decided to share notes! Hers are a bit neater than mine.$4# $t CalvinAbigailNotes 3",
+        "Core.OrcasStories_Calvin.fall_Wed.1":"Abigail and I have a very similar class, despite our different cirriculums.$0#$b# So we've decided to share notes! Hers are a bit neater than mine.$4#$t CalvinAbigailNotes 3",
         "Core.OrcasStories_Calvin.fall_Wed.2":"Ugh, I don't want to work on homework tonight. But I gotta.$3# Maybe I'll just going to spend the whole day with Cetus instead.$6",
         "Core.OrcasStories_Calvin.fall_Wed.3":"Catching any interesting fish this fall? If so, do let me know.$0# Some fish are only abundant this time of year, so if I recommend keeping track of what appears when.$0",
         "Core.OrcasStories_Calvin.fall_Wed.4":"This town has so many pretty colors this time of year. Reminds me of my hometown.$0#$b# The good parts, I mean.$7",
@@ -206,7 +206,17 @@
         "Core.OrcasStories_Calvin.winter_Sun.4":"Make sure to wear gloves and nice warm socks this time of year. Gotta protect your digits, @.$0",
         "Core.OrcasStories_Calvin.winter_Sun.5":"The weeks feel like they're flying by now. I'm looking forward to the new year, even though I'm not happy with how fast it's coming to pass.$20",
 
-     
+        // 8h to 10h Dialogue
+        "Core.OrcasStories_Calvin.8hDays_Mon":"It still doesn't really feel real, does it?$2",
+        "Core.OrcasStories_Calvin.8hDays_Tue":"It's weird... never thought I'd miss geting up so early in the morning...$2",
+        "Core.OrcasStories_Calvin.8hDays_Wed":"I think I'd rather be ablone right now, sorry.$2",
+        "Core.OrcasStories_Calvin.8hDays_Thu":"I guess this day is like how it normally is... but even then it still doesn't feel good.$3",
+        "Core.OrcasStories_Calvin.8hDays_Fri":"Hey, sorry. I'm not really feeling it right now.$2# Could we talk some other time?$16",
+        "Core.OrcasStories_Calvin.8hDays_Sat":"Thanks for checking in on me.$17 I should probably be working on something right now but... I couldn't bring myself to.$2",
+        "Core.OrcasStories_Calvin.8hDays_Sun":"...$2",
+
+
+
 
         //Specific Season Dates
 
@@ -251,7 +261,7 @@
         "Core.OrcasStories_Calvin.troutderby_start":"The Trout Derby! Man, I wish I could participate.$1#$b# I would like you to know, however, that I WILL be accepting any and all trout specimens you might find. Please and thank you.$0",
         "Core.OrcasStories_Calvin.troutderby_end":"So the Trout Derby nears it's end. Tis a shame, I would've liked to gather more samples.$6",
         "Core.OrcasStories_Calvin.spiriteve_prelude":"I wish I could celebrate with y'all tomorrow. Spirit's Eve is probably my favorite holiday. But...$2#$b# I still don't want to leave Cetus on his own.$3# Save me some candy, aye?$1",
-        "Core.OrcasStories_Calvin.spiriteve_missed":"Oh. Hey, you still came to visit. Didnae expect that with all of the Spirit's Eve stuff going on. Thanks for stopping by, it means a lot.$0# Sorry, I havne't got any candy for ya.$1",
+        "Core.OrcasStories_Calvin.spiriteve_missed":"Oh. Hey, you still came to visit. Didnae expect that with all of the Spirit's Eve stuff going on. Thanks for stopping by, it means a lot.$0# Sorry, I haven't got any candy for ya.$1",
         "Core.OrcasStories_Calvin.icefestival_prelude":"Ice baby! Funny that y'all have a festival just for ice fishing.$1#$b# If only Cetus could travel to the lake.$2",
         "Core.OrcasStories_Calvin.squidfest_start":"Aw man, squids are so cool!$1#$b# Cetus is gonna have a blast tossing em around for fun.$0# I kinda feel bad for the squids, but this is typical orca behavior, so I shouldn't scold him for making progress on being a wild orca.$3",
         "Core.OrcasStories_Calvin.squidfest_end":"Couldn't expect it to last forever. But hey! Cetus had fun.$1# Hope you did too, of course. Caught a couple squids myself.$0# With what fishing pole, you ask?$0#$b# Heh, who says I need one?",
@@ -276,7 +286,7 @@
             //"Core.OrcasStories_Calvin.eastScarpInnSleep":"",
             //"Core.OrcasStories_Calvin.eastScarpInnPlay":"",
             //"Core.OrcasStories_Calvin.eastScarpSenCavePeak":"",
-        "Core.OrcasStories_Calvin.sewerCommentary": "This place is foul.$5#$b# But... there's something off about it.$7#$b#. I swear I saw something in the water...$3",
+        "Core.OrcasStories_Calvin.sewerCommentary": "This place is foul.$5#$b# But... there's something off about it.$7#$b# I swear I saw something in the water...$3",
 
 
 
@@ -301,7 +311,8 @@
 
 
         "Core.OrcasStories_Calvin.LuauDialogue":"Man, Cetus must've missed the attention more than I thought. Never seen 'em be so happy to see people.$6",
-        "Core.OrcasStories_Calvin.MoonlightDialogue":"Dinnae worry, farmer, Cetus isn't in any danger. The stings from the Lunaloos are pretty negligable to the blubber of an orca.$0",
+        "Core.OrcasStories_Calvin.MoonlightDialogue":"I'll be in the water with Cetus to watch the lunaloos swim by.$0# What, worried I'll get stung?$1#$b# Relax, farmer, it's quite easy to avoid a sting when you know what you're doing.$0#$b# And of course, respecting the animal in the process.$17",
+        "Core.OrcasStories_Calvin.MoonlightDialogue_Y2":"Dinnae worry, farmer, Cetus isn't in any danger. The stings from the Lunaloos are pretty negligable to the blubber of an orca.$0",
         //"Core.OrcasStories_Calvin.MoonlightDialogue_PostStory":"Don't worry, Cetus isn't in any danger. The stings from the Lunaloos are pretty negligable to the blubber of an orca.$0"
 
         //Strings
@@ -345,8 +356,8 @@
 
             "Strings.OrcasStories_Calvin.calvin_sit_kick.1":"Great view, huh?$0#$b# If time could stop, I'd sit here forever.$17",
             "Strings.OrcasStories_Calvin.calvin_sit_kick.2":"This is a perfect place to stop and think, isn't it?$0",
-            "Strings.OrcasStories_Calvin.calvin_sit_kick.3":"Sit and watch long enough, and you'll a whale now and then.$0",
-            "Strings.OrcasStories_Calvin.calvin_sit_kick.4":"I come up here to be alone with the sea, but I don't mind if you want to take a seat.$0",
+            "Strings.OrcasStories_Calvin.calvin_sit_kick.3":"Sit and watch long enough, and you'll see a whale now and then.$0",
+            "Strings.OrcasStories_Calvin.calvin_sit_kick.4":"I come here to be alone with the sea, but I don't mind if you want to take a seat.$0",
             "Strings.OrcasStories_Calvin.calvin_sit_kick.5":"My mom would call me lazy, if she knew I spent my evenings staring at the ocean.$20#$b# But I don't care. It's sights like these that make all the doubts disappear.$0",
             "Strings.OrcasStories_Calvin.calvin_think.1":"",
             "Strings.OrcasStories_Calvin.calvin_think.2":"",
@@ -552,7 +563,7 @@
             "Events.OrcasStories_Calvin.Event4_16.Calvin":"Thankfully a miss. The only injuries are on his teeth and gums. It's clear he's been gnawing on things he shouldn't be.$22#$b# This is a bad habit he's had since captivity, but I'd hoped he'd move on from it when his surroundings became less restrictive.$20#$b# You can't be doing this, bud. It's not good for you.$2",
             "Events.OrcasStories_Calvin.Event4_17.Cetus":"Errrrrr....",
             "Events.OrcasStories_Calvin.Event4_18.Jacob":"Well obviously bringing him in for an X-ray is out of the question, so I'll run whatever tests I can to see what I find.$0#$b# But if not, we'll need to find some outside help.$2",
-            "Events.OrcasStories_Calvin.Event4_19.Calvin":"IWOA has a bigger vessel thats more equipt for dealing with anything internal but...$22#$b# He isn't super fond of their machines, unsurprisingly.$16#$b# He much prefers the care of humans.$17",
+            "Events.OrcasStories_Calvin.Event4_19.Calvin":"IWOA has a bigger vessel thats more equipped for dealing with anything internal but...$22#$b# He isn't super fond of their machines, unsurprisingly.$16#$b# He much prefers the care of humans.$17",
             "Events.OrcasStories_Calvin.Event4_20.Calvin":"Huh? What's that look for? You really wanna help out?$0#$b# Well, sorry to tell you, but I doubt you're qualified to be dealing with rehabilitation of large marine life.$3",
             "Events.OrcasStories_Calvin.Event4_21.Calvin":"But, as much as I should probably say no...$21#$b# Cetus likes you and being surrounded by trusted people will be good for him at a time like this.$0#$b# Without his home pod, he has nobody to fall back on except us.$22",
             "Events.OrcasStories_Calvin.Event4_22.Calvin":"So I'll let you take notes.$0#$b# But you better write down exactly what I say, got it?$5#$b# I'll have your hide otherwise!$1",
@@ -589,7 +600,7 @@
             "Events.OrcasStories_Calvin.Event6A_18.Answer3":"Liberating.",
             "Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer1":"Aye, I'd imagine. It's a lot... quieter out here. For better or worse.$0#$b# But I get it, really. I think about the sea and think the same thing.$14",
             "Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer2":"Ah, interesting. I suppose it's best not to dwell on the past. Perhaps I should take a page out of your book.$3",
-            "Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer3":"Cheers to that! I might've been a big leap, but I don't think I'd go back, if it were up to me.$6",
+            "Events.OrcasStories_Calvin.Event6A_19.CalvinAnswer3":"Cheers to that! It might've been a big leap, but I don't think I'd go back, if it were up to me.$6",
             "Events.OrcasStories_Calvin.Event6A_20.Calvin":"There's something about this valley, something I've never really been able to experience.$17",
             "Events.OrcasStories_Calvin.Event6A_21.Calvin":"I think he'll love it here. Cetus, I mean.$0",
             "Events.OrcasStories_Calvin.Event6A_22.Calvin":"He's done so well here, and he seems happier than ever.$17#$b# I'm just a little nervous about how everything will go down.$2",
@@ -653,13 +664,35 @@
             "Events.OrcasStories_Calvin.Event6_53.CalvinSenAcknowledge":"Guess you heard all that, huh...?$9",
             "Events.OrcasStories_Calvin.Event6_53.CalvinSenRelationshipAcknowledge":"If you're here for @, the coast is clear now.$17",
             
-
-
-
-
             //7h
 
             //8h
+            "Events.OrcasStories_Calvin.Event8_1.Calvin":"@, hey. Good morning.$3#$b# Looks like today is the day...$2",
+            "Events.OrcasStories_Calvin.Event8_2.Calvin":"It got here pretty fast, didn't it?$18#$b# Wish you could be there, honestly. But I don't think I can take you along.$18",
+            "Events.OrcasStories_Calvin.Event8_3.Question1":"Is there really nothing I can do to come along?",
+            "Events.OrcasStories_Calvin.Event8_3.Question2":"I wish I had more time to say goodybe...",
+            "Events.OrcasStories_Calvin.Event8_4.CalvinAnswer1":"Trust me, I tried. But you don't have the proper certification and all that junk.$3#$b# It's a shame, Cetus would want to say goodbye too.$2",
+            "Events.OrcasStories_Calvin.Event8_4.CalvinAnswer2":"Yeah... me too. Everything just feels like it's happening so fast.$2",
+            "Events.OrcasStories_Calvin.Event8_5.Calvin":"Sorry, @. I'll...$16#$b# I'll see you around.$2",
+
+
+            
+            "Events.OrcasStories_Calvin.Event8.2_1":"Oh. Hey, @. $3#$b# Sorry, but now isn't...$2#$b# Oh who am I kidding?! Things have gone terribly, @!$7",
+            "Events.OrcasStories_Calvin.Event8.2_2":"Connecting with the pod proved futile. Nothing we did seemed to work.$3#$b# We've been playing recordings of the pods calls to Cetus for weeks, and playing his calls to the pod as well.$7",
+            "Events.OrcasStories_Calvin.Event8.2_3":"But it didn't matter. They barely even acknowledged that he was there. They didn't want him.$9",
+            "Events.OrcasStories_Calvin.Event8.2_4":"It's not... it's not fair! We've worked so hard for this, Cetus has been through so much!$5#$b# I've been through so much.$2#$b# He's been in that stupid tank for over ten years and the moment he has a chance to be with his own kind, they brush him off?!$21#$b# What kind of sick joke is that...?$7",
+            "Events.OrcasStories_Calvin.Event8.2_5":"But me? Heh. I'm no better!$5#$b# I told myself I was ready, but when Cetus couldn't leave part of me felt... relieved?!$2",
+            "Events.OrcasStories_Calvin.Event8.2_6":"I feel so sick, I shouldn't be happy, and... and I'm not!$2#$b# But the fact that I feel some relief... Gosh, I'm horrible.$10",
+            "Events.OrcasStories_Calvin.Event8.2_7.Question1":"You're not horrible, Calvin.",
+            "Events.OrcasStories_Calvin.Event8.2_7.Question2":"You have complicated feelings, that's normal.",
+            "Events.OrcasStories_Calvin.Event8.2_8":"But I shouldn't feel this way. I should be upset! I should be angrier...! Shouldn't I?$2",
+            "Events.OrcasStories_Calvin.Event8.2_9.Question1":"Anger won't solve this issue, you know that.",
+            "Events.OrcasStories_Calvin.Event8.2_9.Question2":"You're right to be upset, but your feelings are valid regardless.",
+            "Events.OrcasStories_Calvin.Event8.2_Mad_1":"I... I know. But I just can't understand.$2#$b# I dinnae want to feel like this. I just want to do what's right. but I can't even feel the right way.",
+            "Events.OrcasStories_Calvin.Event8.2_Valid_1":"But... am I really? I mean, I shouldn't be relieved. That's just so selfsih of me.$2#$b# I shouldn't put those feelings before how much of a tragedy this has been.$16",
+
+
+
 
             //9h
 
@@ -681,7 +714,7 @@
         //Gifts
 
 
-        "Gifts.OrcasStories_Calvin.GiftReaction.Love":"$c 0.50# This means a lot to me. Thanks, I won't forget it.#14# Wow, I don't even know what to say! This means a lot, really.$17",
+        "Gifts.OrcasStories_Calvin.GiftReaction.Love":"$c 0.50# This means a lot to me. Thanks, I won't forget it.$14# Wow, I don't even know what to say! This means a lot, really.$17",
         "Gifts.OrcasStories_Calvin.GiftReaction.Like":"$c 0.50# Wow, I'm surprised you thought of me when thinking of giving this away. I really appreciate it.$1# Hey, this is really nice of you, ya know that?$1",
         "Gifts.OrcasStories_Calvin.GiftReaction.Dislike":"$c 0.50# This is... for me? I... don't really know what to do with this.$3# Thanks but... I don't really want this.$16",
         "Gifts.OrcasStories_Calvin.GiftReaction.Hate":"$c 0.50# Oh, you think you're funny? Aye, you're a real riot.$5# Thanks, I hate it. Please leave me alone.$21",
@@ -690,7 +723,7 @@
         "Gifts.OrcasStories_Calvin.Category.Flowers":"Ummm, thanks, I guess?$2",
         "Gifts.OrcasStories_Calvin.Category.Fish":"Ah, a fine specimen. Thanks! I'll put this to good use.$6",
         "Gifts.OrcasStories_Calvin.Category.Junk":"The ocean is suffering from pollution, and you're giving me trash... as a joke?$5#$b# Hilarious, now go find someone else to bother.$7",
-        "Gifts.OrcasStories_Calvin.Seafood":"Do you think its logical or ironic that I love seafood so much? Anyway, thanks!$4", 
+        "Gifts.OrcasStories_Calvin.Seafood":"Do you think its logical or ironic that I love seafood so much? Anyways, thanks!$4", 
         "Gifts.OrcasStories_Calvin.Cheese":"Thanks for the cheese!", 
         "Gifts.OrcasStories_Calvin.Roe":"To think that all of these tiny little eggs can turn into big fish. Weird, right? Life is strange.",
 
@@ -712,12 +745,22 @@
         "Gifts.OrcasStories_Calvin.NautilusShell":"Aren't these shells so pretty? Crazy how many fascinating designs can come from nature.$0", 
         "Gifts.OrcasStories_Calvin.RainbowShell":"What a pretty shell... If I were a necklace type, I'd tie this to one and wear it!$1", 
         "Gifts.OrcasStories_Calvin.Big_Conch":"Woah, it's huge! Such a pretty specimen too.$1", 
-        "Gifts.OrcasStories_Calvin.Coral":"Woah, what an intact specimen! Coral are so fascinating.$6#$b# A lot of people think they're plants, but the coral you see is actually just a rock-like structure formed by tiny animals!$0", 
+        "Gifts.OrcasStories_Calvin.Coral":"Woah, what an intact specimen! Corals are so fascinating.$6#$b# A lot of people think they're plants, but the coral you see is actually just a rock-like structure formed by tiny animals!$0", 
         "Gifts.OrcasStories_Calvin.Urchin":"Everyone's favorite tidepool friend. And a good specimen too, thanks!$1", 
 
 
         "Gifts.OrcasStories_Calvin.KingSalmon":"Hey! This is Cetus's favorite! I'll save this for him. Put it on ice until I get a good opportunity to give it to him.$6# I'll tell him it was from you, he's gonna love it!",
         "Gifts.OrcasStories_Calvin.Shark":"Wuh-- this is... an actual shark! You're handing me a whole shark.$8#$b# Like a SHARK shark. You do realize this is a shark right?$9",
-        "Gifts.OrcasStories_Calvin.SalmonShark":"Woah! A live Salmon Shark!$8#$b# This... this is my favorite fish ever.$17#$b# Thank you for this, @. I don't really know what to do with it, but thank you.$0"
+        "Gifts.OrcasStories_Calvin.SalmonShark":"Woah! A live Salmon Shark!$8#$b# This... this is my favorite fish ever.$17#$b# Thank you for this, @. I don't really know what to do with it, but thank you.$0",
+
+        "Gifts.OrcasStories_Calvin.GiveCandle": "Happy... merry? Merry Winter Star.$4#$b# Sorry my family didn't celebrate.$20#$b# Anyway, here. Don't ask why I had this.$0 (add item here)",
+        "Gifts.OrcasStories_Calvin.RejectCandle": "What? No. You can't give that back to me!$9#$b# Give it to someone else.$20# Who? I don't know, give it to {{GiftRecipient}} or something!$21",
     
+        //gift taste 8h to 10h only
+
+        "Gifts.OrcasStories_Calvin.GiftReaction.Love8h":"",
+        "Gifts.OrcasStories_Calvin.GiftReaction.Like8h":"",
+        "Gifts.OrcasStories_Calvin.GiftReaction.Dislike8h":"",
+        "Gifts.OrcasStories_Calvin.GiftReaction.Hate8h":"",
+        "Gifts.OrcasStories_Calvin.GiftReaction.Neutral8h":""
 }
